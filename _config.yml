@@ -1,1 +1,28 @@
-theme: jekyll-theme-architect
+title: "Le Coccole"
+owner: "ALESCO SRL"
+description: "Asilo Nido Le Coccole"
+
+contact:
+  email: "info@lecoccole.it"
+  phone: "+39 388 123 2345"
+
+info:
+  opening-hours: "Lun-Ven 7:30 - 18:30"
+
+
+
+
+#url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+#paginate_path: "blog/page:num/"
+#permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+#gems: [jekyll-paginate]
+#paginate: 5
+
+navigation:
+ - title: Home
+   url: /index.html
+
