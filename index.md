@@ -37,7 +37,7 @@ sections:
 
 
 services:
-  - title: Inegnanti qualificate
+  - title: Insegnanti qualificate
     description: L'asilo è gestito da due psicoterapeute dell'infanzia e della famiglia.
     icon: "fa-graduation-cap"
   - title: Attività Fisica
