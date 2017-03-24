@@ -70,7 +70,7 @@
             <div class="col-sm-12">
               <ul class="list-inline topList">
                 <li><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></li>
-                <li><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> {{site.contact.phone}}</li>
+                <li><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> <a href="tel:{{site.contact.phone}}">{{site.contact.phone}}</a></li>
                 <li><i class="fa fa-clock-o bg-color-6" aria-hidden="true"></i> {{site.info.opening-hours}}</li>
               </ul>
             </div>
@@ -319,35 +319,74 @@
     </section>
     {% endif %}
 
+    <!-- MAIN SECTION -->
+    <section class="mainContent full-width clearfix aboutSection" id="asilo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-push-6 col-xs-12">
+            <img src="../img/about_us/main.jpg" alt="image" class="img-responsive img-rounded">
+          </div>
+          <div class="col-sm-6 col-sm-pull-6 col-xs-12">
+            <div class="schoolInfo">
+              <h2>{{ site.title }}</h2>
+              <p align="justify">L'Asilo Nido "I Bambini del Circo Massimo" è distribuito su un unico livello di circa 220 mq interni e circa 150 mq esterni. Lo spazio interno è costituito dall'Accoglienza, da un salone polivalente dedicato ai pasti ed alle attività espressive quotidiane. </p>
+              <p align="justify">Lo spazio dedicato ai lattanti è suddiviso in un'area gioco e in un'area dedicata al sonno. Sono presenti tre ampie stanze polivalenti per attività espressive, gioco simbolico e psicomotricità.</p>
+              <p align="justify">La struttura del nido permette di suddividere i bimbi in base alle diverse fasce di età ed in ogni stanza è annesso un angolo cambio. Ogni ambiente è predisposto e studiato per promuovere la socializzazione e l'autonomia dei bambini, ogni ambiente è a misura di bambino e adatto alla sua età.</p>
+              <p align="justify">L'asilo dispone di un giardino esterno attrezzato di diversi giochi di 150 mq circa. Nel'asilo nido è presente la cucina interna.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- FEATURE SECTION -->
-    <section class="servizi full-width clearfix featureSection" id="servizi">
+    <section class="servizi full-width clearfix featureSection afterWhiteSection" id="servizi">
       <div class="container">
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
-            <span>I Servizi</span>
+            <span>Punti di forza</span>
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
 
         <div class="row">
-          {% for service in page.services %}
+          {% for service in page.services limit: 3 offset: 0 %}
+          {% assign color = forloop.index %}
           <div class="col-sm-4 col-xs-12">
             <div class="media featuresContent">
-              <span class="media-left bg-color-{{forloop.index}}">
-                <i class="fa {{service.icon}} bg-color-{{forloop.index}}" aria-hidden="true"></i>
+              <span class="media-left bg-color-{{color}}">
+                <i class="fa {{service.icon}} bg-color-{{color}}" aria-hidden="true"></i>
               </span>
               <div class="media-body">
-                <h3 class="media-heading color-{{forloop.index}}">{{service.title}}</h3>
+                <h3 class="media-heading color-{{color}}">{{service.title}}</h3>
                 <p>{{service.description}}</p>
               </div>
             </div>
           </div>
           {% endfor %}
-
+        </div>
+        <div class="row">
+          {% for service in page.services limit: 6 offset: 3 %}
+          {% assign color = forloop.index | plus: 3 %}
+          <div class="col-sm-4 col-xs-12">
+            <div class="media featuresContent">
+              <span class="media-left bg-color-{{color}}">
+                <i class="fa {{service.icon}} bg-color-{{color}}" aria-hidden="true"></i>
+              </span>
+              <div class="media-body">
+                <h3 class="media-heading color-{{color}}">{{service.title}}</h3>
+                <p>{{service.description}}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
+
+
     
     <!-- PROMOTION SECTION-->
     <section class="promotionWrapper" style="background-image: url(img/home/promotion-1.jpg);">
@@ -378,9 +417,11 @@
           <div class="col-xs-12">
             <div class="filter-container isotopeFilters">
               <ul class="list-inline filter">
-                <li class="active"><a href="#" data-filter="*">La Struttura</a></li>
-                <!--<li><a href="#" data-filter=".interno">Interno</a></li>-->
+                <li class="active"><a href="#" data-filter=".aule">Aule</a></li>
+                <li><a href="#" data-filter=".giardino">Giardino</a></li>
+                <li><a href="#" data-filter=".attivita">Attività</a></li>
               </ul>
+
             </div>
           </div>
         </div>
@@ -388,21 +429,30 @@
 
           {% for image in site.static_files %}
           {% if image.path contains 'assets/home_gallery' %}
-          <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector interno">
-            <article class="">
-              <figure>
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
-                <div class="overlay-background">
-                  <div class="inner"></div>
-                </div>
-                <div class="overlay">
-                  <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </figure>
-            </article>
-          </div>
+            {% if image.path contains 'assets/home_gallery/aule' %}
+              {% assign class = 'aule' %}
+            {% endif %}
+            {% if image.path contains 'assets/home_gallery/giardino' %}
+              {% assign class = 'giardino' %}
+            {% endif %}
+            {% if image.path contains 'assets/home_gallery/attivita' %}
+              {% assign class = 'attivita' %}
+            {% endif %}
+            <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
+              <article class="">
+                <figure>
+                  <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                  <div class="overlay-background">
+                    <div class="inner"></div>
+                  </div>
+                  <div class="overlay">
+                    <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
+                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </figure>
+              </article>
+            </div>
 
           {% endif %}
           {% endfor %}
@@ -410,7 +460,7 @@
         </div>
 
         <div class="btnArea">
-          <a href="photo-gallery.html" class="btn btn-primary">Visualizza tutte</a>
+          <a href="photo-gallery.html" class="btn btn-primary"><i class="fa fa-image"></i> Galleria Completa</a>
         </div>
 
       </div>
@@ -422,7 +472,7 @@
         <div class="sectionTitle text-center alt">
           <h2>
             <span class="shape shape-left bg-color-3"></span>
-            <span>Le Nostre Insegnanti</span>
+            <span>Le Titolari</span>
             <span class="shape shape-right bg-color-3"></span>
           </h2>
         </div>
@@ -430,159 +480,31 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="owl-carousel teamSlider">
+
+              {% for teacher in page.teachers %}
               <div class="slide">
                 <div class="teamContent">
                   <div class="teamImage">
-                    <img src="img/home/team/team-1.jpg" alt="img" class="img-circle">
+                    <img src="{{ teacher.picture }}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        <li><a href="{{ teacher.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Smith</a></h3>
-                    <p>English Teacher</p>
+                    <h3><a href="{{ teacher.linkedin }}" target="_blank">{{ teacher.name }}</a></h3>
+                    <p>{{ teacher.description }}</p>
                   </div>
                 </div>
               </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-2.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-3.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-4.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-1.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-2.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-3.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="teamContent">
-                  <div class="teamImage">
-                    <img src="img/home/team/team-4.jpg" alt="img" class="img-circle">
-                    <div class="maskingContent">
-                      <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="teamInfo">
-                    <h3><a href="teachers-details.html">Amanda Stone</a></h3>
-                    <p>English Teacher</p>
-                  </div>
-                </div>
-              </div>
+              {% endfor %}
             </div>
+
+            <div class="btnArea">
+              <a href="titolari.html" class="btn btn-primary"><i class="fa fa-info"></i> Cosa Facciamo</a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -658,10 +580,11 @@
         <div class="sectionTitleSmall text-center alt">
           <h2>
             <span class="shape shape-left bg-color-3"></span>
-            <span>Una bella frase</span>
+            <span>Una scelta importante</span>
             <span class="shape shape-right bg-color-3"></span>
           </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod</p>
+          <p>"{{ site.sentence }}"</p>
+          <p>{{ site.sentence_author }}</p>
         </div>
       </div>
     </section>
@@ -672,59 +595,25 @@
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
-            <span>Seguici</span>
+            <span>Seguici su Facebook</span>
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
-          
-        <div class="row">
-          <div class="col-sm-4 col-xs-12 block">
+
+        <div id="fb-posts">
+          <div id="fb-template" style="display: none" class="col-sm-4 col-xs-12 block">
             <div class="thumbnail thumbnailContent">
-              <a href="single-blog-left-sidebar.html"><img src="img/home/news/news-1.jpg" alt="image" class="img-responsive"></a>
-              <div class="sticker-round bg-color-1">10 <br>July</div>
-              <div class="caption border-color-1">
-                <h3><a href="single-blog-left-sidebar.html" class="color-1">The standard chunk of Lorem.</a></h3>
+
+              <a href="#" target="_blank" class="fb-link"><img alt="image" class="img-responsive fb-image"></a>
+              <div class="sticker-round fb-bg-color fb-date"></div>
+              <div class="caption fb-border-color">
+                <h3><a href="#" target="_blank" class="fb-color fb-message fb-link"></a></h3>
+                <p class="fb-message"></p>
                 <ul class="list-inline">
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-user" aria-hidden="true"></i>Jone Doe</a></li>
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-comments-o" aria-hidden="true"></i>4 Comments</a></li>
+                  <li><a href="#" target="_blank" class="fb-link"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span class="fb-likes"></span></a></li>
                 </ul>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classi cal Latin literature. </p>
                 <ul class="list-inline btn-yellow">
-                  <li><a href="single-blog-left-sidebar.html" class="btn btn-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Read More</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 block">
-            <div class="thumbnail thumbnailContent">
-              <a href="single-blog-left-sidebar.html"><img src="img/home/news/news-2.jpg" alt="image" class="img-responsive"></a>
-              <div class="sticker-round bg-color-2">10 <br>July</div>
-              <div class="caption border-color-2">
-                <h3><a href="single-blog-left-sidebar.html" class="color-2">Vestibulum congue massa vitae.</a></h3>
-                <ul class="list-inline">
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-user" aria-hidden="true"></i>Jone Doe</a></li>
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-comments-o" aria-hidden="true"></i>4 Comments</a></li>
-                </ul>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classi cal Latin literature. </p>
-                <ul class="list-inline btn-green">
-                  <li><a href="single-blog-left-sidebar.html" class="btn btn-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Read More</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4 col-xs-12 block">
-            <div class="thumbnail thumbnailContent">
-              <a href="single-blog-left-sidebar.html"><img src="img/home/news/news-3.jpg" alt="image" class="img-responsive"></a>
-              <div class="sticker-round bg-color-3">10 <br>July</div>
-              <div class="caption border-color-3">
-                <h3><a href="single-blog-left-sidebar.html" class="color-3">Curabitur ac nulla sodales risus.</a></h3>
-                <ul class="list-inline">
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-user" aria-hidden="true"></i>Jone Doe</a></li>
-                  <li><a href="single-blog-left-sidebar.html"><i class="fa fa-comments-o" aria-hidden="true"></i>4 Comments</a></li>
-                </ul>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classi cal Latin literature. </p>
-                <ul class="list-inline btn-red">
-                  <li><a href="single-blog-left-sidebar.html" class="btn btn-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Read More</a></li>
+                  <li><a href="#" target="_blank" class="btn btn-link fb-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Leggi il post</a></li>
                 </ul>
               </div>
             </div>
@@ -732,7 +621,7 @@
         </div>
         
         <div class="btnArea">
-          <a href="blog-grid.html" class="btn btn-primary">View more</a>
+          <a href="https://www.facebook.com/asilonidoromacircomassimo/" target="_blank" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i> Pagina Facebook</a>
         </div>
           
       </div>
@@ -744,32 +633,13 @@
         <div class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="homeContactContent">
-              <h2>Our Address</h2>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h2>Contattaci</h2>
+              <p>Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.</p>
               <address>
-                <p><i class="fa fa-map-marker bg-color-1" aria-hidden="true"></i>9/4/C Ring Road,Garden Street Dhaka,Bangladesh-1200</p>
-                <p><i class="fa fa-envelope bg-color-2" aria-hidden="true"></i><a href="mailto:hello@example.com">hello@example.com</a></p>
-                <p><i class="fa fa-phone bg-color-4" aria-hidden="true"></i>3333 222 1111</p>
+                <p><i class="fa fa-phone bg-color-4" aria-hidden="true"></i><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
+                <p><i class="fa fa-envelope bg-color-2" aria-hidden="true"></i><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+                <p><i class="fa fa-map-marker bg-color-1" aria-hidden="true"></i>{{ site.contact.address }}</p>
               </address>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xs-12">
-            <div class="homeContactContent">
-              <form action="#" method="POST" role="form">
-                <div class="form-group">
-                  <i class="fa fa-user"></i>
-                  <input type="text" class="form-control border-color-1" id="exampleInputEmail1" placeholder="First name">
-                </div>
-                <div class="form-group">
-                  <i class="fa fa-envelope" aria-hidden="true"></i>
-                  <input type="text" class="form-control border-color-2" id="exampleInputEmail2" placeholder="Email address">
-                </div>
-                <div class="form-group">
-                  <i class="fa fa-comments" aria-hidden="true"></i>
-                  <textarea class="form-control border-color-4" placeholder="Write message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </form>
             </div>
           </div>
         </div>
@@ -799,102 +669,14 @@
       <div class="footerInfoArea full-width clearfix" style="background-image: url(img/footer/footer-bg-1.png);">
         <div class="container">
           <div class="row">
-            <div class="col-sm-3 col-xs-12">
+            <div class="col-sm-6 col-xs-12">
               <div class="footerTitle">
                 <a href="index-v1.html"><img src="img/logo-footer.png"></a>
               </div>
               <div class="footerInfo">
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa officia.Lorem ipsum dolor sit amet.</p>
-                <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="footerTitle">
-                <h4>Useful Links</h4>
-              </div>
-              <div class="footerInfo">
-                <ul class="list-unstyled footerList">
-                  <li>
-                    <a href="index-v1.html">
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>Kidz School
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about_us.html">
-                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>About Kidz School
-                    </a>
-                  </li>
-                  <li>
-                    <a href="index-v2.html">
-                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>Kidz Store
-                    </a>
-                  </li>
-                  <li>
-                    <a href="index-v3.html">
-                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>Kidz Daycare
-                    </a>
-                  </li>
-                  <li>
-                    <a href="photo-gallery.html">
-                      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                      Photo Gallery
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="footerTitle">
-                <h4>Recent Post</h4>
-              </div>
-              <div class="footerInfo">
-                <ul class="list-unstyled postLink">
-                  <li>
-                    <div class="media">
-                      <a class="media-left" href="single-blog.html">
-                        <img class="media-object img-rounded border-color-1" src="img/footer/footer-img-1.png" alt="Image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading"><a href="single-blog.html">A Clean Website Gives More Experience To The Visitors</a></h5>
-                        <p>July 7 - 2016</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <a class="media-left" href="single-blog-left-sidebar.html">
-                        <img class="media-object img-rounded border-color-2" src="img/footer/footer-img-2.png" alt="Image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading"><a href="single-blog-left-sidebar.html">A Clean Website Gives More Experience To The Visitors</a></h5>
-                        <p>July 7 - 2016</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media">
-                      <a class="media-left" href="single-blog-left-sidebar.html">
-                        <img class="media-object img-rounded border-color-4" src="img/footer/footer-img-3.png" alt="Image">
-                      </a>
-                      <div class="media-body">
-                        <h5 class="media-heading"><a href="single-blog-left-sidebar.html">A Clean Website Gives More Experience To The Visitors</a></h5>
-                        <p>July 7 - 2016</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-              <div class="footerTitle">
-                <h4>Mailing List</h4>
-              </div>
-              <div class="footerInfo">
-                <p>Sign up for our mailing list to get latest updates and offers.</p>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Email address" aria-describedby="basic-addon21">
-                  <button type="submit" class="input-group-addon" id="basic-addon21"><i class="fa fa-check" aria-hidden="true"></i></button>
-                </div>
+                <p>{{ site.title }}</p>
+                <p><i>"{{ site.sentence}}"</i></p>
+                <p>{{ site.sentence_author}}</p>
               </div>
             </div>
           </div>
@@ -906,16 +688,12 @@
           <div class="row">
             <div class="col-sm-5 col-sm-push-7 col-xs-12">
               <ul class="list-inline">
-                <li><a href="#" class="bg-color-1"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#" class="bg-color-2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#" class="bg-color-3"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="#" class="bg-color-4"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                <li><a href="#" class="bg-color-5"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                <li><a href="{{ site.social.facebook }}" target="_blank" class="bg-color-1"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
               </ul>
             </div>
             <div class="col-sm-7 col-sm-pull-5 col-xs-12">
               <div class="copyRightText">
-                <p>© 2016 Copyright Kidz School Bootstrap Template by <a href="https://www.iamabdus.com/">Abdus</a>.</p>
+                <p>© Copyright 2017 - Alesco SRL</p>
               </div>
             </div>
           </div>
@@ -928,72 +706,7 @@
     <a href="#pageTop" class="backToTop hidden-xs" id="backToTop"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
   </div>
 
-  <!-- LOGIN MODAL -->
-  <div class="modal fade customModal" id="loginModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="panel panel-default formPanel">
-          <div class="panel-heading bg-color-1 border-color-1">
-            <h3 class="panel-title">Login</h3>
-          </div>
-          <div class="panel-body">
-            <form action="#" method="POST" role="form">
-              <div class="form-group formField">
-                <input type="text" class="form-control" placeholder="User name">
-              </div>
-              <div class="form-group formField">
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div class="form-group formField">
-                <input type="submit" class="btn btn-primary btn-block bg-color-3 border-color-3" value="Log in">
-              </div>
-              <div class="form-group formField">
-                <p class="help-block"><a href="#">Forgot password?</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- CREATE ACCOUNT MODAL -->
-  <div class="modal fade customModal" id="createAccount" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="panel panel-default formPanel">
-          <div class="panel-heading bg-color-1 border-color-1">
-            <h3 class="panel-title">Create  an account</h3>
-          </div>
-          <div class="panel-body">
-            <form action="#" method="POST" role="form">
-              <div class="form-group formField">
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="form-group formField">
-                <input type="text" class="form-control" placeholder="User name">
-              </div>
-              <div class="form-group formField">
-                <input type="text" class="form-control" placeholder="Phone">
-              </div>
-              <div class="form-group formField">
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div class="form-group formField">
-                <input type="password" class="form-control" placeholder="Re-Password">
-              </div>
-              <div class="form-group formField">
-                <input type="submit" class="btn btn-primary btn-block bg-color-3 border-color-3" value="Register">
-              </div>
-              <div class="form-group formField">
-                <p class="help-block">Allready have an account? <a href="#">Log in</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="plugins/jquery-ui/jquery-ui.js"></script>
@@ -1013,6 +726,8 @@
   <script src="js/custom.js"></script>
   <script src="plugins/google-custom-map/google-map.js"></script>
   <script src="https://maps.google.com/maps/api/js?key=AIzaSyCptrstShIT6bqq_4EQgQelit5R6dr9E4w&callback=initMap"></script>
+  <script src="plugins/common-api/common-api.js"></script>
+
 
 </body>
 

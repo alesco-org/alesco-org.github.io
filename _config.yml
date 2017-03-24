@@ -1,10 +1,15 @@
-title: "Le Coccole"
+title: "I Bambini del Circo Massimo"
+sentence: "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda. Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
+sentence_author: "Maria Montessori"
 owner: "ALESCO SRL"
-description: "Asilo Nido Le Coccole"
+description: "Asilo Nido I Bambini del Circo Massimo"
+
+social:
+    facebook: "https://www.facebook.com/asilonidoromacircomassimo/"
 
 contact:
   address: "Via del Circo Massimo 9, 00153, Roma"
-  email: "info@lecoccole.it"
+  email: "info@ibambinidelcircomassimo.it"
   phone: "+39 366 1946395"
 
 info:

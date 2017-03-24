@@ -33,6 +33,10 @@ jQuery(document).ready(function($) {
 			isotopeContainer.isotope({
 				itemSelector: '.isotopeSelector'
 			});
+
+		var filterValue = $(".isotopeFilters .active a").attr('data-filter');
+		isotopeContainer.isotope({ filter: filterValue });
+
 		$('.isotopeFilters').on( 'click', 'a', function(e) {
 				$('.isotopeFilters').find('.active').removeClass('active');
 				$(this).parent().addClass('active');
@@ -89,6 +93,7 @@ jQuery(document).ready(function($) {
 				e.preventDefault();
 			});
 		});
+
 	
 	};
 	
