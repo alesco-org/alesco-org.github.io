@@ -48,9 +48,9 @@ services:
   - title: Orari flessibili
     description: Sono previsti diversi orari di uscita per andare incontro alle esigenze delle famiglie.
     icon: "fa-clock-o"
-  - title: Corsi di Inglese e Spagnolo
+  - title: Inglese e Spagnolo
     description: Diventiamo cittadini del mondo! Apprendere una seconda lingua arricchisce e stimola la naturale curiosità dei bambini..
-    icon: "fa-flag"
+    icon: "fa-globe"
     
 
 teachers:
