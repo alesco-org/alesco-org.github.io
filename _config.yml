@@ -1,6 +1,8 @@
 title: "I Bambini del Circo Massimo"
-sentence: "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda. Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
-sentence_author: "Maria Montessori"
+sentence:
+  text: "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda. Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
+  author: "Maria Montessori"
+
 owner: "ALESCO SRL"
 description: "Asilo Nido I Bambini del Circo Massimo"
 

@@ -7,6 +7,10 @@
   padding-top: 0px;
 }
 
+.main-wrapper .whiteSection.afterWhiteSection {
+  padding-top: 25px;
+}
+
 .mainContent.aboutSection {
   padding-bottom: 50px;
 }
@@ -15,4 +19,39 @@
 .countUpSection p {
   font-size: 20px;
   text-shadow: 0px 0px 30px rgba(100, 100, 100, 1);
+}
+
+/* Fix Banner */
+
+@media (min-width: 320px) {
+  .fullscreenbanner .tp-caption.rs-caption-1 {
+    font-size: 22px !important;
+    line-height: 2px !important;
+    padding: 0 10px !important;
+  }
+}
+@media (min-width: 768px) {
+  .fullscreenbanner .tp-caption.rs-caption-1 {
+    font-size: 45px !important;
+    line-height: 40px !important;
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .fullscreenbanner .tp-caption.rs-caption-1 {
+    font-size: 50px !important;
+    line-height: 40px !important;
+  }
+}
+
+/* Fix Padding top */
+@media (min-width: 320px) {
+  .main-wrapper .whiteSection, .mainContent, .lightSection, .colorSection {
+    padding: 0 0 50px 0;
+  }
+}
+@media (min-width: 768px) {
+  .main-wrapper .whiteSection, .mainContent, .lightSection, .colorSection {
+    padding: 100px 0;
+  }
 }
