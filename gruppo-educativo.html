@@ -17,21 +17,49 @@ features:
             <div class="col-sm-6 col-xs-12">
                 <div class="schoolInfo">
                     <h2>{{ page.title }}</h2>
-
-                    <p align="justify">
-                        Giulia Papini Titolare e Coordinatrice, laureata in Psicologia dell’Infanzia e della Famiglia e specializzanda in Psicoterapia Familiare. Si occupa del coordinamento delle attività quotidiane e dei laboratori esterni e definizione del progetto pedagogico.
-                    </p>
-                    <p align="justify">
-                        Elena Ierace Titolare ed educatrice, laureata in Psicologia dell’Infanzia e della Famiglia e specializzanda in Psicoterapia Familiare. Si occupa della gestione interna quotidiana delle diverse classi suddivise per fasce di età.
-                    </p>
-                    <p align="justify">
-                        Ginevra Papini Titolare, diplomata in Tecnico dei Servizi Sociali e Specializzata come Educatrice Professionale. Si occupa dell’organizzazione delle attività e della cura dei bambini.
-                    </p>
-
+                    <div class="text-justify">
+                        <p>L'asilo nido "I Bambini del Circo Massimo" è un servizio socio educativo gestito da tre titolari con i titoli del settore.</p>
+                        <p>
+                            <strong>Giulia Papini</strong>, titolare e coordinatrice, <mark>laureata in Psicologia dell'Infanzia e della Famiglia</mark> e specializzanda in Psicoterapia Familiare. Si occupa del coordinamento delle attività quotidiane e dei laboratori esterni e definizione del progetto pedagogico.
+                        </p>
+                        <p>
+                            <strong>Elena Ierace</strong>, titolare ed educatrice, <mark>laureata in Psicologia dell’Infanzia e della Famiglia</mark> e specializzanda in Psicoterapia Familiare. Si occupa della gestione interna quotidiana delle diverse classi suddivise per fasce di età.
+                        </p>
+                        <p>
+                            <strong>Ginevra Papini</strong>, titolare ed educatrice, diplomata in Tecnico dei Servizi Sociali e <mark>specializzata come Educatrice Professionale</mark>. Si occupa dell'organizzazione delle attività e della cura dei bambini.
+                        </p>
+                        <p>
+                            Tutte le educatrici che svolgono le attività quotidiane possiedono i titoli di studio richiesti, oltre una notevole esperienza con i bambini.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6 col-xs-12">
-                <img src="../img/about_us/main.jpg" alt="image" class="img-responsive img-rounded">
+                <img src="../img/main/socie.jpg" alt="image" class="img-responsive img-rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="row isotopeContainer">
+
+                {% for image in site.static_files %}
+                {% if image.path contains 'assets/personale' %}
+                <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
+                    <article class="">
+                        <figure>
+                            <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                            <div class="overlay-background">
+                                <div class="inner"></div>
+                            </div>
+                            <div class="overlay">
+                                <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
+                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </figure>
+                    </article>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>

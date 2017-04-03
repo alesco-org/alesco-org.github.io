@@ -118,13 +118,34 @@
                   <span>Servizi</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-
+                  <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="cucina-interna.html">Cucina Interna</a></li>
+                  <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="laboratori.html">Laboratori</a></li>
+                  <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="pediatra.html">Pediatra</a></li>
+                  <li class="{% if page.id=='corsi' %}active{% endif %}"><a href="corsi.html">Corsi di Disostruzione</a></li>
+                  <li class="{% if page.id=='centro-estivo' %}active{% endif %}"><a href="centro-estivo.html">Centro Estivo</a></li>
+                  <li class="{% if page.id=='sala-feste' %}active{% endif %}"><a href="sala-feste.html">Sala Feste</a></li>
+                </ul>
+              </li>
+              <li class="{% if page.group.id=='al-nido' %}active{% endif %} dropdown singleDrop color-4">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-child bg-color-4" aria-hidden="true"></i>
+                  <span>Al Nido</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="inserimento.html">Inserimento</a></li>
+                  <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="giornata-tipo.html">Giornata Tipo</a></li>
+                  <li class="{% if page.id=='alimentazione' %}active{% endif %}"><a href="alimentazione.html">Alimentazione</a></li>
                 </ul>
               </li>
 
-              <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-6">
+              <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-2">
                 <a href="galleria.html" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-image bg-color-6" aria-hidden="true"></i> <span>Galleria Fotografica</span></a>
+                  <i class="fa fa-image bg-color-2" aria-hidden="true"></i> <span>Foto</span></a>
+              </li>
+
+              <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-6">
+                <a href="contatti.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-envelope bg-color-6" aria-hidden="true"></i> <span>Contatti</span></a>
               </li>
             </ul>
           </div>

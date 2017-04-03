@@ -5,40 +5,39 @@ id: galleria
 features:
     breadcrumb: true
     contacts: true
+
+gallery_sections:
+ - id: giardino
+   name: Il Giardino
+ - id: lattanti
+   name: Stanza dei Lattanti
+ - id: medi
+   name: Stanza dei Medi
+ - id: grandi
+   name: Stanza dei Grandi
+ - id: ninne
+   name: Stanza delle Ninne
+
+
 ---
 
 <!-- WHITE SECTION -->
 <section class="whiteSection full-width clearfix homeGallerySection" id="galleria">
     <div class="container">
 
-        <div class="row">
 
-
-
-            <div class="col-xs-12">
-                <div class="filter-container isotopeFilters">
-                    <ul class="list-inline filter">
-                        <li class="active"><a href="#" data-filter=".aule">Aule</a></li>
-                        <li><a href="#" data-filter=".giardino">Giardino</a></li>
-                        <li><a href="#" data-filter=".attivita">Attività</a></li>
-                    </ul>
-
-                </div>
-            </div>
+        {% for section in page.gallery_sections %}
+        <div class="sectionTitle text-center clearfix">
+            <h2>
+                <span class="shape shape-left bg-color-4"></span>
+                <span>{{section.name}}</span>
+                <span class="shape shape-right bg-color-4"></span>
+            </h2>
         </div>
-        <div class="row isotopeContainer" id="container">
+        <div class="row isotopeContainer" id="container-{{section.id}}">
 
             {% for image in site.static_files %}
-            {% if image.path contains 'assets/home_gallery' %}
-            {% if image.path contains 'assets/home_gallery/aule' %}
-            {% assign class = 'aule' %}
-            {% endif %}
-            {% if image.path contains 'assets/home_gallery/giardino' %}
-            {% assign class = 'giardino' %}
-            {% endif %}
-            {% if image.path contains 'assets/home_gallery/attivita' %}
-            {% assign class = 'attivita' %}
-            {% endif %}
+            {% if image.path contains 'assets/full_gallery/' and image.path contains section.id %}
             <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
                 <article class="">
                     <figure>
@@ -54,11 +53,12 @@ features:
                     </figure>
                 </article>
             </div>
-
             {% endif %}
             {% endfor %}
-
         </div>
+        {% endfor %}
+
+
 
 
     </div>
