@@ -177,7 +177,7 @@
       <div class="fullscreenbanner-container">
         <div class="fullscreenbanner">
           <ul>
-            {% for slide in page.slides limit: 1 %}
+            {% for slide in page.slides %}
             <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{{slide.title}}">
               <img style="display: none;" src="{{slide.img}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
@@ -328,20 +328,20 @@
         <div class="row isotopeContainer" id="container">
 
           {% for image in site.static_files %}
-          {% if image.path contains 'assets/home_gallery' %}
-            {% if image.path contains 'assets/home_gallery/aule' %}
+          {% if image.path contains 'assets/home_gallery/m/' %}
+            {% if image.path contains 'assets/home_gallery/m/aule' %}
               {% assign class = 'aule' %}
             {% endif %}
-            {% if image.path contains 'assets/home_gallery/giardino' %}
+            {% if image.path contains 'assets/home_gallery/m/giardino' %}
               {% assign class = 'giardino' %}
             {% endif %}
-            {% if image.path contains 'assets/home_gallery/attivita' %}
+            {% if image.path contains 'assets/home_gallery/m/attivita' %}
               {% assign class = 'attivita' %}
             {% endif %}
             <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
               <article class="">
                 <figure>
-                  <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                  <img src="{{ site.baseurl }}{{ image.path | replace_first: '/m/', '/s/' }}" alt="image" class="img-rounded" />
                   <div class="overlay-background">
                     <div class="inner"></div>
                   </div>
@@ -380,7 +380,7 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-md-11 col-md-offset-2 col-xs-12">
             <div class="owl-carousel teamSlider">
 
               {% for teacher in page.teachers %}
@@ -390,12 +390,22 @@
                     <img src="{{ teacher.picture }}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
+                        {% if teacher.linkedin %}
                         <li><a href="{{ teacher.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        {% else %}
+                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                        {% endif %}
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
-                    <h3><a href="{{ teacher.linkedin }}" target="_blank">{{ teacher.name }}</a></h3>
+                    <h3>
+                      {% if teacher.linkedin %}
+                        <a href="{{ teacher.linkedin }}" target="_blank">{{ teacher.name }}</a>
+                      {% else %}
+                        <a href="gruppo-educativo.html">{{ teacher.name }}</a>
+                      {% endif %}
+                    </h3>
                     <p>{{ teacher.description }}</p>
                   </div>
                 </div>
@@ -403,10 +413,12 @@
               {% endfor %}
             </div>
 
-            <div class="btnArea">
-              <a href="gruppo-educativo.html" class="btn btn-primary"><i class="fa fa-users"></i> Gruppo Educativo</a>
-            </div>
 
+          </div>
+        </div>
+        <div class="row">
+          <div class="btnArea">
+            <a href="gruppo-educativo.html" class="btn btn-primary"><i class="fa fa-users"></i> Gruppo Educativo</a>
           </div>
         </div>
       </div>

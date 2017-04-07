@@ -16,7 +16,7 @@ $(document).ready(function() {
                 .css("display", "block")
                 .attr("id", "fb-post-" + (i+1));
 
-            $(".fb-message", template).text(res[i].message);
+            $(".fb-message", template).text(res[i].message ? res[i].message : "Nuova immagine!");
             $(".fb-image", template).attr("src", res[i].picture);
             $(".fb-date", template).text(res[i].date.split("-")[2] + " / " + res[i].date.split("-")[1]);
             $(".fb-likes", template).text(res[i].likes);

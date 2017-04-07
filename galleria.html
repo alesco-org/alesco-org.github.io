@@ -37,16 +37,16 @@ gallery_sections:
         <div class="row isotopeContainer" id="container-{{section.id}}">
 
             {% for image in site.static_files %}
-            {% if image.path contains 'assets/full_gallery/' and image.path contains section.id %}
+            {% if image.path contains 'assets/full_gallery/m/' and image.path contains section.id %}
             <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
                 <article class="">
                     <figure>
-                        <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                        <img src="{{ site.baseurl }}{{ image.path | replace_first: '/m/', '/s/' }}" alt="image" class="img-rounded" />
                         <div class="overlay-background">
                             <div class="inner"></div>
                         </div>
                         <div class="overlay">
-                            <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
+                            <a class="fancybox-pop" href="{{ site.baseurl }}{{ image.path }}">
                                 <i class="fa fa-search-plus" aria-hidden="true"></i>
                             </a>
                         </div>
