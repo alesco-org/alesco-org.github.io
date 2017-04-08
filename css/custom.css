@@ -21,6 +21,18 @@
   text-shadow: 0px 0px 30px rgba(100, 100, 100, 1);
 }
 
+/* Utils */
+
+.space-large {
+  margin-top: 60px;
+}
+.space-medium {
+  margin-top: 30px;
+}
+.space-small {
+  margin-top: 15px;
+}
+
 /* Fix Banner */
 
 @media (min-width: 320px) {
@@ -30,25 +42,18 @@
     padding: 0 10px !important;
 
     margin-top: -80px;
+    text-shadow: none;
   }
   .fullscreenbanner .tp-caption.rs-caption-2 {
     margin-top: -30px;
     font-size: 14px !important;
     line-height: 14px;
+
+    text-shadow: none;
   }
-  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span, .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
     color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-    padding: 3px 10px;
-    border-radius: 5px;
-  }
-  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
-    color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+    background-color: rgba(181,213,106,0.6);
     padding: 3px 10px;
     border-radius: 5px;
   }
@@ -60,29 +65,21 @@
     padding: 0;
 
     margin-top: -110px;
+    text-shadow: none;
   }
   .fullscreenbanner .tp-caption.rs-caption-2 {
     margin-top: -60px;
     font-size: 18px !important;
     line-height: 18px;
-  }
-  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
-    color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-    padding: 7px 20px;
-    border-radius: 10px;
-  }
-  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
-    color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-    padding: 7px 20px;
-    border-radius: 10px;
-  }
 
+    text-shadow: none;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span, .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
+    color: #ffffff;
+    background-color: rgba(181,213,106,0.6);
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
 }
 @media (min-width: 992px) {
   .fullscreenbanner .tp-caption.rs-caption-1 {
@@ -90,25 +87,18 @@
     line-height: 40px !important;
 
     margin-top: -110px;
+    text-shadow: none;
   }
   .fullscreenbanner .tp-caption.rs-caption-2 {
     margin-top: -60px;
     font-size: 28px !important;
     line-height: 28px;
+
+    text-shadow: none;
   }
-  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span, .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
     color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
-    padding: 7px 20px;
-    border-radius: 10px;
-  }
-  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
-    color: #ffffff;
-    background-color: #2be09e;
-    filter: alpha(opacity=70);
-    opacity: 0.7;
+    background-color: rgba(181,213,106,0.6);
     padding: 7px 20px;
     border-radius: 10px;
   }
@@ -153,5 +143,25 @@
     height: auto;
     padding: 4px 15px;
     width: 160px;
+  }
+}
+
+/* Fix H3 */
+.schoolInfo h3 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #ea7066;
+  font-weight: 700;
+}
+@media (min-width: 320px) {
+  .schoolInfo h3 {
+    margin: 20px 0;
+  }
+}
+@media (min-width: 768px) {
+  .schoolInfo h3 {
+    margin: 0 0 20px 0;
   }
 }
