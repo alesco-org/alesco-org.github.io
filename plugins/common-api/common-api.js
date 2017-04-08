@@ -3,7 +3,7 @@ $(document).ready(function() {
     $.get("https://alesco.nerdammer.it/posts", function (res) {
 
         var row = $("<div/>").addClass("row");
-        for (var i=0; i<res.length && i<3; i++) {
+        for (var i=0; i<res.length && i<6; i++) {
             if (i % 3 === 0) {
                 if (i > 0) {
                     row.appendTo("#fb-posts");

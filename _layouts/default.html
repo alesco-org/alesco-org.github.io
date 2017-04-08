@@ -121,9 +121,9 @@
                   <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="laboratori.html">Laboratori</a></li>
                   <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="pediatra.html">Pediatra</a></li>
                   <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="cucina-interna.html">Cucina Interna</a></li>
-                  <li class="{% if page.id=='corsi' %}active{% endif %}"><a href="corsi.html">Corsi di Disostruzione</a></li>
-                  <li class="{% if page.id=='centro-estivo' %}active{% endif %}"><a href="centro-estivo.html">Centro Estivo</a></li>
-                  <li class="{% if page.id=='sala-feste' %}active{% endif %}"><a href="sala-feste.html">Sala Feste</a></li>
+                  <!--<li class="{% if page.id=='corsi' %}active{% endif %}"><a href="corsi.html">Corsi di Disostruzione</a></li>-->
+                  <!--<li class="{% if page.id=='centro-estivo' %}active{% endif %}"><a href="centro-estivo.html">Centro Estivo</a></li>-->
+                  <!--<li class="{% if page.id=='sala-feste' %}active{% endif %}"><a href="sala-feste.html">Sala Feste</a></li>-->
                 </ul>
               </li>
               <li class="{% if page.group.id=='al-nido' %}active{% endif %} dropdown singleDrop color-4">
@@ -134,7 +134,7 @@
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="inserimento.html">Inserimento</a></li>
                   <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="giornata-tipo.html">Giornata Tipo</a></li>
-                  <li class="{% if page.id=='alimentazione' %}active{% endif %}"><a href="alimentazione.html">Alimentazione</a></li>
+                  <!--<li class="{% if page.id=='alimentazione' %}active{% endif %}"><a href="alimentazione.html">Alimentazione</a></li>-->
                 </ul>
               </li>
 
@@ -281,6 +281,11 @@
           {% endfor %}
         </div>
       </div>
+
+      <div class="btnArea">
+        <a href="laboratori.html" class="btn btn-primary"><i class="fa fa-soccer-ball-o"></i> I Laboratori</a>
+      </div>
+
     </section>
     {% endif %}
 
@@ -432,10 +437,23 @@
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
+            {% if page.features.invite %}
+            <span>Contatti</span>
+            {% else %}
             <span>Dove Siamo</span>
+            {% endif %}
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
+        {% if page.features.invite %}
+        <div class="row schoolInfo">
+          <div class="col-xs-12">
+            <p>L'asilo nido "I Bambini del Circo Massimo" ti aspetta per mostrarti la struttura ed il servizio educativo. Chiama ora per prendere un appuntamento.</p>
+          </div>
+        </div>
+        <div class="row space-medium">
+        </div>
+        {% endif %}
 
         <div class="row">
           <div class="col-sm-4 col-xs-12">
