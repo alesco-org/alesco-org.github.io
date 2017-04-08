@@ -28,6 +28,29 @@
     font-size: 22px !important;
     line-height: 2px !important;
     padding: 0 10px !important;
+
+    margin-top: -80px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-2 {
+    margin-top: -30px;
+    font-size: 14px !important;
+    line-height: 14px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 3px 10px;
+    border-radius: 5px;
   }
 }
 @media (min-width: 768px) {
@@ -35,12 +58,59 @@
     font-size: 45px !important;
     line-height: 40px !important;
     padding: 0;
+
+    margin-top: -110px;
   }
+  .fullscreenbanner .tp-caption.rs-caption-2 {
+    margin-top: -60px;
+    font-size: 18px !important;
+    line-height: 18px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
+
 }
 @media (min-width: 992px) {
   .fullscreenbanner .tp-caption.rs-caption-1 {
     font-size: 50px !important;
     line-height: 40px !important;
+
+    margin-top: -110px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-2 {
+    margin-top: -60px;
+    font-size: 28px !important;
+    line-height: 28px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-1 span.title-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 7px 20px;
+    border-radius: 10px;
+  }
+  .fullscreenbanner .tp-caption.rs-caption-2 span.subtitle-span {
+    color: #ffffff;
+    background-color: #2be09e;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    padding: 7px 20px;
+    border-radius: 10px;
   }
 }
 

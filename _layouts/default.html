@@ -13,26 +13,26 @@
   {% endif %}
   
   <!-- PLUGINS CSS STYLE -->
-  <link href="plugins/jquery-ui/jquery-ui.css" rel="stylesheet">
-  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="plugins/selectbox/select_option1.css">
-  <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="plugins/isotope/jquery.fancybox.css">
-  <link rel="stylesheet" type="text/css" href="plugins/isotope/isotope.css">
+  <link href="plugins/jquery-ui/jquery-ui.css?version={{site.version}}" rel="stylesheet">
+  <link href="plugins/bootstrap/css/bootstrap.min.css?version={{site.version}}" rel="stylesheet">
+  <link href="plugins/font-awesome/css/font-awesome.min.css?version={{site.version}}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css?version={{site.version}}" media="screen">
+  <link rel="stylesheet" type="text/css" href="plugins/selectbox/select_option1.css?version={{site.version}}">
+  <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css?version={{site.version}}" media="screen">
+  <link rel="stylesheet" type="text/css" href="plugins/isotope/jquery.fancybox.css?version={{site.version}}">
+  <link rel="stylesheet" type="text/css" href="plugins/isotope/isotope.css?version={{site.version}}">
   
   <!-- GOOGLE FONT -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,600,700' rel='stylesheet' type='text/css'>
 
   <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/colors/default.css" id="option_color">
-  <link href="css/custom.css?v=1" rel="stylesheet">
+  <link href="css/style.css?version={{site.version}}" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/default.css?version={{site.version}}" id="option_color">
+  <link href="css/custom.css?version={{site.version}}" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png?version={{site.version}}">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -189,7 +189,7 @@
                      data-start="1000"
                      data-easing="Back.easeInOut"
                      data-endspeed="300">
-                  {{slide.title}}
+                  <span class="title-span">{{slide.title}}</span>
                 </div>
 
                 <div class="tp-caption rs-caption-2 sft text-{{slide.align}}"
@@ -202,7 +202,7 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="off">
-                  {{slide.description}}
+                  <span class="subtitle-span">{{slide.description}}</span>
                 </div>
               </div>
             </li>
@@ -631,28 +631,28 @@
 
 
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="plugins/jquery-ui/jquery-ui.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
-  <script src="plugins/owl-carousel/owl.carousel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?version={{site.version}}"></script>
+  <script src="plugins/jquery-ui/jquery-ui.js?version={{site.version}}"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js?version={{site.version}}"></script>
+  <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js?version={{site.version}}"></script>
+  <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js?version={{site.version}}"></script>
+  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js?version={{site.version}}"></script>
+  <script src="plugins/owl-carousel/owl.carousel.js?version={{site.version}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="plugins/isotope/isotope.min.js"></script>
-  <script src="plugins/isotope/jquery.fancybox.pack.js"></script>
-  <script src="plugins/isotope/isotope-triger.js"></script>
-  <script src="plugins/countdown/jquery.syotimer.js"></script>
-  <script src="plugins/velocity/velocity.min.js"></script>
-  <script src="plugins/smoothscroll/SmoothScroll.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="plugins/counter-up/jquery.counterup.min.js?version={{site.version}}"></script>
+  <script src="plugins/isotope/isotope.min.js?version={{site.version}}"></script>
+  <script src="plugins/isotope/jquery.fancybox.pack.js?version={{site.version}}"></script>
+  <script src="plugins/isotope/isotope-triger.js?version={{site.version}}"></script>
+  <script src="plugins/countdown/jquery.syotimer.js?version={{site.version}}"></script>
+  <script src="plugins/velocity/velocity.min.js?version={{site.version}}"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.js?version={{site.version}}"></script>
+  <script src="js/custom.js?version={{site.version}}"></script>
   {% if page.features.map %}
-  <script src="plugins/google-custom-map/google-map.js"></script>
+  <script src="plugins/google-custom-map/google-map.js?version={{site.version}}"></script>
   <script src="https://maps.google.com/maps/api/js?key=AIzaSyCptrstShIT6bqq_4EQgQelit5R6dr9E4w&callback=initMap"></script>
   {% endif %}
   {% if page.features.social %}
-  <script src="plugins/common-api/common-api.js"></script>
+  <script src="plugins/common-api/common-api.js?version={{site.version}}"></script>
   {% endif %}
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -662,8 +662,7 @@
 
   ga('create', 'UA-96984171-1', 'auto');
   ga('send', 'pageview');
-
-</script>
+  </script>
 
 
 </body>
