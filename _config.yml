@@ -34,3 +34,8 @@ navigation:
  - title: Home
    url: /index.html
 
+gems:
+ - jekyll-sitemap
+
+exclude:
+ - examples
