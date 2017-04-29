@@ -1,0 +1,84 @@
+---
+layout: default
+title: Open Day 2017
+id: open-day-2017
+features:
+    breadcrumb: true
+    contacts: true
+---
+
+<section class="whiteSection afterWhiteSection full-width clearfix">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-xs-12">
+                <div class="schoolInfo">
+                    <h2>{{ page.title }}</h2>
+                    <div class="text-justify">
+
+                        <div class="clearfix">
+
+                            <p>
+                                Il 13 Maggio 2017, l'Asilo Nido "I Bambini del Circo Massimo" organizza una <strong>giornata di giochi e spettacoli aperta a tutti i bambini!</strong>
+                            </p>
+                            <p>
+                                I nuovi genitori che hanno intenzione di iscrivere il proprio figlio/a per l'anno scolastico 2017/2018 avranno l'occasione di esplorare l'asilo
+                                nido, conoscere il personale e l'offerta educativa. Per tutti i partecipanti saranno disponibili dei <strong>coupon sconto del 50%</strong>
+                                sull'iscrizione e altre offerte vantaggiose!
+                            </p>
+                            <p>
+                                Per i bambini invece...
+                            </p>
+                            <ul class="list-unstyled para-list">
+                                <li><i class="fa fa-check" aria-hidden="true"></i> <strong>Topolino</strong> verrà a farci visita con tanti palloncini!</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Il <strong>Castello Salterello</strong> gonfiabile sarà allestito in giardino!</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i> Tanti giochi e animazione: <strong>il teatrino, trucca bimbi, baby dance</strong> e altro ancora...</li>
+                            </ul>
+
+                            <p>
+                                Vieni a trovarci <strong>il 13 Maggio 2017, dalle ore 16:00 alle 19:00!</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row space-medium">
+            <div class="col-xs-12 col-md-12">
+                <div class="row isotopeContainer">
+
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'assets/open_day/2017/gallery' %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
+                        <article class="">
+                            <figure>
+                                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="row space-medium">
+            <div class="col-sm-5 col-xs-12">
+                <img src="/assets/open_day/2017/volantino-2017-front.png" alt="Volantino Open Day 2017 (front)" class="img-responsive img-rounded">
+            </div>
+            <div class="col-sm-offset-2 col-sm-5 col-xs-12">
+                <img src="/assets/open_day/2017/volantino-2017-back.png" alt="Volantino Open Day 2017 (back)" class="img-responsive img-rounded">
+            </div>
+        </div>
+
+    </div>
+</section>
