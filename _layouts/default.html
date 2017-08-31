@@ -448,8 +448,53 @@
         {% if page.features.invite %}
         <div class="row schoolInfo">
           <div class="col-xs-12">
-            <h2>Ti aspettiamo!</h2>
-            <p>L'asilo nido "I Bambini del Circo Massimo" ti aspetta per mostrarti la struttura ed il servizio educativo. Chiama ora per <strong>prendere un appuntamento senza impegno</strong>.</p>
+            <h2>Inviaci un messaggio!</h2>
+
+            <p>
+              Se sei alla ricerca di un asilo nido per il tuo bambino/a e desideri ricevere ulteriori informazioni, inviaci un messaggio utilizzando il form qui sotto.
+              Ti ricontatteremo appena possibile.
+            </p>
+
+            <div class="homeContactContent">
+
+              <div class="form-group">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control border-color-1" id="inputName" placeholder="Nome e Cognome (es. Mario Rossi) *">
+              </div>
+
+              <div class="form-group">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="text" class="form-control border-color-2" id="inputEmail" placeholder="Indirizzo Email (es. mario.rossi@gmail.com) *">
+              </div>
+
+              <div class="form-group">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <input type="text" class="form-control border-color-5" id="inputPhone" placeholder="Telefono (es. 333444555 oppure +33 333444555)">
+              </div>
+
+              <div class="form-group">
+                <select id="inputSubject" class="form-control border-color-6">
+                  <option value="">- seleziona un motivo -</option>
+                  <option value="Iscrizione Asilo Nido">Informazioni relative all'iscrizione all'asilo nido</option>
+                  <option value="Lavorare in Asilo">Vorrei lavorare con voi</option>
+                  <option value="Informazioni Asilo Nido">Altre informazioni</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <textarea id="inputMessage" class="form-control border-color-4" placeholder="Scrivi qui il tuo messaggio *"></textarea>
+              </div>
+
+              <div id="formErrorContainer"></div>
+
+              <div class="formBtnArea">
+                <button id="inputSendMessageBtn" type="button" class="btn btn-primary">Invia il messaggio</button>
+              </div>
+            </div>
+
+            <div class="space-large"></div>
+
 
             <h2>Come raggiungere la struttura</h2>
             <p align="justify">L'asilo nido si trova in <strong>via del Circo Massimo 9</strong>, all'incrocio tra via del Circo Massimo e viale Aventino (di fronte alla FAO), ed è situato a due passi dall'uscita della stazione della metro B "Circo Massimo".</p>
@@ -588,9 +633,10 @@
               <h2>Contattaci</h2>
               <p>Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.</p>
               <address>
-                <p><i class="fa fa-phone bg-color-4" aria-hidden="true"></i><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
-                <p><i class="fa fa-envelope bg-color-2" aria-hidden="true"></i><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
-                <p><i class="fa fa-map-marker bg-color-1" aria-hidden="true"></i>{{ site.contact.address }}</p>
+                <p><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i><a href="contatti.html">Inviaci un messaggio</a></p>
+                <p><i class="fa fa-phone bg-color-2" aria-hidden="true"></i><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
+                <p><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+                <p><i class="fa fa-map-marker bg-color-6" aria-hidden="true"></i>{{ site.contact.address }}</p>
               </address>
             </div>
           </div>
@@ -680,7 +726,10 @@
   <script src="https://maps.google.com/maps/api/js?key=AIzaSyCptrstShIT6bqq_4EQgQelit5R6dr9E4w&callback=initMap"></script>
   {% endif %}
   {% if page.features.social %}
-  <script src="plugins/common-api/common-api.js?version={{site.version}}"></script>
+  <script src="plugins/common-api/facebook-posts.js?version={{site.version}}"></script>
+  {% endif %}
+  {% if page.features.invite %}
+  <script src="plugins/common-api/write-message.js?version={{site.version}}"></script>
   {% endif %}
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
