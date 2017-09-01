@@ -73,8 +73,9 @@
           <div class="row">
             <div class="col-sm-12">
               <ul class="list-inline topList">
-                <li><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a></li>
-                <li><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> <a href="tel:{{site.contact.phone}}">{{site.contact.phone}}</a></li>
+                <li><a href="mailto:{{site.contact.email}}"><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> {{site.contact.email}}</a></li>
+                <li><a href="tel:{{site.contact.phone}}"><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> {{site.contact.phone}}</a></li>
+                <li><a href="contatti.html"><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> Scrivici</a></li>
                 <li><i class="fa fa-clock-o bg-color-6" aria-hidden="true"></i> {{site.info.opening-hours}}</li>
               </ul>
             </div>
@@ -479,6 +480,11 @@
                   <option value="Lavorare in Asilo">Vorrei lavorare con voi</option>
                   <option value="Informazioni Asilo Nido">Altre informazioni</option>
                 </select>
+              </div>
+              <div id="alertWorkWithUs" class="alert alert-info" style="display: none; line-height: normal">
+                <i class="fa fa-info-circle"></i> <strong>Attenzione!</strong>
+                <br />
+                Per consentirvi di <strong>allegare alla candidatura il vostro CV aggiornato</strong>, è preferibile inviare le proposte direttamente al seguente indirizzo: <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>
               </div>
 
               <div class="form-group">

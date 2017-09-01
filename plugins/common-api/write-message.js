@@ -1,5 +1,16 @@
 
 $(document).ready(function() {
+
+    $("#inputSubject").change(function() {
+        var subject = $(this).val();
+
+        if (subject == "Lavorare in Asilo") {
+            $("#alertWorkWithUs").show("fast");
+        } else {
+            $("#alertWorkWithUs").hide();
+        }
+    });
+
     $("#inputSendMessageBtn").click(function() {
 
         var name = trim($("#inputName").val());
