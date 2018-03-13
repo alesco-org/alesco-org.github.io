@@ -23,7 +23,7 @@ info:
   opening-hours: "Lun-Ven 7:30 - 18:30"
 
 
-version: "4"
+version: "5"
 
 #url: http://brianmaierjr.github.com/long-haul
 baseurl: ""
