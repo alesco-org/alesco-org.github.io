@@ -207,6 +207,21 @@
                      data-captionhidden="off">
                   <span class="subtitle-span">{{slide.description}}</span>
                 </div>
+
+                {% if site.alert.show %}
+                <div class="tp-caption rs-caption-2 sft text-{{slide.align}} banneralert"
+                     data-hoffset="0"
+                     data-x="{{slide.align}}"
+                     data-y="350"
+                     data-speed="1000"
+                     data-start="1500"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="300"
+                     data-endeasing="Power1.easeIn"
+                     data-captionhidden="off">
+                  <span class="subtitle-span">{{site.alert.message}}</span>
+                </div>
+                {% endif %}
               </div>
             </li>
             {% endfor %}
