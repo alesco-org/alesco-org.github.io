@@ -477,6 +477,12 @@
               Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione <strong><a href="lavora-con-noi.html">"Lavora con noi"</a></strong>.
             </p>
 
+            {% if site.alert.show %}
+            <p>
+              <span class="contacts-alert">Attenzione: {{site.alert.message}}</span>
+            </p>
+            {% endif %}
+
             <div class="homeContactContent">
 
               <div class="form-group">
@@ -657,7 +663,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-xs-12">
-            <div class="homeContactContent">
+            <p class="homeContactContent">
               <h2>Contattaci</h2>
               <p>Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.</p>
               <address>
