@@ -61,9 +61,9 @@ $(document).ready(function() {
             "Message-Text": message
         }, function () {
             if (subject == 'Iscrizione Asilo Nido') {
-                $(location).attr("href", "contatti-conferma-iscrizione.html");
+                $(location).attr("href", "/contatti-conferma-iscrizione/");
             } else {
-                $(location).attr("href", "contatti-conferma.html");
+                $(location).attr("href", "/contatti-conferma/");
             }
         }).fail(function () {
             error("Si è verificato un errore durante l'invio del messaggio. <br /><br />Per favore, invia la tua richiesta via mail a: <a href=\"info@ibambinidelcircomassimo.it\">info@ibambinidelcircomassimo.it</a>.<br/><br/>Ci scusiamo per l'inconveniente.");

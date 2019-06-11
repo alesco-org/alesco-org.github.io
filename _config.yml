@@ -33,7 +33,7 @@ highlighter: rouge
 
 navigation:
  - title: Home
-   url: /index.html
+   url: /home/
 
 gems:
  - jekyll-sitemap

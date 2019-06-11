@@ -3,6 +3,10 @@ title: I Bambini Del Circo Massimo
 info:
   opening_hours: "Mon-Fri 7:30 AM - 6:30 PM"
 
+cookie:
+  desc: This website uses cookies to gather information about usage of the website itself.
+
+
 titles:
   gruppo-educativo: Educational Group
   chi-siamo: Who We Are
@@ -26,6 +30,7 @@ titles:
   promotion-2019: Promotion 2019
 
 global:
+  info: Info
   contact_us: Contact Us
   contact_us_long: Contact us to have more information. We can schedule a meeting so you can see the location and get to know our educational project.
   contacts: Contacts
@@ -48,7 +53,7 @@ global:
   send_us_a_message: Send us a message
   write_us: Write us
   location: The Location
-  method: Educational Principles
+  method: Educational Method
   work_with_us: Work with Us
   doctor: Pediatrician
   kitchen: Internal Kitchen
@@ -166,7 +171,8 @@ contacts:
   desc: |-
     If you're looking for a nursery school for your child and want to have more information, send us a message using the form below.
     We'll contact you back as soon as possible.
-  disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the <strong><a href="lavora-con-noi.html">"Work with us"</a> section of this website</strong>.
+  disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the page
+  disclaimer-page: \"Work with us\"
   placeholders:
     name: Name and Surname (eg. John Doe) *
     email: Email Address (eg. johndoe@gmail.com) *
@@ -178,7 +184,8 @@ contacts:
     work: I want to work with you
     reserve: I want to reserve some halls or the garden
     other: Other information
-  disclaimer2: To send work proposals, please follow instructions in the <a href="lavora-con-noi.html">"Lavora con noi"</a> section of this website
+  disclaimer2: To send work proposals, please follow instructions in the page
+  disclaimer2-page: \"Lavora con noi\"
   send: Send
   reaching: How to get here
   location:

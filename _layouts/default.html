@@ -13,26 +13,26 @@
   {% endif %}
   
   <!-- PLUGINS CSS STYLE -->
-  <link href="plugins/jquery-ui/jquery-ui.css?version={{site.version}}" rel="stylesheet">
-  <link href="plugins/bootstrap/css/bootstrap.min.css?version={{site.version}}" rel="stylesheet">
-  <link href="plugins/font-awesome/css/font-awesome.min.css?version={{site.version}}" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="plugins/rs-plugin/css/settings.css?version={{site.version}}" media="screen">
-  <link rel="stylesheet" type="text/css" href="plugins/selectbox/select_option1.css?version={{site.version}}">
-  <link rel="stylesheet" type="text/css" href="plugins/owl-carousel/owl.carousel.css?version={{site.version}}" media="screen">
-  <link rel="stylesheet" type="text/css" href="plugins/isotope/jquery.fancybox.css?version={{site.version}}">
-  <link rel="stylesheet" type="text/css" href="plugins/isotope/isotope.css?version={{site.version}}">
+  <link href="{{ site.baseurl_root }}/plugins/jquery-ui/jquery-ui.css?version={{site.version}}" rel="stylesheet">
+  <link href="{{ site.baseurl_root }}/plugins/bootstrap/css/bootstrap.min.css?version={{site.version}}" rel="stylesheet">
+  <link href="{{ site.baseurl_root }}/plugins/font-awesome/css/font-awesome.min.css?version={{site.version}}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/plugins/rs-plugin/css/settings.css?version={{site.version}}" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/plugins/selectbox/select_option1.css?version={{site.version}}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/plugins/owl-carousel/owl.carousel.css?version={{site.version}}" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/plugins/isotope/jquery.fancybox.css?version={{site.version}}">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl_root }}/plugins/isotope/isotope.css?version={{site.version}}">
   
   <!-- GOOGLE FONT -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,600,700' rel='stylesheet' type='text/css'>
 
   <!-- CUSTOM CSS -->
-  <link href="css/style.css?version={{site.version}}" rel="stylesheet">
-  <link rel="stylesheet" href="css/colors/default.css?version={{site.version}}" id="option_color">
-  <link href="css/custom.css?version={{site.version}}" rel="stylesheet">
+  <link href="{{ site.baseurl_root }}/css/style.css?version={{site.version}}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl_root }}/css/colors/default.css?version={{site.version}}" id="option_color">
+  <link href="{{ site.baseurl_root }}/css/custom.css?version={{site.version}}" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="img/favicon.png?version={{site.version}}">
+  <link rel="shortcut icon" href="{{ site.baseurl_root }}/img/favicon.png?version={{site.version}}">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,7 +75,7 @@
               <ul class="list-inline topList">
                 <li><a href="mailto:{{site.contact.email}}"><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> {{site.contact.email}}</a></li>
                 <li><a href="tel:{{site.contact.phone}}"><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> {{site.contact.phone}}</a></li>
-                <li><a href="contatti.html"><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> {% t global.write_us %}</a></li>
+                <li><a href="{% tl contatti %}"><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> {% t global.write_us %}</a></li>
                 <li><i class="fa fa-clock-o bg-color-6" aria-hidden="true"></i> {% t info.opening_hours %}</li>
               </ul>
             </div>
@@ -94,24 +94,24 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="{{site.title}}"></a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><img src="{{ site.baseurl_root }}/img/logo.png" alt="{{site.title}}"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="{% if page.id=='index' %}active{% endif %} singleDrop color-1">
-                <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="{{ site.baseurl }}/index.html" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>{% t global.home %}</span>
                 </a>
               </li>
               <li class="{% if page.group.id=='chi-siamo' %}active{% endif %} dropdown singleDrop color-3">
                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul bg-color-3" aria-hidden="true"></i> <span>{% t global.who %}</span></a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li class="{% if page.id=='gruppo-educativo' %}active{% endif %}"><a href="gruppo-educativo.html">{% t global.group %}</a></li>
-                  <li class="{% if page.id=='struttura' %}active{% endif %}"><a href="struttura.html">{% t global.location %}</a></li>
-                  <li class="{% if page.id=='metodo-educativo' %}active{% endif %}"><a href="metodo-educativo.html">{% t global.method %}</a></li>
-                  <li class="{% if page.id=='lavora-con-noi' %}active{% endif %}"><a href="lavora-con-noi.html">{% t global.work_with_us %}</a></li>
+                  <li class="{% if page.id=='gruppo-educativo' %}active{% endif %}"><a href="{% tl gruppo-educativo %}">{% t global.group %}</a></li>
+                  <li class="{% if page.id=='struttura' %}active{% endif %}"><a href="{% tl struttura %}">{% t global.location %}</a></li>
+                  <li class="{% if page.id=='metodo-educativo' %}active{% endif %}"><a href="{% tl metodo-educativo %}">{% t global.method %}</a></li>
+                  <li class="{% if page.id=='lavora-con-noi' %}active{% endif %}"><a href="{% tl lavora-con-noi %}">{% t global.work_with_us %}</a></li>
                 </ul>
               </li>
               <li class="{% if page.group.id=='servizi' %}active{% endif %} dropdown singleDrop color-5">
@@ -120,10 +120,10 @@
                   <span>{% t global.services %}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="laboratori.html">{% t global.laboratories %}</a></li>
-                  <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="pediatra.html">{% t global.doctor %}</a></li>
-                  <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="cucina-interna.html">{% t global.kitchen %}</a></li>
-                  <li class="{% if page.id=='affitto-sale' %}active{% endif %}"><a href="affitto-sale.html">{% t global.reservations %}</a></li>
+                  <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="{% tl laboratori %}">{% t global.laboratories %}</a></li>
+                  <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="{% tl pediatra %}">{% t global.doctor %}</a></li>
+                  <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="{% tl cucina-interna %}">{% t global.kitchen %}</a></li>
+                  <li class="{% if page.id=='affitto-sale' %}active{% endif %}"><a href="{% tl affitto-sale %}">{% t global.reservations %}</a></li>
                 </ul>
               </li>
               <li class="{% if page.group.id=='al-nido' %}active{% endif %} dropdown singleDrop color-4">
@@ -132,18 +132,18 @@
                   <span>{% t global.nursery %}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="inserimento.html">{% t global.inclusion %}</a></li>
-                  <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="giornata-tipo.html">{% t global.day %}</a></li>
+                  <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="{% tl inserimento %}">{% t global.inclusion %}</a></li>
+                  <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="{% tl giornata-tipo %}">{% t global.day %}</a></li>
                 </ul>
               </li>
 
               <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-2">
-                <a href="galleria.html" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="{% tl galleria %}" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-image bg-color-2" aria-hidden="true"></i> <span>{% t global.photo %}</span></a>
               </li>
 
               <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-1">
-                <a href="contatti.html" role="button" aria-haspopup="true" aria-expanded="false">
+                <a href="{% tl contatti %}" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> <span>{% t global.contacts %}</span></a>
               </li>
 
@@ -195,7 +195,7 @@
 
 
             <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s1.title %}">
-              <img style="display: none;" src="{% t slide.s1.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+              <img style="display: none;" src="{{ site.baseurl_root }}/{% t slide.s1.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start text-{% t slide.s1.align %}"
                      data-hoffset="0"
@@ -239,7 +239,7 @@
             </li>
 
             <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s2.title %}">
-              <img style="display: none;" src="{% t slide.s2.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+              <img style="display: none;" src="{{ site.baseurl_root }}/{% t slide.s2.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start text-{% t slide.s2.align %}"
                      data-hoffset="0"
@@ -283,7 +283,7 @@
             </li>
 
             <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s3.title %}">
-              <img style="display: none;" src="{% t slide.s3.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+              <img style="display: none;" src="{{ site.baseurl_root }}/{% t slide.s3.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
                 <div class="tp-caption rs-caption-1 sft start text-{% t slide.s3.align %}"
                      data-hoffset="0"
@@ -460,7 +460,7 @@
       </div>
 
       <div class="btnArea">
-        <a href="laboratori.html" class="btn btn-primary"><i class="fa fa-soccer-ball-o"></i> {% t global.laboratories %}</a>
+        <a href="{% tl laboratori %}" class="btn btn-primary"><i class="fa fa-soccer-ball-o"></i> {% t global.laboratories %}</a>
       </div>
 
     </section>
@@ -474,7 +474,7 @@
         <div class="promotionInfo">
           <h2>{% t home.know %}</h2>
           <p>{% t home.contact_desc %}</p>
-          <a href="contatti.html" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% t global.contact_us %}</a>
+          <a href="{% tl contatti %}" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% t global.contact_us %}</a>
         </div>
       </div>
     </section>
@@ -542,7 +542,7 @@
         </div>
 
         <div class="btnArea">
-          <a href="galleria.html" class="btn btn-primary"><i class="fa fa-image"></i> {% t global.full_gallery %}</a>
+          <a href="{% tl galleria %}" class="btn btn-primary"><i class="fa fa-image"></i> {% t global.full_gallery %}</a>
         </div>
 
       </div>
@@ -568,16 +568,16 @@
               <div class="slide">
                 <div class="teamContent">
                   <div class="teamImage">
-                    <img src="{% t home.teachers.elena.picture %}" alt="img" class="img-circle">
+                    <img src="{{ site.baseurl_root }}/{% t home.teachers.elena.picture %}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
-                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                        <li><a href="{% tl gruppo-educativo %}"><i class="fa fa-info" aria-hidden="true"></i></a></li>
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
                     <h3>
-                      <a href="gruppo-educativo.html">{% t home.teachers.elena.name %}</a>
+                      <a href="{% tl gruppo-educativo %}">{% t home.teachers.elena.name %}</a>
                     </h3>
                     <p>{% t home.teachers.elena.description %}</p>
                   </div>
@@ -587,16 +587,16 @@
               <div class="slide">
                 <div class="teamContent">
                   <div class="teamImage">
-                    <img src="{% t home.teachers.ginevra.picture %}" alt="img" class="img-circle">
+                    <img src="{{ site.baseurl_root }}/{% t home.teachers.ginevra.picture %}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
-                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                        <li><a href="{% tl gruppo-educativo %}"><i class="fa fa-info" aria-hidden="true"></i></a></li>
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
                     <h3>
-                      <a href="gruppo-educativo.html">{% t home.teachers.ginevra.name %}</a>
+                      <a href="{% tl gruppo-educativo %}">{% t home.teachers.ginevra.name %}</a>
                     </h3>
                     <p>{% t home.teachers.ginevra.description %}</p>
                   </div>
@@ -606,16 +606,16 @@
               <div class="slide">
                 <div class="teamContent">
                   <div class="teamImage">
-                    <img src="{% t home.teachers.giulia.picture %}" alt="img" class="img-circle">
+                    <img src="{{ site.baseurl_root }}/{% t home.teachers.giulia.picture %}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
-                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                        <li><a href="{% tl gruppo-educativo %}"><i class="fa fa-info" aria-hidden="true"></i></a></li>
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
                     <h3>
-                      <a href="gruppo-educativo.html">{% t home.teachers.giulia.name %}</a>
+                      <a href="{% tl gruppo-educativo %}">{% t home.teachers.giulia.name %}</a>
                     </h3>
                     <p>{% t home.teachers.giulia.description %}</p>
                   </div>
@@ -629,7 +629,7 @@
         </div>
         <div class="row">
           <div class="btnArea">
-            <a href="gruppo-educativo.html" class="btn btn-primary"><i class="fa fa-users"></i> {% t global.group %}</a>
+            <a href="{% tl gruppo-educativo %}" class="btn btn-primary"><i class="fa fa-users"></i> {% t global.group %}</a>
           </div>
         </div>
       </div>
@@ -661,7 +661,7 @@
             </p>
 
             <p>
-              {% t contacts.disclaimer %}
+              {% t contacts.disclaimer %} <strong><a href="{% tl lavora-con-noi %}">{% t contacts.disclaimer-page %}</a></strong>.
             </p>
 
             {% if site.alert.show %}
@@ -699,7 +699,7 @@
               <div id="alertWorkWithUs" class="alert alert-info" style="display: none; line-height: normal">
                 <i class="fa fa-info-circle"></i> <strong>{% t global.warning %}!</strong>
                 <br />
-                {% t contacts.disclaimer2 %}
+                {% t contacts.disclaimer2 %} <a href="{% tl lavora-con-noi %}">{% t contacts.disclaimer2-page %}</a>
               </div>
 
               <div class="form-group">
@@ -854,7 +854,7 @@
               <h2>{% t global.contact_us %}</h2>
               <p>{% t global.contact_us_long %}</p>
               <address>
-                <p><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i><a href="contatti.html">{% t global.send_us_a_message %}</a></p>
+                <p><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i><a href="{% tl contatti %}">{% t global.send_us_a_message %}</a></p>
                 <p><i class="fa fa-phone bg-color-2" aria-hidden="true"></i><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
                 <p><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
                 <p><i class="fa fa-map-marker bg-color-6" aria-hidden="true"></i>{{ site.contact.address }}</p>
@@ -911,7 +911,7 @@
             </div>
             <div class="col-sm-7 col-sm-pull-5 col-xs-12">
               <div class="copyRightText">
-                <p>© Copyright 2017 Alesco SRL | <a href="/privacy.html">Privacy Policy</a></p>
+                <p>© Copyright 2017 Alesco SRL | <a href="{{ site.baseurl_root }}/{% tl privacy %}">Privacy Policy</a></p>
               </div>
             </div>
           </div>
@@ -927,30 +927,30 @@
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?version={{site.version}}"></script>
-  <script src="plugins/jquery-ui/jquery-ui.js?version={{site.version}}"></script>
-  <script src="plugins/bootstrap/js/bootstrap.min.js?version={{site.version}}"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js?version={{site.version}}"></script>
-  <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js?version={{site.version}}"></script>
-  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js?version={{site.version}}"></script>
-  <script src="plugins/owl-carousel/owl.carousel.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/jquery-ui/jquery-ui.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/bootstrap/js/bootstrap.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/rs-plugin/js/jquery.themepunch.tools.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/selectbox/jquery.selectbox-0.1.3.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/owl-carousel/owl.carousel.js?version={{site.version}}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-  <script src="plugins/counter-up/jquery.counterup.min.js?version={{site.version}}"></script>
-  <script src="plugins/isotope/isotope.min.js?version={{site.version}}"></script>
-  <script src="plugins/isotope/jquery.fancybox.pack.js?version={{site.version}}"></script>
-  <script src="plugins/isotope/isotope-triger.js?version={{site.version}}"></script>
-  <script src="plugins/countdown/jquery.syotimer.js?version={{site.version}}"></script>
-  <script src="plugins/velocity/velocity.min.js?version={{site.version}}"></script>
-  <script src="plugins/smoothscroll/SmoothScroll.js?version={{site.version}}"></script>
-  <script src="js/custom.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/counter-up/jquery.counterup.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/isotope/isotope.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/isotope/jquery.fancybox.pack.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/isotope/isotope-triger.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/countdown/jquery.syotimer.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/velocity/velocity.min.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/smoothscroll/SmoothScroll.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/js/custom.js?version={{site.version}}"></script>
   {% if page.features.map %}
-  <script src="plugins/google-custom-map/google-map.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/google-custom-map/google-map.js?version={{site.version}}"></script>
   <script src="https://maps.google.com/maps/api/js?key=AIzaSyCptrstShIT6bqq_4EQgQelit5R6dr9E4w&callback=initMap"></script>
   {% endif %}
   {% if page.features.social %}
-  <script src="plugins/common-api/facebook-posts.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/common-api/facebook-posts.js?version={{site.version}}"></script>
   {% endif %}
   {% if page.features.invite %}
-  <script src="plugins/common-api/write-message.js?version={{site.version}}"></script>
+  <script src="{{ site.baseurl_root }}/plugins/common-api/write-message.js?version={{site.version}}"></script>
   {% endif %}
 
   {% if site.prod-mode %}
@@ -967,7 +967,7 @@
 
   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
   <script type="text/javascript">
-      window.cookieconsent_options = {"message":"Questo sito utilizza i cookie per raccogliere informazioni sull'utilizzo del sito stesso.","dismiss":"Ok","learnMore":"Informazioni","link":"/privacy.html","theme":"light-bottom"};
+      window.cookieconsent_options = {"message":"{% t cookie.desc %}","dismiss":"Ok","learnMore":"{% t global.info %}","link":"{{ site.baseurl }}/privacy/","theme":"light-bottom"};
   </script>
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>

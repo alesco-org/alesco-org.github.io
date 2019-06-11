@@ -3,6 +3,9 @@ title: I Bambini Del Circo Massimo
 info:
   opening_hours: "Lun-Ven 7:30 - 18:30"
 
+cookie:
+  desc: Questo sito utilizza i cookie per raccogliere informazioni sull'utilizzo del sito stesso.
+
 titles:
   gruppo-educativo: Gruppo Educativo
   chi-siamo: Chi Siamo
@@ -27,6 +30,7 @@ titles:
 
 
 global:
+  info: Informazioni
   contact_us: Contattaci
   contact_us_long: Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.
   contacts: Contatti
@@ -166,7 +170,8 @@ contacts:
   desc: |-
     Se sei alla ricerca di un asilo nido per il tuo bambino/a e desideri ricevere ulteriori informazioni, inviaci un messaggio utilizzando il form qui sotto.
     Ti ricontatteremo appena possibile.
-  disclaimer: Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione <strong><a href="lavora-con-noi.html">"Lavora con noi"</a></strong>.
+  disclaimer: Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione
+  disclaimer-page: \"Lavora con noi\"
   placeholders:
     name: Nome e Cognome (es. Mario Rossi) *
     email: Indirizzo Email (es. mario.rossi@gmail.com) *
@@ -178,7 +183,8 @@ contacts:
     work: Vorrei lavorare con voi
     reserve: Vorrei affittare le sale o il giardino
     other: Altre informazioni
-  disclaimer2: Per inviare proposte di collaborazione, seguire le istruzioni riportate nella sezione <a href="lavora-con-noi.html">"Lavora con noi"</a>
+  disclaimer2: Per inviare proposte di collaborazione, seguire le istruzioni riportate nella sezione
+  disclaimer2-page: \"Lavora con noi\"
   send: Invia il messaggio
   reaching: Come raggiungere la struttura
   location:
