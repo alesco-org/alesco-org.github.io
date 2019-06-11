@@ -177,3 +177,17 @@ p span.contacts-alert {
   font-weight: bold;
   font-size: large;
 }
+
+
+.promo {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.promo a {
+  padding: 15px;
+  background-color: #008800;
+  color: #FFF;
+  font-size: 40px;
+  border-radius: 8px;
+}

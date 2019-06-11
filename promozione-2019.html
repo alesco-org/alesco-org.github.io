@@ -1,7 +1,7 @@
 ---
 layout: default
-title: titles.open-day-2017
-id: open-day-2018
+title: titles.promotion-2019
+id: promotion-2019
 features:
     breadcrumb: true
     contacts: true
@@ -11,69 +11,26 @@ features:
     <div class="container">
         <div class="row">
 
-            <div class="col-xs-12 col-md-12">
+            <div class="col-sm-6 col-xs-12">
                 <div class="schoolInfo">
                     <h2>{% t page.title %}</h2>
                     <div class="text-justify">
 
-                        <div class="clearfix">
-
-                            <p>
-                                Il 19 Maggio 2018, l'Asilo Nido "I Bambini del Circo Massimo" organizza una <strong>giornata di giochi e spettacoli aperta a tutti i bambini!</strong>
-                            </p>
-                            <p>
-                                I nuovi genitori che hanno intenzione di iscrivere il proprio figlio/a per l'anno scolastico 2018/2019 avranno l'occasione di esplorare l'asilo
-                                nido, conoscere il personale e l'offerta educativa.
-                            </p>
-                            <p>
-                                <strong>Per i bambini invece... Tanti giochi e animazione!</strong>
-                            </p>
-
-                            <p>
-                                Vieni a trovarci <strong>Sabato 19 Maggio 2018, dalle ore 16:00 alle 19:00!</strong>
-                            </p>
-                        </div>
-
+                        <p>
+                            {% t promotion.2019.p1 %}
+                        </p>
+                        <p>
+                            <strong>{% t promotion.2019.p2 %}</strong>
+                        </p>
                     </div>
+
                 </div>
             </div>
-        </div>
-
-        <div class="row space-medium">
-            <div class="col-sm-3 col-xs-12"></div>
             <div class="col-sm-6 col-xs-12">
-                <img src="/assets/open_day/2018/volantino-2018.png" alt="Volantino Open Day 2018" class="img-responsive img-rounded">
+                <img src="/assets/promozioni/2019/volantino-2019.png" alt="Volantino 2019" class="img-responsive img-rounded">
             </div>
-            <div class="col-sm-3 col-xs-12"></div>
+
         </div>
-
-        <div class="row space-medium">
-            <div class="col-xs-12 col-md-12">
-                <div class="row isotopeContainer">
-
-                    {% for image in site.static_files %}
-                    {% if image.path contains 'assets/open_day/2018/gallery' %}
-                    <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
-                        <article class="">
-                            <figure>
-                                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
-                                <div class="overlay-background">
-                                    <div class="inner"></div>
-                                </div>
-                                <div class="overlay">
-                                    <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
-                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </figure>
-                        </article>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
 
     </div>
 </section>

@@ -23,6 +23,7 @@ titles:
   contatti: Contacts
   conferma: Message Sent!
   affitto-sale: Rent Halls and Garden
+  promotion-2019: Promotion 2019
 
 global:
   contact_us: Contact Us
@@ -83,7 +84,7 @@ slide:
     img: "img/header/header-3-cropped.jpg"
 
 alert:
-  message: Enrollment open for next school year 2019/2020!
+  message: Enrollment available for next school year 2019/2020!
 
 section:
   s1:
@@ -368,3 +369,10 @@ day:
   t9: Reunion
   p9: The exit times are 15.30, 16.30, 17.30, 18.30. For children who do not sleep in the nursery school, the first exit time is at 12.30.
 
+promotion:
+  2019:
+    invite: Promo 2019 - Click here!
+    p1: |-
+      For all new enrolled children for the school year 2019/2020, you'll have a 50% discount on the subscription fee.
+      Promotion is valid until June 30, 2019.
+    p2: Few places available... Hurry up!
