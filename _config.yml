@@ -1,14 +1,11 @@
 title: "I Bambini del Circo Massimo"
-sentence:
-  text: "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda. Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
-  author: "Maria Montessori"
+
 
 owner: "ALESCO SRL"
 description: "Asilo Nido I Bambini del Circo Massimo"
 
 alert:
   show: true
-  message: Iscrizioni aperte per l'anno scolastico 2019/2020!
 
 social:
     facebook: "https://www.facebook.com/asilonidoromacircomassimo/"
@@ -19,8 +16,7 @@ contact:
   email: "info@ibambinidelcircomassimo.it"
   phone: "+39 366 1946395"
 
-info:
-  opening-hours: "Lun-Ven 7:30 - 18:30"
+
 
 
 version: "5"
@@ -41,8 +37,11 @@ navigation:
 
 gems:
  - jekyll-sitemap
+ - jekyll-multiple-languages-plugin
 
 exclude:
  - examples
+
+languages: ["it", "en"]
 
 prod-mode: true

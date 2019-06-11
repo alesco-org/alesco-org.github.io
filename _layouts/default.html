@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% if page.title %}
-  <title>{{page.title}} - {{site.title}}</title>
+  <title>{% t page.title %} - {{site.title}}</title>
   {% else %}
   <title>{{site.title}}</title>
   {% endif %}
@@ -75,8 +75,8 @@
               <ul class="list-inline topList">
                 <li><a href="mailto:{{site.contact.email}}"><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> {{site.contact.email}}</a></li>
                 <li><a href="tel:{{site.contact.phone}}"><i class="fa fa-phone bg-color-2" aria-hidden="true"></i> {{site.contact.phone}}</a></li>
-                <li><a href="contatti.html"><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> Scrivici</a></li>
-                <li><i class="fa fa-clock-o bg-color-6" aria-hidden="true"></i> {{site.info.opening-hours}}</li>
+                <li><a href="contatti.html"><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i> {% t global.write_us %}</a></li>
+                <li><i class="fa fa-clock-o bg-color-6" aria-hidden="true"></i> {% t info.opening_hours %}</li>
               </ul>
             </div>
           </div>
@@ -94,62 +94,73 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img src="img/logo.png" alt="{{site.title}}"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="{{site.title}}"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="{% if page.id=='index' %}active{% endif %} singleDrop color-1">
-                <a href="/" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>Home</span>
+                <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>{% t global.home %}</span>
                 </a>
               </li>
               <li class="{% if page.group.id=='chi-siamo' %}active{% endif %} dropdown singleDrop color-3">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul bg-color-3" aria-hidden="true"></i> <span>Chi Siamo</span></a>
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul bg-color-3" aria-hidden="true"></i> <span>{% t global.who %}</span></a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li class="{% if page.id=='gruppo-educativo' %}active{% endif %}"><a href="gruppo-educativo.html">Gruppo Educativo</a></li>
-                  <li class="{% if page.id=='struttura' %}active{% endif %}"><a href="struttura.html">La Struttura</a></li>
-                  <li class="{% if page.id=='metodo-educativo' %}active{% endif %}"><a href="metodo-educativo.html">Metodo Educativo</a></li>
-                  <li class="{% if page.id=='lavora-con-noi' %}active{% endif %}"><a href="lavora-con-noi.html">Lavora con Noi</a></li>
+                  <li class="{% if page.id=='gruppo-educativo' %}active{% endif %}"><a href="gruppo-educativo.html">{% t global.group %}</a></li>
+                  <li class="{% if page.id=='struttura' %}active{% endif %}"><a href="struttura.html">{% t global.location %}</a></li>
+                  <li class="{% if page.id=='metodo-educativo' %}active{% endif %}"><a href="metodo-educativo.html">{% t global.method %}</a></li>
+                  <li class="{% if page.id=='lavora-con-noi' %}active{% endif %}"><a href="lavora-con-noi.html">{% t global.work_with_us %}</a></li>
                 </ul>
               </li>
               <li class="{% if page.group.id=='servizi' %}active{% endif %} dropdown singleDrop color-5">
                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-file-text-o bg-color-5" aria-hidden="true"></i>
-                  <span>Servizi</span>
+                  <span>{% t global.services %}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="laboratori.html">Laboratori</a></li>
-                  <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="pediatra.html">Pediatra</a></li>
-                  <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="cucina-interna.html">Cucina Interna</a></li>
-                  <li class="{% if page.id=='affitto-sale' %}active{% endif %}"><a href="affitto-sale.html">Affitto Sale</a></li>
-                  <!--<li class="{% if page.id=='corsi' %}active{% endif %}"><a href="corsi.html">Corsi di Disostruzione</a></li>-->
-                  <!--<li class="{% if page.id=='centro-estivo' %}active{% endif %}"><a href="centro-estivo.html">Centro Estivo</a></li>-->
-                  <!--<li class="{% if page.id=='sala-feste' %}active{% endif %}"><a href="sala-feste.html">Sala Feste</a></li>-->
+                  <li class="{% if page.id=='laboratori' %}active{% endif %}"><a href="laboratori.html">{% t global.laboratories %}</a></li>
+                  <li class="{% if page.id=='pediatra' %}active{% endif %}"><a href="pediatra.html">{% t global.doctor %}</a></li>
+                  <li class="{% if page.id=='cucina-interna' %}active{% endif %}"><a href="cucina-interna.html">{% t global.kitchen %}</a></li>
+                  <li class="{% if page.id=='affitto-sale' %}active{% endif %}"><a href="affitto-sale.html">{% t global.reservations %}</a></li>
                 </ul>
               </li>
               <li class="{% if page.group.id=='al-nido' %}active{% endif %} dropdown singleDrop color-4">
                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <i class="fa fa-child bg-color-4" aria-hidden="true"></i>
-                  <span>Al Nido</span>
+                  <span>{% t global.nursery %}</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
-                  <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="inserimento.html">Inserimento</a></li>
-                  <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="giornata-tipo.html">Giornata Tipo</a></li>
-                  <!--<li class="{% if page.id=='alimentazione' %}active{% endif %}"><a href="alimentazione.html">Alimentazione</a></li>-->
+                  <li class="{% if page.id=='inserimento' %}active{% endif %}"><a href="inserimento.html">{% t global.inclusion %}</a></li>
+                  <li class="{% if page.id=='giornata-tipo' %}active{% endif %}"><a href="giornata-tipo.html">{% t global.day %}</a></li>
                 </ul>
               </li>
 
               <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-2">
                 <a href="galleria.html" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-image bg-color-2" aria-hidden="true"></i> <span>Foto</span></a>
+                  <i class="fa fa-image bg-color-2" aria-hidden="true"></i> <span>{% t global.photo %}</span></a>
               </li>
 
-              <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-6">
+              <li class="{% if page.id=='galleria' %}active{% endif %} singleDrop color-1">
                 <a href="contatti.html" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-envelope bg-color-6" aria-hidden="true"></i> <span>Contatti</span></a>
+                  <i class="fa fa-envelope bg-color-1" aria-hidden="true"></i> <span>{% t global.contacts %}</span></a>
               </li>
+
+              <li class="dropdown singleDrop color-6">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-globe bg-color-6" aria-hidden="true"></i>
+                  <span>{% t global.language %}</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="/">Italiano</a></li>
+                  <li><a href="/en/">English</a></li>
+                </ul>
+              </li>
+
+
+
+
             </ul>
           </div>
         </div>
@@ -161,13 +172,13 @@
     <section class="pageTitleSection">
       <div class="container">
         <div class="pageTitleInfo">
-          <h2>{{page.title}}</h2>
+          <h2>{% t page.title %}</h2>
           <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
             {% if page.group %}
-            <li>{{page.group.title}}</li>
+            <li>{% t page.group.title %}</li>
             {% endif %}
-            <li class="active">{{page.title}}</li>
+            <li class="active">{% t page.title %}</li>
           </ol>
         </div>
       </div>
@@ -180,24 +191,26 @@
       <div class="fullscreenbanner-container">
         <div class="fullscreenbanner">
           <ul>
-            {% for slide in page.slides %}
-            <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{{slide.title}}">
-              <img style="display: none;" src="{{slide.img}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+
+
+
+            <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s1.title %}">
+              <img style="display: none;" src="{% t slide.s1.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
               <div class="slider-caption container">
-                <div class="tp-caption rs-caption-1 sft start text-{{slide.align}}"
+                <div class="tp-caption rs-caption-1 sft start text-{% t slide.s1.align %}"
                      data-hoffset="0"
-                     data-x="{{slide.align}}"
+                     data-x="{% t slide.s1.align %}"
                      data-y="200"
                      data-speed="800"
                      data-start="1000"
                      data-easing="Back.easeInOut"
                      data-endspeed="300">
-                  <span class="title-span">{{slide.title}}</span>
+                  <span class="title-span">{% t slide.s1.title %}</span>
                 </div>
 
-                <div class="tp-caption rs-caption-2 sft text-{{slide.align}}"
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s1.align %}"
                      data-hoffset="0"
-                     data-x="{{slide.align}}"
+                     data-x="{% t slide.s1.align %}"
                      data-y="265"
                      data-speed="1000"
                      data-start="1500"
@@ -205,13 +218,13 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="off">
-                  <span class="subtitle-span">{{slide.description}}</span>
+                  <span class="subtitle-span">{% t slide.s1.description %}</span>
                 </div>
 
                 {% if site.alert.show %}
-                <div class="tp-caption rs-caption-2 sft text-{{slide.align}} banneralert"
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s1.align %} banneralert"
                      data-hoffset="0"
-                     data-x="{{slide.align}}"
+                     data-x="{% t slide.s1.align %}"
                      data-y="350"
                      data-speed="1000"
                      data-start="1500"
@@ -219,12 +232,101 @@
                      data-endspeed="300"
                      data-endeasing="Power1.easeIn"
                      data-captionhidden="off">
-                  <span class="subtitle-span">{{site.alert.message}}</span>
+                  <span class="subtitle-span">{% t alert.message %}</span>
                 </div>
                 {% endif %}
               </div>
             </li>
-            {% endfor %}
+
+            <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s2.title %}">
+              <img style="display: none;" src="{% t slide.s2.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+              <div class="slider-caption container">
+                <div class="tp-caption rs-caption-1 sft start text-{% t slide.s2.align %}"
+                     data-hoffset="0"
+                     data-x="{% t slide.s2.align %}"
+                     data-y="200"
+                     data-speed="800"
+                     data-start="1000"
+                     data-easing="Back.easeInOut"
+                     data-endspeed="300">
+                  <span class="title-span">{% t slide.s2.title %}</span>
+                </div>
+
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s2.align %}"
+                     data-hoffset="0"
+                     data-x="{% t slide.s2.align %}"
+                     data-y="265"
+                     data-speed="1000"
+                     data-start="1500"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="300"
+                     data-endeasing="Power1.easeIn"
+                     data-captionhidden="off">
+                  <span class="subtitle-span">{% t slide.s2.description %}</span>
+                </div>
+
+                {% if site.alert.show %}
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s2.align %} banneralert"
+                     data-hoffset="0"
+                     data-x="{% t slide.s2.align %}"
+                     data-y="350"
+                     data-speed="1000"
+                     data-start="1500"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="300"
+                     data-endeasing="Power1.easeIn"
+                     data-captionhidden="off">
+                  <span class="subtitle-span">{% t alert.message %}</span>
+                </div>
+                {% endif %}
+              </div>
+            </li>
+
+            <li data-transition="fade" data-slotamount="5" data-masterspeed="700" data-title="{% t slide.s3.title %}">
+              <img style="display: none;" src="{% t slide.s3.img %}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+              <div class="slider-caption container">
+                <div class="tp-caption rs-caption-1 sft start text-{% t slide.s3.align %}"
+                     data-hoffset="0"
+                     data-x="{% t slide.s3.align %}"
+                     data-y="200"
+                     data-speed="800"
+                     data-start="1000"
+                     data-easing="Back.easeInOut"
+                     data-endspeed="300">
+                  <span class="title-span">{% t slide.s3.title %}</span>
+                </div>
+
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s3.align %}"
+                     data-hoffset="0"
+                     data-x="{% t slide.s3.align %}"
+                     data-y="265"
+                     data-speed="1000"
+                     data-start="1500"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="300"
+                     data-endeasing="Power1.easeIn"
+                     data-captionhidden="off">
+                  <span class="subtitle-span">{% t slide.s3.description %}</span>
+                </div>
+
+                {% if site.alert.show %}
+                <div class="tp-caption rs-caption-2 sft text-{% t slide.s3.align %} banneralert"
+                     data-hoffset="0"
+                     data-x="{% t slide.s3.align %}"
+                     data-y="350"
+                     data-speed="1000"
+                     data-start="1500"
+                     data-easing="Power4.easeOut"
+                     data-endspeed="300"
+                     data-endeasing="Power1.easeIn"
+                     data-captionhidden="off">
+                  <span class="subtitle-span">{% t alert.message %}</span>
+                </div>
+                {% endif %}
+              </div>
+            </li>
+
+
           </ul>
         </div>
       </div>
@@ -237,15 +339,34 @@
       <div class="sectionLinkArea hidden-xs scrolling">
         <div class="container">
           <div class="row">
-            {% for section in page.sections %}
             <div class="col-sm-3">
-              <a href="{{section.link}}" class="sectionLink bg-color-{{forloop.index}}" id="{{section.id}}">
-                <i class="fa {{section.icon}} linkIcon border-color-{{forloop.index}}" aria-hidden="true"></i>
-                <span class="linkText">{{section.title}}</span>
+              <a href="{% t section.s1.link %}" class="sectionLink bg-color-1">
+                <i class="fa {% t section.s1.icon %} linkIcon border-color-1" aria-hidden="true"></i>
+                <span class="linkText">{% t section.s1.title %}</span>
                 <i class="fa fa-chevron-down locateArrow" aria-hidden="true"></i>
               </a>
             </div>
-            {% endfor %}
+            <div class="col-sm-3">
+              <a href="{% t section.s2.link %}" class="sectionLink bg-color-2">
+                <i class="fa {% t section.s2.icon %} linkIcon border-color-2" aria-hidden="true"></i>
+                <span class="linkText">{% t section.s2.title %}</span>
+                <i class="fa fa-chevron-down locateArrow" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="{% t section.s3.link %}" class="sectionLink bg-color-3">
+                <i class="fa {% t section.s3.icon %} linkIcon border-color-3" aria-hidden="true"></i>
+                <span class="linkText">{% t section.s3.title %}</span>
+                <i class="fa fa-chevron-down locateArrow" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <a href="{% t section.s4.link %}" class="sectionLink bg-color-4">
+                <i class="fa {% t section.s4.icon %} linkIcon border-color-4" aria-hidden="true"></i>
+                <span class="linkText">{% t section.s4.title %}</span>
+                <i class="fa fa-chevron-down locateArrow" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -261,47 +382,85 @@
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
-            <span>Perché sceglierci?</span>
+            <span>{% t home.why %}</span>
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
 
         <div class="row">
-          {% for service in page.services limit: 3 offset: 0 %}
-          {% assign color = forloop.index %}
           <div class="col-sm-4 col-xs-12">
             <div class="media featuresContent">
-              <span class="media-left bg-color-{{color}}">
-                <i class="fa {{service.icon}} bg-color-{{color}}" aria-hidden="true"></i>
+              <span class="media-left bg-color-1">
+                <i class="fa {% t home.services.s1.icon %} bg-color-1" aria-hidden="true"></i>
               </span>
               <div class="media-body">
-                <h3 class="media-heading color-{{color}}">{{service.title}}</h3>
-                <p>{{service.description}}</p>
+                <h3 class="media-heading color-1">{% t home.services.s1.title %}</h3>
+                <p>{% t home.services.s1.description %}</p>
               </div>
             </div>
           </div>
-          {% endfor %}
+          <div class="col-sm-4 col-xs-12">
+            <div class="media featuresContent">
+              <span class="media-left bg-color-2">
+                <i class="fa {% t home.services.s2.icon %} bg-color-2" aria-hidden="true"></i>
+              </span>
+              <div class="media-body">
+                <h3 class="media-heading color-2">{% t home.services.s2.title %}</h3>
+                <p>{% t home.services.s2.description %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="media featuresContent">
+              <span class="media-left bg-color-3">
+                <i class="fa {% t home.services.s3.icon %} bg-color-3" aria-hidden="true"></i>
+              </span>
+              <div class="media-body">
+                <h3 class="media-heading color-3">{% t home.services.s3.title %}</h3>
+                <p>{% t home.services.s3.description %}</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row">
-          {% for service in page.services limit: 6 offset: 3 %}
-          {% assign color = forloop.index | plus: 3 %}
           <div class="col-sm-4 col-xs-12">
             <div class="media featuresContent">
-              <span class="media-left bg-color-{{color}}">
-                <i class="fa {{service.icon}} bg-color-{{color}}" aria-hidden="true"></i>
+              <span class="media-left bg-color-4">
+                <i class="fa {% t home.services.s4.icon %} bg-color-4" aria-hidden="true"></i>
               </span>
               <div class="media-body">
-                <h3 class="media-heading color-{{color}}">{{service.title}}</h3>
-                <p>{{service.description}}</p>
+                <h3 class="media-heading color-4">{% t home.services.s4.title %}</h3>
+                <p>{% t home.services.s4.description %}</p>
               </div>
             </div>
           </div>
-          {% endfor %}
+          <div class="col-sm-4 col-xs-12">
+            <div class="media featuresContent">
+              <span class="media-left bg-color-5">
+                <i class="fa {% t home.services.s5.icon %} bg-color-5" aria-hidden="true"></i>
+              </span>
+              <div class="media-body">
+                <h3 class="media-heading color-5">{% t home.services.s5.title %}</h3>
+                <p>{% t home.services.s5.description %}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <div class="media featuresContent">
+              <span class="media-left bg-color-6">
+                <i class="fa {% t home.services.s6.icon %} bg-color-6" aria-hidden="true"></i>
+              </span>
+              <div class="media-body">
+                <h3 class="media-heading color-6">{% t home.services.s6.title %}</h3>
+                <p>{% t home.services.s6.description %}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="btnArea">
-        <a href="laboratori.html" class="btn btn-primary"><i class="fa fa-soccer-ball-o"></i> I Laboratori</a>
+        <a href="laboratori.html" class="btn btn-primary"><i class="fa fa-soccer-ball-o"></i> {% t global.laboratories %}</a>
       </div>
 
     </section>
@@ -313,9 +472,9 @@
     <section class="promotionWrapper" style="background-image: url(img/home/promotion-1.jpg);">
       <div class="container">
         <div class="promotionInfo">
-          <h2>Vuoi conoscerci meglio?</h2>
-          <p>Contattaci ora per prenotare una visita. Ti mostreremo la struttura e il nostro progetto educativo. </p>
-          <a href="contatti.html" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Contattaci</a>
+          <h2>{% t home.know %}</h2>
+          <p>{% t home.contact_desc %}</p>
+          <a href="contatti.html" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% t global.contact_us %}</a>
         </div>
       </div>
     </section>
@@ -328,7 +487,7 @@
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
-            <span>Galleria</span>
+            <span>{% t global.gallery %}</span>
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
@@ -340,9 +499,9 @@
           <div class="col-xs-12">
             <div class="filter-container isotopeFilters">
               <ul class="list-inline filter">
-                <li class="active"><a href="#" data-filter=".aule">Aule</a></li>
-                <li><a href="#" data-filter=".giardino">Giardino</a></li>
-                <li><a href="#" data-filter=".attivita">Attività</a></li>
+                <li class="active"><a href="#" data-filter=".aule">{% t global.rooms %}</a></li>
+                <li><a href="#" data-filter=".giardino">{% t global.garden %}</a></li>
+                <li><a href="#" data-filter=".attivita">{% t global.activities %}</a></li>
               </ul>
 
             </div>
@@ -383,7 +542,7 @@
         </div>
 
         <div class="btnArea">
-          <a href="galleria.html" class="btn btn-primary"><i class="fa fa-image"></i> Galleria Completa</a>
+          <a href="galleria.html" class="btn btn-primary"><i class="fa fa-image"></i> {% t global.full_gallery %}</a>
         </div>
 
       </div>
@@ -397,7 +556,7 @@
         <div class="sectionTitle text-center alt">
           <h2>
             <span class="shape shape-left bg-color-3"></span>
-            <span>Le Titolari</span>
+            <span>{% t global.owners %}</span>
             <span class="shape shape-right bg-color-3"></span>
           </h2>
         </div>
@@ -406,34 +565,63 @@
           <div class="col-md-11 col-md-offset-2 col-xs-12">
             <div class="owl-carousel teamSlider">
 
-              {% for teacher in page.teachers %}
               <div class="slide">
                 <div class="teamContent">
                   <div class="teamImage">
-                    <img src="{{ teacher.picture }}" alt="img" class="img-circle">
+                    <img src="{% t home.teachers.elena.picture %}" alt="img" class="img-circle">
                     <div class="maskingContent">
                       <ul class="list-inline">
-                        {% if teacher.linkedin %}
-                        <li><a href="{{ teacher.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        {% else %}
                         <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
-                        {% endif %}
                       </ul>
                     </div>
                   </div>
                   <div class="teamInfo">
                     <h3>
-                      {% if teacher.linkedin %}
-                        <a href="{{ teacher.linkedin }}" target="_blank">{{ teacher.name }}</a>
-                      {% else %}
-                        <a href="gruppo-educativo.html">{{ teacher.name }}</a>
-                      {% endif %}
+                      <a href="gruppo-educativo.html">{% t home.teachers.elena.name %}</a>
                     </h3>
-                    <p>{{ teacher.description }}</p>
+                    <p>{% t home.teachers.elena.description %}</p>
                   </div>
                 </div>
               </div>
-              {% endfor %}
+
+              <div class="slide">
+                <div class="teamContent">
+                  <div class="teamImage">
+                    <img src="{% t home.teachers.ginevra.picture %}" alt="img" class="img-circle">
+                    <div class="maskingContent">
+                      <ul class="list-inline">
+                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="teamInfo">
+                    <h3>
+                      <a href="gruppo-educativo.html">{% t home.teachers.ginevra.name %}</a>
+                    </h3>
+                    <p>{% t home.teachers.ginevra.description %}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="teamContent">
+                  <div class="teamImage">
+                    <img src="{% t home.teachers.giulia.picture %}" alt="img" class="img-circle">
+                    <div class="maskingContent">
+                      <ul class="list-inline">
+                        <li><a href="gruppo-educativo.html"><i class="fa fa-info" aria-hidden="true"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="teamInfo">
+                    <h3>
+                      <a href="gruppo-educativo.html">{% t home.teachers.giulia.name %}</a>
+                    </h3>
+                    <p>{% t home.teachers.giulia.description %}</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
 
@@ -441,7 +629,7 @@
         </div>
         <div class="row">
           <div class="btnArea">
-            <a href="gruppo-educativo.html" class="btn btn-primary"><i class="fa fa-users"></i> Gruppo Educativo</a>
+            <a href="gruppo-educativo.html" class="btn btn-primary"><i class="fa fa-users"></i> {% t global.group %}</a>
           </div>
         </div>
       </div>
@@ -456,9 +644,9 @@
           <h2>
             <span class="shape shape-left bg-color-4"></span>
             {% if page.features.invite %}
-            <span>Contatti</span>
+            <span>{% t global.contacts %}</span>
             {% else %}
-            <span>Dove Siamo</span>
+            <span>{% t global.where %}</span>
             {% endif %}
             <span class="shape shape-right bg-color-4"></span>
           </h2>
@@ -466,20 +654,19 @@
         {% if page.features.invite %}
         <div class="row schoolInfo">
           <div class="col-xs-12">
-            <h2>Inviaci un messaggio!</h2>
+            <h2>{% t contacts.send_message %}</h2>
 
             <p>
-              Se sei alla ricerca di un asilo nido per il tuo bambino/a e desideri ricevere ulteriori informazioni, inviaci un messaggio utilizzando il form qui sotto.
-              Ti ricontatteremo appena possibile.
+              {% t contacts.desc %}
             </p>
 
             <p>
-              Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione <strong><a href="lavora-con-noi.html">"Lavora con noi"</a></strong>.
+              {% t contacts.disclaimer %}
             </p>
 
             {% if site.alert.show %}
             <p>
-              <span class="contacts-alert">Attenzione: {{site.alert.message}}</span>
+              <span class="contacts-alert">{% t global.warning %}: {% t alert.message %}</span>
             </p>
             {% endif %}
 
@@ -487,55 +674,55 @@
 
               <div class="form-group">
                 <i class="fa fa-user"></i>
-                <input type="text" class="form-control border-color-1" id="inputName" placeholder="Nome e Cognome (es. Mario Rossi) *">
+                <input type="text" class="form-control border-color-1" id="inputName" placeholder="{% t contacts.placeholders.name %}">
               </div>
 
               <div class="form-group">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <input type="text" class="form-control border-color-2" id="inputEmail" placeholder="Indirizzo Email (es. mario.rossi@gmail.com) *">
+                <input type="text" class="form-control border-color-2" id="inputEmail" placeholder="{% t contacts.placeholders.email %}">
               </div>
 
               <div class="form-group">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <input type="text" class="form-control border-color-5" id="inputPhone" placeholder="Telefono (es. 333444555 oppure +33 333444555)">
+                <input type="text" class="form-control border-color-5" id="inputPhone" placeholder="{% t contacts.placeholders.phone %}">
               </div>
 
               <div class="form-group">
                 <select id="inputSubject" class="form-control border-color-6">
-                  <option value="">- seleziona un motivo -</option>
-                  <option value="Iscrizione Asilo Nido">Informazioni relative all'iscrizione all'asilo nido</option>
-                  <option value="Lavorare in Asilo">Vorrei lavorare con voi</option>
-                  <option value="Affito Sale">Vorrei affittare le sale o il giardino</option>
-                  <option value="Informazioni Asilo Nido">Altre informazioni</option>
+                  <option value="">{% t contacts.reason.select %}</option>
+                  <option value="Iscrizione Asilo Nido">{% t contacts.reason.info %}</option>
+                  <option value="Lavorare in Asilo">{% t contacts.reason.work %}</option>
+                  <option value="Affito Sale">{% t contacts.reason.reserve %}</option>
+                  <option value="Informazioni Asilo Nido">{% t contacts.reason.other %}</option>
                 </select>
               </div>
               <div id="alertWorkWithUs" class="alert alert-info" style="display: none; line-height: normal">
-                <i class="fa fa-info-circle"></i> <strong>Attenzione!</strong>
+                <i class="fa fa-info-circle"></i> <strong>{% t global.warning %}!</strong>
                 <br />
-                Per inviare proposte di collaborazione, seguire le istruzioni riportate nella sezione <a href="lavora-con-noi.html">"Lavora con noi"</a>
+                {% t contacts.disclaimer2 %}
               </div>
 
               <div class="form-group">
                 <i class="fa fa-comments" aria-hidden="true"></i>
-                <textarea id="inputMessage" class="form-control border-color-4" placeholder="Scrivi qui il tuo messaggio *"></textarea>
+                <textarea id="inputMessage" class="form-control border-color-4" placeholder="{% t contacts.placeholders.message %}"></textarea>
               </div>
 
               <div id="formErrorContainer"></div>
 
               <div class="formBtnArea">
-                <button id="inputSendMessageBtn" type="button" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i> Invia il messaggio</button>
+                <button id="inputSendMessageBtn" type="button" class="btn btn-primary"><i class="fa fa-paper-plane-o"></i> {% t contacts.send %}</button>
               </div>
             </div>
 
             <div class="space-large clearfix"></div>
 
 
-            <h2>Come raggiungere la struttura</h2>
-            <p align="justify">L'asilo nido si trova in <strong>via del Circo Massimo 9</strong>, all'incrocio tra via del Circo Massimo e viale Aventino (di fronte alla FAO), ed è situato a due passi dall'uscita della stazione della metro B "Circo Massimo".</p>
-            <p align="justify">L'asilo è facilmente raggiungibile in pochi minuti attraverso i mezzi pubblici:</p>
+            <h2>{% t contacts.reaching %}</h2>
+            <p align="justify">{% t contacts.location.p1 %}</p>
+            <p align="justify">{% t contacts.location.p2 %}:</p>
             <ul>
-              <li><i class="fa fa-check" aria-hidden="true"></i> <strong>Metro B:</strong> a pochi minuti dalle fermate di <strong>Marconi, Basilica S. Paolo, Garbatella, Piramide, (Circo Massimo), Colosseo, Cavour, Termini, Castro Pretorio e Policlinico.</strong></li>
-              <li><i class="fa fa-check" aria-hidden="true"></i> <strong>Tram nr. 3:</strong> a poche fermate da <strong>San Giovanni, Manzoni, via Labicana, via Merulana, (Circo Massimo), viale Aventino, via Marmorata, Porta Portese e Trastevere.</strong></li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> {% t contacts.location.metro %}</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> {% t contacts.location.tram %}</li>
             </ul>
           </div>
         </div>
@@ -550,7 +737,7 @@
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
               </span>
               <div class="media-body">
-                <h3 class="media-heading">Indirizzo:</h3>
+                <h3 class="media-heading">{% t global.address %}:</h3>
                 <p class="imagePad">{{site.contact.address}}</p>
               </div>
             </div>
@@ -563,7 +750,7 @@
                 </span>
               </a>
               <div class="media-body">
-                <h3 class="media-heading">Telefono:</h3>
+                <h3 class="media-heading">{% t global.phone %}:</h3>
                 <p class="imagePad">
                   <a href="tel:{{site.contact.phone}}">{{site.contact.phone}}</a>
                 </p>
@@ -578,7 +765,7 @@
                 </span>
               </a>
               <div class="media-body">
-                <h3 class="media-heading">Email:</h3>
+                <h3 class="media-heading">{% t global.email %}:</h3>
                 <p class="imagePad">
                   <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>
                 </p>
@@ -607,11 +794,11 @@
         <div class="sectionTitleSmall text-center alt">
           <h2>
             <span class="shape shape-left bg-color-3"></span>
-            <span>Una scelta importante</span>
+            <span>{% t sentence.title %}</span>
             <span class="shape shape-right bg-color-3"></span>
           </h2>
-          <p>"{{ site.sentence.text }}"</p>
-          <p>{{ site.sentence.author }}</p>
+          <p>"{% t sentence.text %}"</p>
+          <p>{% t sentence.author %}</p>
         </div>
       </div>
     </section>
@@ -624,7 +811,7 @@
         <div class="sectionTitle text-center">
           <h2>
             <span class="shape shape-left bg-color-4"></span>
-            <span>Seguici su Facebook</span>
+            <span>{% t global.follow_facebook %}</span>
             <span class="shape shape-right bg-color-4"></span>
           </h2>
         </div>
@@ -642,7 +829,7 @@
                   <li><a href="#" target="_blank" class="fb-link"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <span class="fb-likes"></span></a></li>
                 </ul>
                 <ul class="list-inline btn-yellow">
-                  <li><a href="#" target="_blank" class="btn btn-link fb-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Leggi il post</a></li>
+                  <li><a href="#" target="_blank" class="btn btn-link fb-link"><i class="fa fa-angle-double-right" aria-hidden="true"></i> {% t global.read_post %}</a></li>
                 </ul>
               </div>
             </div>
@@ -650,7 +837,7 @@
         </div>
         
         <div class="btnArea">
-          <a href="https://www.facebook.com/asilonidoromacircomassimo/" target="_blank" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i> Pagina Facebook</a>
+          <a href="https://www.facebook.com/asilonidoromacircomassimo/" target="_blank" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i> {% t global.facebook_page %} </a>
         </div>
           
       </div>
@@ -664,10 +851,10 @@
         <div class="row">
           <div class="col-sm-6 col-xs-12">
             <div class="homeContactContent">
-              <h2>Contattaci</h2>
-              <p>Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.</p>
+              <h2>{% t global.contact_us %}</h2>
+              <p>{% t global.contact_us_long %}</p>
               <address>
-                <p><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i><a href="contatti.html">Inviaci un messaggio</a></p>
+                <p><i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i><a href="contatti.html">{% t global.send_us_a_message %}</a></p>
                 <p><i class="fa fa-phone bg-color-2" aria-hidden="true"></i><a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a></p>
                 <p><i class="fa fa-envelope bg-color-1" aria-hidden="true"></i><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
                 <p><i class="fa fa-map-marker bg-color-6" aria-hidden="true"></i>{{ site.contact.address }}</p>
@@ -705,8 +892,8 @@
             <div class="col-sm-6 col-xs-12">
               <div class="footerInfo">
                   <p>{{ site.title }}</p>
-                <p><i>"{{ site.sentence.text}}"</i></p>
-                <p>{{ site.sentence.author}}</p>
+                <p><i>"{% t sentence.text %}"</i></p>
+                <p>{% t sentence.author %}</p>
               </div>
             </div>
           </div>

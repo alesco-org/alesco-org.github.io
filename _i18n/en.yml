@@ -1,0 +1,236 @@
+title: I Bambini Del Circo Massimo
+
+info:
+  opening_hours: "Mon-Fri 7:30 AM - 6:30 PM"
+
+titles:
+  gruppo-educativo: Educational Group
+  chi-siamo: Who We Are
+  struttura: The Location
+  metodo-educativo: Educational Method
+  lavora-con-noi: Work with Us
+
+global:
+  contact_us: Contact Us
+  contact_us_long: Contact us to have more information. We can schedule a meeting so you can see the location and get to know our educational project.
+  contacts: Contacts
+  gallery: Photo Gallery
+  rooms: Rooms
+  garden: Garden
+  activities: Activities
+  full_gallery: Full Photo Gallery
+  owners: The Directors
+  laboratories: Workshops
+  group: Educational Group
+  where: Where We Are
+  warning: Notice
+  address: Address
+  phone: Phone
+  email: Email
+  follow_facebook: Follow Us on Facebook
+  facebook_page: Facebook Page
+  read_post: Read the post
+  send_us_a_message: Send us a message
+  write_us: Write us
+  location: The Location
+  method: Educational Principles
+  work_with_us: Work with Us
+  doctor: Pediatrician
+  kitchen: Internal Kitchen
+  reservations: Rent Location
+  nursery: Daycare
+  inclusion: Inclusion
+  day: Typical Day
+  photo: Photos
+  services: Services
+  who: Who We Are
+  home: Home
+  language: Language
+
+slide:
+  s1:
+    title: "I Bambini del Circo Massimo"
+    description: "The adventure of growing together..."
+    align: "left"
+    img: "img/header/header-1-cropped.jpg"
+  s2:
+    title: "I Bambini del Circo Massimo"
+    description: "As if they were in your arms..."
+    align: "right"
+    img: "img/header/header-2-cropped.jpg"
+  s3:
+    title: "I Bambini del Circo Massimo"
+    description: "The art of educating..."
+    align: "right"
+    img: "img/header/header-3-cropped.jpg"
+
+alert:
+  message: Enrollment open for next school year 2019/2020!
+
+section:
+  s1:
+    title: "Nursery School"
+    link: "#asilo"
+    icon: "fa-child"
+  s2:
+    title: "Photo Gallery"
+    link: "#galleria"
+    icon: "fa-picture-o"
+  s3:
+    title: "Where We Are"
+    link: "#dove"
+    icon: "fa-map-o"
+  s4:
+    title: "Follow Us"
+    link: "#facebook"
+    icon: "fa-facebook-official"
+
+home:
+  title: The Nursery School (Preschool)
+  p1: |-
+    The Nursery School (Preschool) "I Bambini del Circo Massimo" is a child care school for children ranging from 3 months to 3 years old. It's
+    located on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
+    The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities.
+  p2: |-
+    The hall dedicated to infants is divided into a game area and a sleeping section.
+    There are three big multipurpose rooms for expressive activities, symbolic games and psychomotricity.
+  p3: |-
+    The location of the nursery schools allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    Every environment is designed to promote social activities and autonomy of every child, it's child-friendly and well suited for the child age.
+  p4: |-
+    The nursery school contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+  why: Why choosing us?
+  services:
+    s1:
+      title: Qualified Staff
+      description: The nursery school is managed by psychologists and professional educators.
+      icon: "fa-graduation-cap"
+    s2:
+      title: Continuous Training
+      description: The staff continuously follows courses for first aid, PBLS, HACCP and security.
+      icon: "fa-pencil"
+    s3:
+      title: Music Workshops
+      description: Children follow music workshops with Gordon's method, given by professional teachers.
+      icon: "fa-music"
+    s4:
+      title: Healthy Food
+      description: Our food menu are developed by a nutritionist.
+      icon: "fa-cutlery"
+    s5:
+      title: Flexible hours
+      description: We provide several options for exit hours to help families.
+      icon: "fa-clock-o"
+    s6:
+      title: English and Spanish
+      description: Let's become citizens of the world! Learning a second language enriches and stimulates curiosity in children..
+      icon: "fa-globe"
+  know: Do you want to know more?
+  contact_desc: Contact us for scheduling a visit. We'll show you the location and our educational project.
+  teachers:
+    elena:
+      name: Elena Ierace
+      description: "Psychologist and Family Psychoterapist"
+      picture: "assets/titolari/elena.jpg"
+    ginevra:
+      name: Ginevra Papini
+      description: "Professional Educator"
+      picture: "assets/titolari/ginevra.jpg"
+    giulia:
+      name: Giulia Papini
+      description: "Psychologist and Family Psychoterapist"
+      picture: "assets/titolari/giulia.jpg"
+
+
+contacts:
+  send_message: Send us a message!
+  desc: |-
+    If you're looking for a nursery school for your child and want to have more information, send us a message using the form below.
+    We'll contact you back as soon as possible.
+  disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the <strong><a href="lavora-con-noi.html">"Work with us"</a> section of this website</strong>.
+  placeholders:
+    name: Name and Surname (eg. John Doe) *
+    email: Email Address (eg. johndoe@gmail.com) *
+    phone: Phone Number (eg. +33 333444555)
+    message: Write your message here *
+  reason:
+    select: "- select a reason -"
+    info: Information about enrollment in the nursery school
+    work: I want to work with you
+    reserve: I want to reserve some halls or the garden
+    other: Other information
+  disclaimer2: To send work proposals, please follow instructions in the <a href="lavora-con-noi.html">"Lavora con noi"</a> section of this website
+  send: Send
+  reaching: How to get here
+  location:
+    p1: The nursery school is located in <strong>via del Circo Massimo 9</strong>, where via del Circo Massimo crosses viale Aventino (in front of the FAO building), and it's located nearby the metro B station "Circo Massimo".
+    p2: The nursery school is easily reachable in few minutes using public transportation from
+    metro: <strong>Metro B:</strong> few minutes from metro stations of <strong>Marconi, Basilica S. Paolo, Garbatella, Piramide, (Circo Massimo), Colosseo, Cavour, Termini, Castro Pretorio and Policlinico.</strong>
+    tram: <strong>Tram nr. 3:</strong> few stops from <strong>San Giovanni, Manzoni, via Labicana, via Merulana, (Circo Massimo), viale Aventino, via Marmorata, Porta Portese and Trastevere.</strong>
+
+
+sentence:
+  title: An important choice
+  text: "The child is like a traveler who observes new things and tries to understand the unknown language of those around him. We adults are the guides of these travelers who make their entry into human life..."
+  author: "Maria Montessori"
+
+group:
+  title: Educational Group
+  p1: The nursery school "I Bambini del Circo Massimo" is an educational service directed by three people.
+  p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about coordinating daily activities, workshops and defining the pedagogical project.
+  p3: <strong>Elena Ierace</strong>, owner and educator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about daily work organization and works in the various classes divided by child age.
+  p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator</mark>. She cares about doing activities and having cares of the children.
+  p5: All other educators who follow daily activities own all requirements and degrees required by laws, and also a lot of experience in working with children.
+
+location:
+  see-all: Full Photo Gallery
+  p1: |-
+    The Nursery School (Preschool) "I Bambini del Circo Massimo" is a child care school for children ranging from 3 months to 3 years old. It's
+    located on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
+    The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities.
+  p2: |-
+    The hall dedicated to infants is divided into a game area and a sleeping section.
+    There are three big multipurpose rooms for expressive activities, symbolic games and psychomotricity.
+  p3: |-
+    The location of the nursery schools allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    Every environment is designed to promote social activities and autonomy of every child, it's child-friendly and well suited for the child age.
+  p4: |-
+    The nursery school contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+
+
+method:
+  p1: |-
+    The child occupies a central position and, in its uniqueness, is a bearer of strong potential.
+    The adult's job is to offer adequate spaces for the expression of intuition and imagination.
+    Children learn within the relationship between peers and with the adult who stands in a perspective of listening and observation.
+    The nursery school must be thought of as a place to build the right conditions for learning, within which children can be
+    welcomed and helped to grow.
+  p2: |-
+    "The child is like a traveler who observes new things and tries to understand the unknown language of those around him. We adults are the guides of these travelers who make their entry into human life..."
+    <br/>
+    Maria Montessori.
+  p3: |-
+    The child must have the opportunity to express his full potential within a well-organized environment and detailed planning.
+    The better the quality of the gaming opportunities offered, the more enjoyable the experience will be for both the adult and the child.
+  p4: |-
+    Within the nursery school, the child must create secure and stable relationships with a figure of
+    reference that takes care of him.
+    The good numerical ratio between educators and children is the key element that guarantees
+    the quality of a nursery school, the organization of the school ensures regular occasions for care
+    in which the educator pays personal attention to each individual child.
+  p5: |-
+    An American research has shown that children included in nursery programs with more careful educators
+    have a better linguistic and cognitive development and
+    they have a better social life. The organization in sections allows the educator
+    to be careful to the playing opportunities appropriate for their age.
+  p6: |-
+    The section for younger children combines intimacy and spaciousness, to allow children who already move to use
+    a suitable surface and to guarantee to the little ones a comfortable space where to play and rest.
+    In the first year of life the child understands the world through his senses, so it will be important to help him in the development
+    of motility and ability to manipulate, to make him an active subject in the understanding of the world.
+
+work:
+  p1: If working with children is the best thing in the world for you, you can send us your CV and we'll evaluate it.
+  p2: In this moment our staff is complete, but we have some <strong>open positions for internships</strong> in our nursery school.
+  p3: Send your CV to
+  p4: "specifying your availability for an internship."

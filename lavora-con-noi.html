@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lavora con Noi
+title: titles.lavora-con-noi
 last_modified_at: 2017-09-08T18:30:00+02:00
 group:
     id: chi-siamo
@@ -17,23 +17,19 @@ features:
 
             <div class="col-sm-6 col-xs-12">
                 <div class="schoolInfo">
-                    <h2>{{ page.title }}</h2>
+                    <h2>{% t page.title %}</h2>
                     <div class="text-justify">
 
                         <p>
-                            Se anche per te lavorare con i bambini è la cosa più bella del mondo, puoi inviarci il tuo curriculum e valuteremo la tua candidatura.
+                            {% t work.p1 %}
                         </p>
-                        <!--<p>-->
-                            <!--<strong><i class="fa fa-frown-o"></i> In questo momento, il nostro staff è al completo</strong>, ma puoi inviare lo stesso il tuo curriculum. Saremo noi a ricontattarti-->
-                            <!--nel caso in cui si apra qualche posizione in futuro.-->
-                        <!--</p>-->
+
                         <p>
-                            In questo momento il nostro staff è completo, ma abbiamo delle
-                            <strong>posizioni aperte per tirocini formativi</strong> presso la nostra struttura.
+                            {% t work.p2 %}
                         </p>
                         <p>
-                            Invia il tuo curriculum a <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>, specificando la tua disponibilità
-                            per un tirocinio formativo.
+                            {% t work.p3 %} <a href="mailto:{{site.contact.email}}">{{site.contact.email}}</a>,
+                            {% t work.p4 %}
                         </p>
                     </div>
 

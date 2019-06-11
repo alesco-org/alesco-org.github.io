@@ -1,0 +1,239 @@
+title: I Bambini Del Circo Massimo
+
+info:
+  opening_hours: "Lun-Ven 7:30 - 18:30"
+
+titles:
+  gruppo-educativo: Gruppo Educativo
+  chi-siamo: Chi Siamo
+  struttura: La Struttura
+  metodo-educativo: Metodo Educativo
+  lavora-con-noi: Lavora con Noi
+
+global:
+  contact_us: Contattaci
+  contact_us_long: Contattaci per avere maggiori informazioni. Potrai prendere un appuntamento per vedere la struttura e conoscere il nostro progetto educativo.
+  contacts: Contatti
+  gallery: Galleria
+  rooms: Aule
+  garden: Giardino
+  activities: Attività
+  full_gallery: Galleria Completa
+  owners: Le Titolari
+  laboratories: I Laboratori
+  group: Gruppo Educativo
+  where: Dove Siamo
+  warning: Attenzione
+  address: Indirizzo
+  phone: Telefono
+  email: Email
+  follow_facebook: Seguici su Facebook
+  facebook_page: Pagina Facebook
+  read_post: Leggi il post
+  send_us_a_message: Inviaci un messaggio
+  write_us: Scrivici
+  location: La Struttura
+  method: Metodo Educativo
+  work_with_us: Lavora con Noi
+  doctor: Pediatra
+  kitchen: Cucina Interna
+  reservations: Affitto Sale
+  nursery: Al Nido
+  inclusion: Inserimento
+  day: Giornata Tipo
+  photo: Foto
+  services: Servizi
+  who: Chi Siamo
+  home: Home
+  language: Language
+
+slide:
+  s1:
+    title: "I Bambini del Circo Massimo"
+    description: "L'avventura di crescere insieme..."
+    align: "left"
+    img: "img/header/header-1-cropped.jpg"
+  s2:
+    title: "I Bambini del Circo Massimo"
+    description: "Accolti come fossero tra le vostre braccia..."
+    align: "right"
+    img: "img/header/header-2-cropped.jpg"
+  s3:
+    title: "I Bambini del Circo Massimo"
+    description: "L'arte di educare..."
+    align: "right"
+    img: "img/header/header-3-cropped.jpg"
+
+alert:
+  message: Iscrizioni aperte per l'anno scolastico 2019/2020!
+
+section:
+  s1:
+    title: "L'asilo"
+    link: "#asilo"
+    icon: "fa-child"
+  s2:
+    title: "Galleria"
+    link: "#galleria"
+    icon: "fa-picture-o"
+  s3:
+    title: "Dove Siamo"
+    link: "#dove"
+    icon: "fa-map-o"
+  s4:
+    title: "Seguici"
+    link: "#facebook"
+    icon: "fa-facebook-official"
+
+home:
+  title: I Bambini del Circo Massimo
+  p1: |-
+    L'Asilo Nido "I Bambini del Circo Massimo" è distribuito su un unico livello di circa 220 mq interni e circa 150 mq esterni.
+    Lo spazio interno è costituito dall'Accoglienza, da un salone polivalente dedicato ai pasti ed alle attività espressive quotidiane.
+  p2: |-
+    Lo spazio dedicato ai lattanti è suddiviso in un'area gioco e in un'area dedicata al sonno.
+    Sono presenti tre ampie stanze polivalenti per attività espressive, gioco simbolico e psicomotricità.
+  p3: |-
+    La struttura del nido permette di suddividere i bimbi in base alle diverse fasce di età ed in ogni stanza è annesso un angolo cambio. Ogni ambiente è predisposto
+    e studiato per promuovere la socializzazione e l'autonomia dei bambini, ogni ambiente è a misura di bambino e adatto alla sua età.
+  p4: |-
+    L'asilo dispone di un giardino esterno attrezzato di diversi giochi di 150 mq circa. Nel'asilo nido è presente la cucina interna.
+  why: Perché sceglierci?
+  services:
+    s1:
+      title: Personale Qualificato
+      description: L'asilo è gestito da psicologhe ed educatrici professionali.
+      icon: "fa-graduation-cap"
+    s2:
+      title: Formazione continua
+      description: Il personale segue corsi di aggiornamento di primo soccorso e disostruzione pediatrica, HACCP, sicurezza.
+      icon: "fa-pencil"
+    s3:
+      title: Laboratorio di Musica
+      description: I bimbi frequentano corsi di musica con metodo Gordon, seguiti da un'insegnante esperta.
+      icon: "fa-music"
+    s4:
+      title: Alimentazione sana
+      description: I nostri menù sono elaborati da una nutrizionista.
+      icon: "fa-cutlery"
+    s5:
+      title: Orari flessibili
+      description: Sono previsti diversi orari di uscita per andare incontro alle esigenze delle famiglie.
+      icon: "fa-clock-o"
+    s6:
+      title: Inglese e Spagnolo
+      description: Diventiamo cittadini del mondo! Apprendere una seconda lingua arricchisce e stimola la naturale curiosità dei bambini..
+      icon: "fa-globe"
+  know: Vuoi conoscerci meglio?
+  contact_desc: Contattaci ora per prenotare una visita. Ti mostreremo la struttura e il nostro progetto educativo.
+  teachers:
+    elena:
+      name: Elena Ierace
+      description: "Psicologa e Psicoterapeuta della Famiglia"
+      picture: "assets/titolari/elena.jpg"
+    ginevra:
+      name: Ginevra Papini
+      description: "Educatrice Professionale"
+      picture: "assets/titolari/ginevra.jpg"
+    giulia:
+      name: Giulia Papini
+      description: "Psicologa e Psicoterapeuta della Famiglia"
+      picture: "assets/titolari/giulia.jpg"
+
+
+contacts:
+  send_message: Inviaci un messaggio!
+  desc: |-
+    Se sei alla ricerca di un asilo nido per il tuo bambino/a e desideri ricevere ulteriori informazioni, inviaci un messaggio utilizzando il form qui sotto.
+    Ti ricontatteremo appena possibile.
+  disclaimer: Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione <strong><a href="lavora-con-noi.html">"Lavora con noi"</a></strong>.
+  placeholders:
+    name: Nome e Cognome (es. Mario Rossi) *
+    email: Indirizzo Email (es. mario.rossi@gmail.com) *
+    phone: Telefono (es. 333444555 oppure +33 333444555)
+    message: Scrivi qui il tuo messaggio *
+  reason:
+    select: "- seleziona un motivo -"
+    info: Informazioni relative all'iscrizione all'asilo nido
+    work: Vorrei lavorare con voi
+    reserve: Vorrei affittare le sale o il giardino
+    other: Altre informazioni
+  disclaimer2: Per inviare proposte di collaborazione, seguire le istruzioni riportate nella sezione <a href="lavora-con-noi.html">"Lavora con noi"</a>
+  send: Invia il messaggio
+  reaching: Come raggiungere la struttura
+  location:
+    p1: L'asilo nido si trova in <strong>via del Circo Massimo 9</strong>, all'incrocio tra via del Circo Massimo e viale Aventino (di fronte alla FAO), ed è situato a due passi dall'uscita della stazione della metro B "Circo Massimo".
+    p2: L'asilo è facilmente raggiungibile in pochi minuti attraverso i mezzi pubblici
+    metro: <strong>Metro B:</strong> a pochi minuti dalle fermate di <strong>Marconi, Basilica S. Paolo, Garbatella, Piramide, (Circo Massimo), Colosseo, Cavour, Termini, Castro Pretorio e Policlinico.</strong>
+    tram: <strong>Tram nr. 3:</strong> a poche fermate da <strong>San Giovanni, Manzoni, via Labicana, via Merulana, (Circo Massimo), viale Aventino, via Marmorata, Porta Portese e Trastevere.</strong>
+
+
+sentence:
+  title: Una scelta importante
+  text: "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda. Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
+  author: "Maria Montessori"
+
+
+
+group:
+  p1: L'asilo nido "I Bambini del Circo Massimo" è un servizio socio educativo gestito da tre titolari con i titoli del settore.
+  p2: <strong>Giulia Papini</strong>, titolare e coordinatrice, <mark>laureata in Psicologia dell'Infanzia e della Famiglia</mark> e specializzanda in Psicoterapia Familiare. Si occupa del coordinamento delle attività quotidiane e dei laboratori esterni e definizione del progetto pedagogico.
+  p3: <strong>Elena Ierace</strong>, titolare ed educatrice, <mark>laureata in Psicologia dell’Infanzia e della Famiglia</mark> e specializzanda in Psicoterapia Familiare. Si occupa della gestione interna quotidiana delle diverse classi suddivise per fasce di età.
+  p4: <strong>Ginevra Papini</strong>, titolare ed educatrice, diplomata in Tecnico dei Servizi Sociali e <mark>specializzata come Educatrice Professionale</mark>. Si occupa dell'organizzazione delle attività e della cura dei bambini.
+  p5: Tutte le educatrici che svolgono le attività quotidiane possiedono i titoli di studio richiesti, oltre una notevole esperienza con i bambini.
+
+location:
+  see-all: Guarda Tutte le Foto
+  p1: |-
+    L'Asilo Nido "I Bambini del Circo Massimo" è distribuito su un unico livello di circa 220 mq interni e circa 150 mq esterni. Lo spazio interno è costituito
+    dall'Accoglienza, da un salone polivalente dedicato ai pasti ed alle attività espressive quotidiane.
+  p2: |-
+    Lo spazio dedicato ai lattanti è suddiviso in un'area gioco e in un'area dedicata al sonno. Sono presenti tre ampie stanze polivalenti per attività espressive,
+    gioco simbolico e psicomotricità.
+  p3: |-
+    La struttura del nido permette di suddividere i bimbi in base alle diverse fasce di età ed in ogni stanza è annesso un angolo cambio. Ogni ambiente è predisposto
+    e studiato per promuovere la socializzazione e l'autonomia dei bambini, ogni ambiente è a misura di bambino e adatto alla sua età.
+  p4: |-
+    L'asilo dispone di un giardino esterno attrezzato di diversi giochi di 150 mq circa. Nel'asilo nido è presente la cucina interna.
+
+
+method:
+  p1: |-
+    Il bambino occupa una posizione centrale e nella sua unicità è portatore di forti potenzialità,
+    compito dell'adulto è quello di offrire spazi adeguati all'espressione dell'intuito e della fantasia.
+    I bambini apprendono all'interno della relazione tra pari e con l'adulto che si pone in un'ottica di ascolto e osservazione.
+    Il nido deve essere pensato come luogo per costruire le giuste condizioni per l'apprendimento, all'interno del quale i bambini possano essere
+    accolti e aiutati a crescere.
+  p2: |-
+    "Il bambino è come un viaggiatore che osserva le cose nuove e cerca di capire il linguaggio sconosciuto di chi lo circonda.
+    Noi adulti siamo i ciceroni di questi viaggiatori che fanno il loro ingresso nella vita umana..."
+    <br/>
+    Maria Montessori.
+  p3: |-
+    Il bambino deve avere la possibilità di esprimere al massimo le proprie potenzialità
+    all'interno di un ambiente ben organizzato e di una programmazione dettagliata.
+    Migliore sarà la qualità delle opportunità di gioco offerte più piacevole sarà l'esperienza
+    vissuta sia per l'adulto che per il bambino.
+  p4: |-
+    All'interno del nido il bambino deve creare relazioni sicure e stabili con una figura di
+    riferimento che si prende cura di lui.
+    Il buon rapporto numerico tra educatrici e bambini è l'elemento chiave che garantisce
+    la qualità di un nido, l'organizzazione del nido assicura regolari occasioni di accudimento
+    nelle quali l'educatrice presta un'attenzione personale ad ogni singolo bambino.
+  p5: |-
+    Una ricerca americana ha dimostrato che i bambini inclusi nei programmi dei nidi con educatrici
+    più premurose hanno un migliore sviluppo linguistico e cognitivo e
+    hanno una migliore qualità sociale. L'organizzazione in sezioni permette all'educatrice
+    di essere attenta alle opportunità di gioco appropriate per la loro età.
+  p6: |-
+    La sezione dei bambini più piccoli deve coniugare intimità e spaziosità, per permettere ai bambini che si muovono di usufruire
+    di una superficie adeguata e per garantire ai più piccoli uno spazio confortevole dove giocare e riposare.
+    Nel primo anno di vita il bambino conosce il mondo attraverso i sensi, sarà quindi importante aiutarlo nello sviluppo della motilità
+    e della capacità di manipolazione e renderlo soggetto attivo nella conoscenza delle cose e del mondo.
+
+
+work:
+  p1: Se anche per te lavorare con i bambini è la cosa più bella del mondo, puoi inviarci il tuo curriculum e valuteremo la tua candidatura.
+  p2: In questo momento il nostro staff è completo, ma abbiamo delle <strong>posizioni aperte per tirocini formativi</strong> presso la nostra struttura.
+  p3: Invia il tuo curriculum a
+  p4: "specificando la tua disponibilità per un tirocinio formativo."
