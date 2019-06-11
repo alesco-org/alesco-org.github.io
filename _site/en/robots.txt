@@ -1,1 +1,1 @@
-Sitemap: /en/sitemap.xml
+Sitemap: /https://ibambinidelcircomassimo.it/en/sitemap.xml
