@@ -9,8 +9,8 @@ echo $sitemap > _site/sitemap.xml
 echo $en_sitemap >> _site/sitemap.xml
 echo "</urlset>" >> _site/sitemap.xml
 
-#git add _site/*
-#git commit -m "updating site"
+git add _site/*
+git commit -m "updating site"
 
 # requires the git-subtree package
-#git subtree push --prefix _site origin master
+git subtree push --prefix _site origin master
