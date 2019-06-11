@@ -8,15 +8,15 @@ features:
 
 gallery_sections:
  - id: giardino
-   name: Il Giardino
+   name: global.garden
  - id: lattanti
-   name: Stanza dei Lattanti
+   name: global.infants
  - id: medi
-   name: Stanza dei Medi
+   name: global.medium
  - id: grandi
-   name: Stanza dei Grandi
+   name: global.big
  - id: ninne
-   name: Stanza delle Ninne
+   name: global.sleeping
 
 
 ---
@@ -30,7 +30,7 @@ gallery_sections:
         <div class="sectionTitle text-center clearfix">
             <h2>
                 <span class="shape shape-left bg-color-4"></span>
-                <span>{{section.name}}</span>
+                <span>{% t section.name %}</span>
                 <span class="shape shape-right bg-color-4"></span>
             </h2>
         </div>

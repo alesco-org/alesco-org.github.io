@@ -9,7 +9,7 @@ titles:
   struttura: The Location
   metodo-educativo: Educational Method
   lavora-con-noi: Work with Us
-  laboratori: Workshops
+  laboratori: Laboratories
   pediatra: Pediatrician
   cucina-interna: Internal Kitchen
   servizi: Services
@@ -34,7 +34,7 @@ global:
   activities: Activities
   full_gallery: Full Photo Gallery
   owners: The Directors
-  laboratories: Workshops
+  laboratories: Laboratories
   group: Educational Group
   where: Where We Are
   warning: Notice
@@ -60,6 +60,10 @@ global:
   who: Who We Are
   home: Home
   language: Language
+  infants: Room of little children
+  medium: Room of medium children
+  big: Room of big children
+  sleeping: Sleeping room
 
 slide:
   s1:
@@ -124,8 +128,8 @@ home:
       description: The staff continuously follows courses for first aid, PBLS, HACCP and security.
       icon: "fa-pencil"
     s3:
-      title: Music Workshops
-      description: Children follow music workshops with Gordon's method, given by professional teachers.
+      title: Music Laboratory
+      description: Children follow a music laboratory with Gordon's method, given by professional teachers.
       icon: "fa-music"
     s4:
       title: Healthy Food
@@ -191,9 +195,9 @@ sentence:
 group:
   title: Educational Group
   p1: The nursery school "I Bambini del Circo Massimo" is an educational service directed by three people.
-  p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about coordinating daily activities, workshops and defining the pedagogical project.
+  p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about coordinating daily activities, laboratories and defining the pedagogical project.
   p3: <strong>Elena Ierace</strong>, owner and educator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about daily work organization and works in the various classes divided by child age.
-  p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator</mark>. She cares about doing activities and having cares of the children.
+  p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator</mark>. She cares about doing activities and taking care of the children.
   p5: All other educators who follow daily activities own all requirements and degrees required by laws, and also a lot of experience in working with children.
 
 location:
@@ -248,3 +252,119 @@ work:
   p2: In this moment our staff is complete, but we have some <strong>open positions for internships</strong> in our nursery school.
   p3: Send your CV to
   p4: "specifying your availability for an internship."
+
+
+
+workshops:
+  p1: "From Monday to Friday there are <strong>two structured workshops per day</strong>. Structured laboratories are all those activities that are coordinated by an adult who explains to the children the activity they are going to do together."
+  p2: "Each laboratory is designed as a game that allows learning by letting the child experience freedom and autonomy. Here is a list of the main structured laboratories:"
+  manipolazione:
+    title: "Manipulation Laboratory"
+    text: "Using pongo, salt dough. The manipulation activity responds to many children's needs, stimulates his creativity, develops sensory, motor, cognitive and expressive skills, promotes eye-hand coordination and develops fine manual skills."
+  travasi:
+    title: "Decanting Laboratory"
+    text: "A wide range of containers of different shapes and materials to be filled and emptied with different types of pasta, legumes and rice."
+  puzzle:
+    title: "Cognitive Laboratory"
+    text: "Cognitive games allow the child to stimulate assertive and mnemonic abilities. For this purpose we use puzzles, objects joining and images of everyday life to do games of image association."
+  libri:
+    title: "Book Reading"
+    text: "Telling fairy tales and letting children interpret the different characters that populate books allow the child to develop imagination."
+  teatrino:
+    title: "The \"Theater\""
+    text: "Educators perform the most beautiful fairy tales through the use of puppets and the little theater. This is an important moment of exchange between adult and child who actively participates in the construction of the story."
+  pittura:
+    title: "Painting Laboratory"
+    text: "Using the brush or finger painting."
+  creativo:
+    title: "Creative Laboratory"
+    text: "Use of fabrics, buttons, zippers."
+  cucina:
+    title: "Cooking Laboratory"
+    text: "During the cooking workshop, the children prepare pizza, pasta and biscuits starting from the dough until everything is baked."
+  psicomotricita:
+    title: "Psychomotricity"
+    text: "Once a week there is a psychomotricity laboratory which can be performed outdoor (in the garden) or in the classroom. Knowing how to move in space and knowing your possibilities is a fundamental objective for this age group. Children in small groups can try different psychomotricity paths based on their acquired skills."
+  musica:
+    title: "Music Laboratory"
+    text: "Music, like all artistic disciplines, is an expressive language that, especially in the first years of life, reaches the essence of the child even before verbal language. For this reason, as early as infancy, we have the opportunity to interact with the child through music that is truly conceived as an opportunity for emotional, physical (gestural) and social growth."
+  lingue:
+    title: "English and Spanish Laboratory"
+    text: "The child from 1 to 3 years is still in the phase of learning his primary language and for this reason his brain has a remarkable elasticity. If the child already comes into contact with a foreign language and starts playing with it, he will have the opportunity to learn the differences between the sounds of the two languages in a spontaneous and natural way, all at an age when nothing is experienced as a task but as pure fun."
+  esterni:
+    title: "Outdoor Activities"
+    text: "The structure is equipped with a very spacious outdoor garden (150 square meters), which offers the possibility of doing several external laboratories including gardening, water games and the use of small swimming pools in summer for bathing."
+
+
+pediatrician:
+  p1: The nursery school includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
+  name: Dr. Marina De Angelis
+  items:
+    i1: Born in Roma on 03/25/1958
+    i2: Graduated in medicine and surgery at the "La Sapienza" University of Rome on 10/25/1982 with a score of 110/110 cum laude
+    i3: Specialized in Pediatrics in July 1986 with a grade of 70/70 cum laude
+    i4: Specialized in allergology and clinical immunology in July 1989 with a score of 70/70 cum laude
+    i5: For 10 years she worked at the department of allergology and immunology of the Umberto Primo polyclinic pediatric clinic
+    i6: She obtained a diploma in homeopath
+    i7: Registered in the Rome homeopathy register since July 1988
+    i8: Basic pediatrician with study in via Marmorea 137
+
+
+
+kitchen:
+  p1: "The nursery school is equipped with a professional, all-steel interior kitchen. The cook, in possession of the HACCP certification, prepares the morning snacks, lunch and afternoon snacks."
+  p2: "Our snack includes: yogurt, pureed fruit (apple, pear, banana), ciambellone prepared by the cook, milk with cereals, rice cakes, crackers, biscuits with jam."
+  p3: "Our diet requires that the child takes all the nutrients every day in adequate quantities. Approximately 15% of proteins, 30% of fats and 60% of carbohydrates are expected. So our food model includes lots of fruit and vegetables, together with cereals and legumes, fish, meat and eggs."
+
+
+rent:
+  p1: "It's possible to rent the rooms and / or the garden of the nursery school on <strong> Saturday and Sunday at any time </strong>, or on <strong> weekdays after 18:30 </strong>."
+  p2: "The structure is suitable for hosting (and has already hosted in the past) activities such as the following:"
+  items:
+    i1: Birthday parties
+    i2: Childbirth preparation courses
+    i3: Language courses (adults and children)
+    i4: Yoga courses (adults and children)
+    i5: Pilates courses
+    i6: Psychomotricity courses
+    i7: Pediatric first aid courses and BLSD
+    i8: Breastfeeding and weaning training courses
+    i9: Muscle awakening courses
+  p3: For any other information and to know the availability of the structure, <strong>contact us immediately ...</strong>
+
+inclusion:
+  p1: The inclusion / adaptation phase is a particularly delicate period. The child arrives in an environment that he does not know and is expected to relate to
+    unknown adults and children. For this reason it is important that the inclusion phase is gradual and serene.
+  p2: During the first days the parent will be required to accompany the child in the class in which the other children and the educator of reference are present. The child will thus be able to get to know the surrounding environment and the educator can always count on parent's presence in times of stress. The parent and the child are bound by an invisible thread which is one of the manifestations of the attachment bond. Gradually the child and educator will establish a bond of trust and affection and the parent can be every day less present.
+  p3: It's important that the educator and the parent talk about what is happening to give a meaning to the child's practical experience. The more the adult is serene and shows trust in the environment and in the educator, the more the child will feel that he is in a safe place.
+  p4: Another fundamental thing is to say goodbye the child at the time of leaving and to verbalize that the mother and father go to work but they will return back to take him home. The child must feel clarity and serenity in the message that the adult sends. Our model of inclusion ends in about two weeks. It is very important not to force the children and respect their pace.
+  p5: The child can bring a teddy bear or a game to which he is particularly attached, it acts as a "transitional object" and creates a sort of bridge between the nursery school and the house, having the function of comforting the child in times of stress.
+
+day:
+  t1: 7.30 - 9.30 Welcoming
+  p1: Welcoming means to meet, listen, reassure, contain and verbalize emotions. In the delicate moment of entrance, we try to offer understanding and support to both mother and child, obviously in different forms. It is impossible to welcome a child without welcoming his parents, his family and his story. Children are welcomed at the entrance by the educator, in the lobby there are holes to leave the child's personal items and a small box in which to put the shoes before wearing non-slip socks or slippers for the nursery school.
+  t2: 9.30 - 10.00 Snack
+  p2: For the time of the snack we move into the big hall. The younger children are taken by the educators while the older ones eat autonomously. Snacks are provided by the nursery school.
+  t3: 10.00 - 11.00 Activities and Laboratories
+  p3: |-
+    Every day the spaces of the nursery school are purposely arranged to allow all children to freely choose what, where and how to play with whom. The spaces are communicating and an educator is always present in every room.
+
+    These are the moments of playing, prepared by educators according to certain criteria:
+  i1: "Variety: during the year various materials and games are proposed;"
+  i2: "Congruence with age and progression: the materials and activities follow a logic of increasing complexity, in relation to the development of children;"
+  i3: "Regularity: all moments of activity are made recognizable to the child because they are proposed consistently;"
+  i4: "Social interactivity: in relation to the skills of each age, all activities aim to facilitate communication and exchanges between peers."
+  t4: 11.00 - 11.20 Changing
+  p4: This moment is dedicated to body care. Each child is accompanied to the bathroom individually to encourage all that variety of attitudes and attentions that he needs in this delicate and pleasant moment.
+  p4-2: In fact, we believe that the tone of voice, the way the child is supported on the changing table, the gestures and looks that are exchanged during the "change" are crucial to establishing a climate of trust, complicity and affection between the two.
+  t5: 11.30 - 12.00 Lunch
+  p5: "Lunch is the time for socializing for children. This moment is made more fun by the figure of the \"waiter\": every day two children are chosen on a rotating basis and they'll bring the dishes to the other children who are waiting on the table."
+  p5-2: The role of the waiter allows the children to actively participate in the meal and helps to create a serene atmosphere.
+  t6: 12.30 - 14.30 Sleeping
+  p6: The children who stay at the nursery school to sleep are accompanied by the educators in the sleeping room. Before going to sleep, the educator sings some songs or read a fable to reconcile the moment of sleep, then children go to sleep all together. Each child has his own fixed place and easily recognizes it also because of the sheet that is brought from home.
+  t7: 15.30 - 16.00 Afternoon snack
+  t8: 15.30-18.30 Afternoon activities
+  p8: Free playing activities, out in the garden when possible. Reading and cognitive games.
+  t9: Reunion
+  p9: The exit times are 15.30, 16.30, 17.30, 18.30. For children who do not sleep in the nursery school, the first exit time is at 12.30.
+

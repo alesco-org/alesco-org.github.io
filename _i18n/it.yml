@@ -61,6 +61,10 @@ global:
   who: Chi Siamo
   home: Home
   language: Language
+  infants: Stanza dei Lattanti
+  medium: Stanza dei Medi
+  big: Stanza dei Grandi
+  sleeping: Stanza delle Ninne
 
 slide:
   s1:
@@ -252,3 +256,137 @@ work:
   p2: In questo momento il nostro staff è completo, ma abbiamo delle <strong>posizioni aperte per tirocini formativi</strong> presso la nostra struttura.
   p3: Invia il tuo curriculum a
   p4: "specificando la tua disponibilità per un tirocinio formativo."
+
+
+
+workshops:
+  p1: Dal lunedì al venerdì sono previsti <strong>due laboratori strutturati al giorno</strong>. Per laboratori strutturati si intende tutte quelle attività in cui è previsto
+    l'intervento dell'adulto che coordina e spiega ai bambini l'attività che andranno a fare insieme.
+  p2: "Il laboratorio è pensato come un gioco che permette l'apprendimento permettendo al bambino di sperimentare libertà e autonomia. Ecco un elenco dei principali laboratori strutturati:"
+  manipolazione:
+    title: "Laboratorio di manipolazione"
+    text: "Utilizzo del pongo, della pasta di sale. L'attività di manipolazione risponde a molti bisogni dei bambini, stimola la loro creatività, sviluppa competenze sensoriali, motorie, cognitive ed espressive, favorisce la coordinazione oculo-manuale e sviluppa la manualità fine."
+  travasi:
+    title: "Laboratorio dei travasi"
+    text: "Il materiale messo a disposizione è composto da un'ampia gamma di contenitori di diversa forma e materiale da riempire e svuotare con pasta di diverso tipo, legumi, riso."
+  puzzle:
+    title: "Laboratori cognitivi"
+    text: "I giochi cognitivi permettono al bambino di stimolare le capacità assertive e mnemoniche. Utilizziamo a questo scopo i puzzle, gli incastri di oggetti e immagini della vita quotidiana, giochi di associazione di immagine."
+  libri:
+    title: "Lettura dei Libri"
+    text: "Raccontare le favole e lasciare interpretare ai bambini i diversi personaggi che popolano i libri permettono al bambino di sviluppare fantasia e immaginazione."
+  teatrino:
+    title: "Il \"Teatrino\""
+    text: "Le educatrici rappresentano le più belle favole attraverso l'utilizzo delle marionette e del Teatrino, questo è un importante momento di scambio tra adulto e bambino che partecipa attivamente alla costruzione della storia."
+  pittura:
+    title: "Laboratorio di Pittura"
+    text: "Utilizzo del pennello o della pittura a dita."
+  creativo:
+    title: "Laboratorio Creativo"
+    text: "Utilizzo di stoffe, bottoni, cerniere."
+  cucina:
+    title: "Laboratorio di Cucina"
+    text: "Durante il laboratorio di cucina, i bimbi preparano la pizza, la pasta e i biscotti partendo dall'impasto fino alla messa in forno."
+  psicomotricita:
+    title: "Psicomotricità"
+    text: "Una volta la settimana è previsto il laboratorio di psicomotricità che può essere effettuato all'aperto (nel giardino esterno) oppure in aula. Sapersi muovere nello spazio e conoscere le proprie possibilità è un obiettivo fondamentale per questa fascia di età. I bambini in piccoli gruppi potranno cimentarsi in percorsi psicomotori diversificati in base alle capacità acquisite."
+  musica:
+    title: "Laboratorio di Musica"
+    text: "La musica, come tutte le discipline artistiche, è un linguaggio espressivo che, soprattutto nei primi anni di vita, arriva all'essenza del bambino ancor prima del linguaggio verbale. Per questo motivo, già dalla primissima infanzia, abbiamo la possibilità di interagire con il bambino attraverso la musica pensata davvero come occasione di crescita emotiva, fisica (gestuale) e sociale."
+  lingue:
+    title: "Laboratorio di Inglese e Spagnolo"
+    text: "Il bambino da 1 a 3 anni è ancora nella fase dell'acquisizione della sua lingua madre e proprio per questo il suo cervello possiede un'elasticità notevole. Se il bambino già dal Nido entra in contatto con una lingua straniera ed inizia a giocare con essa, avrà la possibilità di apprendere in modo spontaneo e naturale le differenze tra i suoni delle due lingue, il tutto in un'età in cui nulla è vissuto come un compito ma bensì come puro divertimento."
+  esterni:
+    title: "Laboratori Esterni"
+    text: "La struttura è fornita di un giardino esterno molto spazioso (150 mq), che offre la possibilità di fare diversi laboratori esterni tra cui il giardinaggio, i giochi con l'acqua e l'utilizzo di piccole piscine d'estate per fare il bagno."
+
+
+
+pediatrician:
+  p1: L'asilo prevede la visita medica di tutti i bimbi (con autorizzazione dei genitori), almeno una volta al mese. Le visite vengono effettuate dalla dott.ssa Marina De Angelis.
+  name: Dott.ssa Marina De Angelis
+  items:
+    i1: Nata a Roma il 25/03/1958
+    i2: Laureata in medicina e chirurgia presso l'università "La Sapienza" di Roma il 25/10/1982 con voto 110/110 e lode
+    i3: Specializzata in Pediatria nel luglio 1986 con voto 70/70 e lode
+    i4: Specializzata in allergologia e immunologia clinica nel luglio 1989 con voto 70/70 e lode
+    i5: Ha frequentato per 10 anni reparto di allergologia e immunologia presso la clinica pediatrica policlinico Umberto primo
+    i6: Ha conseguito diploma di omeopata
+    i7: Iscritta all'albo omeopatia di Roma dal luglio 1988
+    i8: Pediatra di base con studio in via Marmorea 137
+
+
+
+kitchen:
+  p1: L'asilo è dotato di una cucina interna di tipo professionale interamente in acciaio.
+    La cuoca, in possesso della certificazione HACCP, prepara le merende della mattina, il pranzo e la merenda del pomeriggio.
+  p2: "La nostra merenda prevede: yogurt, frutta frullata (mela, pera, banana), ciambellone preparato dalla cuoca, latte con cereali, gallette di riso, crackers, fette biscottate con marmellata."
+  p3: La nostra dieta prevede che il bambino assuma ogni giorno tutti i principi alimentari in quantità adeguate,
+    indicativamente si prevede un apporto del 15% di proteine, del 30% di grassi e del 60% di carboidrati.
+    Quindi il nostro modello alimentare prevede tanta frutta e verdura, accompagnata da cereali e legumi, pesce, carne e uova.
+
+
+
+rent:
+  p1: "&Egrave; possibile affittare le sale e/o il giardino dell'Asilo Nido il <strong>sabato e la domenica a qualsiasi ora</strong>, oppure nei <strong>giorni feriali dopo le ore 18:30</strong>."
+  p2: "La struttura è adatta ad ospitare (e ha già ospitato in passato) attività come le seguenti:"
+  items:
+    i1: Feste di compleanno
+    i2: Corsi di preparazione al parto
+    i3: Corsi di lingua (adulti e bambini)
+    i4: Corsi di yoga (adulti e bambini)
+    i5: Corsi di pilates
+    i6: Corsi di psicomotricità
+    i7: Corsi di primo soccorso pediatrico e BLSD
+    i8: Corsi di formazione allattamento al seno e svezzamento
+    i9: Corsi di risveglio muscolare
+  p3: Per qualsiasi altra informazione e per conoscere le disponibilità della struttura, <strong>contattaci subito...</strong>
+
+
+inclusion:
+  p1: La fase di inserimento/ambientamento è un periodo particolarmente delicato, il bimbo arriva in un ambiente che non conosce e dovrà relazionarsi
+    con adulti e bambini che gli sono sconosciuti. Proprio per tale motivo è importante che l'ambientamento sia graduale e sereno.
+  p2: Nei primi giorni verrà richiesto al genitore di accompagnare il bimbo all'interno della classe in cui sono presenti gli altri bimbi e
+    l'educatrice di riferimento. Il bambino avrà così modo di conoscere l'ambiente circostante e l'educatrice potendo sempre contare sulla
+    presenza del genitore nei momenti di stress. Il genitore ed il bambino sono legati da un filo invisibile che è una delle manifestazioni
+    del legame di attaccamento, gradualmente bambino ed educatrice instaureranno un legame di fiducia e di affetto per cui il genitore potrà essere
+    sempre meno presente.
+  p3: É importante che educatrice e genitore verbalizzino ciò che sta accadendo per dare un senso all'esperienza pratica del bambino, più l'adulto è sereno e manifesta
+    fiducia nell'ambiente e nelle educatrici e più il bambino sentirà di essere in un posto sicuro.
+  p4: Un'altra cosa fondamentale è salutare il bimbo al momento del distacco e verbalizzare che la mamma o il papà vanno a lavoro ma torneranno a prenderlo,
+    il bambino deve sentire chiarezza e serenità nel messaggio che invia l'adulto. Il nostro modello di ambientamento prevede che si concluda in circa due settimane,
+    è molto importante comunque non forzare i tempi e rispettare i ritmi del bambino.
+  p5: Il bimbo potrà portare al nido un orsacchiotto o un gioco a cui è particolarmente legato, esso ha la funzione di “oggetto transizionale” e crea una sorta di ponte tra nido e casa avendo la funzione di consolare il bambino nei momenti di stress.
+
+
+
+day:
+  t1: 7.30 - 9.30 Accoglienza
+  p1: Accogliere significa andare incontro, ascoltare, tranquillizzare, contenere e  verbalizzare le emozioni.
+    Nel momento delicato dell'accoglienza, cerchiamo  di offrire alla diade madre-bambino comprensione e supporto, ovviamente in forme diverse. E' impossibile infatti accogliere un bambino senza accogliere i suoi genitori, la sua famiglia e la sua storia. I bambini vengono accolti all'ingresso dall'educatrice, in questo ambiente sono presenti le buchette per inserire gli oggetti personali del bambino e una scatolina in cui mettere a posto le scarpette e per indossare i calzini antiscivolo o le ciabattine per il Nido.
+  t2: 9.30 - 10.00 Merenda
+  p2: Per il momento della merenda ci si sposta in salone, i bimbi più piccoli sono imboccati dalle educatrici mentre i più grandi mangiano da soli. Le merende consumate sono fornite dal Nido.
+  t3: 10.00 - 11.00 Attività di gioco e Laboratori
+  p3: |-
+    Quotidianamente gli spazi del nido vengono appositamente predisposti per permettere a tutti i bambini di poter scegliere liberamente con cosa, dove, con chi e come giocare.
+    Gli spazi sono comunicanti ed in ogni stanza è sempre presente un'educatrice.
+
+    Sono momenti di gioco pensati e preparati dalle educatrici secondo alcuni criteri:
+  i1: "Varietà: durante l'anno vengono proposti materiali, giochi e proposte diversificate;"
+  i2: "Congruenza all'età e progressione: i materiali e le attività offerte seguono una logica di crescente complessità, in relazione allo sviluppo dei bambini;"
+  i3: "Regolarità: anche i momenti di attività sono resi riconoscibili al bambino perché proposti con costanza;"
+  i4: "Interattività sociale: in relazione alle competenze proprie di ciascuna età, tutte le attività mirano a facilitare gli scambi comunicativi e gli scambi tra pari."
+  t4: 11.00 - 11.20 Il Cambio
+  p4: Questo momento è dedicato alla cura del corpo. Ogni bimbo viene accompagnato in bagno singolarmente per favorire tutta quella varietà di atteggiamenti e attenzioni di cui necessita in questo delicato e piacevole momento.
+  p4-2: Riteniamo infatti che il tono di voce, il modo di appoggiare il bimbo sul fasciatoio, i gesti e gli sguardi che ci si scambia durante il "cambio" siano determinanti per stabilire un clima di fiducia, complicità e affetto tra i due.
+  t5: 11.30 - 12.00 Il Pranzo
+  p5: Il pranzo è un momento di comunione e socialità per i bambini, questo momento viene reso maggiormente divertente dalla figura del "cameriere", ogni giorno vengono scelti a rotazione due bimbi che porteranno le pietanze agli altri bambini che attendono seduti in tavola.
+  p5-2: Il ruolo del cameriere permette ai bimbi di partecipare attivamente al momento del pasto e contribuisce a creare un'atmosfera serena.
+  t6: 12.30 - 14.30 Le Ninne
+  p6: I bambini che rimangono al nido a dormire vengono accompagnati dalle educatrici nella stanza delle ninne allestita.. Prima di andare a ninna si cantano delle canzoncine o si legge una favola per conciliare il momento del sonno, poi si va a dormire tutti insieme, ogni bambino ha sempre il proprio posto fisso e lo riconosce facilmente anche perché il lenzuolo viene portato da casa.
+  t7: 15.30 - 16.00 Merenda pomeridiana
+  t8: 15.30-18.30 Attività pomeridiane
+  p8: Attività di gioco libero, uscita in giardino, lettura e giochi cognitivi.
+  t9: Ricongiungimento
+  p9: Gli orari di uscita sono 15.30, 16.30, 17.30, 18.30. Per i bimbi che non fanno le ninne al nido la prima uscita disponibile è alle 12,30.
+
