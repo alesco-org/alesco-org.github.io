@@ -19,6 +19,7 @@ titles:
   servizi: Services
   open-day-2017: Open Day 2017
   open-day-2018: Open Day 2018
+  open-day-2019: Open Day 2019
   privacy: Privacy Policy
   al-nido: Daycare
   inserimento: Inclusion
@@ -383,3 +384,8 @@ promotion:
       For all new enrolled children for the school year 2019/2020, you'll have a 50% discount on the subscription fee.
       Promotion is valid until June 30, 2019.
     p2: Few places available... Hurry up!
+  open-day-2019:
+    p1: "On July 6, 2019 the Nursery School \"I Bambini del Circo Massimo\" organises a <strong>day of games and shows open to all children!</strong>"
+    p2: "All new parents who want to enroll their children for the school year 2019/2020 will be able to visit the facility, meet the educators and get to know our educational project."
+    p3: "<strong>For the children... A lot of games and shows!</strong>"
+    p4: "Come to meet us on <strong>July 6, 2019, from 4pm to 7pm!</strong>"

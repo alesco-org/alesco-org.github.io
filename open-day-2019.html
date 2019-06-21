@@ -1,0 +1,81 @@
+---
+layout: default
+title: titles.open-day-2019
+id: open-day-2019
+namespace: open-day-2019
+permalink: /open-day-2019/
+permalink_en: /open-day-2019/
+features:
+    breadcrumb: true
+    contacts: true
+---
+
+<section class="whiteSection afterWhiteSection full-width clearfix">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12">
+                <div class="schoolInfo">
+                    <h2>{% t page.title %}</h2>
+                    <div class="text-justify">
+
+                        <div class="clearfix">
+
+                            <p>
+                                {% t promotion.open-day-2019.p1 %}
+                            </p>
+                            <p>
+                                {% t promotion.open-day-2019.p2 %}
+                            </p>
+                            <p>
+                                {% t promotion.open-day-2019.p3 %}
+                            </p>
+
+                            <p>
+                                {% t promotion.open-day-2019.p4 %}
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row space-medium">
+            <div class="col-sm-3 col-xs-12"></div>
+            <div class="col-sm-6 col-xs-12">
+                <img src="/assets/open_day/2019/volantino-2019-{{ site.lang }}.png" alt="Volantino Open Day 2019" class="img-responsive img-rounded">
+            </div>
+            <div class="col-sm-3 col-xs-12"></div>
+        </div>
+
+        <div class="row space-medium">
+            <div class="col-xs-12 col-md-12">
+                <div class="row isotopeContainer">
+
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'assets/open_day/2019/gallery' %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 isotopeSelector {{ class }}">
+                        <article class="">
+                            <figure>
+                                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" class="img-rounded" />
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <a class="fancybox-pop" rel="portfolio-1" href="{{ site.baseurl }}{{ image.path }}">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
