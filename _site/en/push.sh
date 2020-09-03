@@ -11,4 +11,4 @@ git add _site/*
 git commit -m "updating site"
 
 # requires the git-subtree package
-git subtree push --split --prefix _site origin master
+git push origin `git subtree split --prefix _site website-builder`:master --force
