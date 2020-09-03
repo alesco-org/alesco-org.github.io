@@ -22,7 +22,7 @@ titles:
   open-day-2019: Open Day 2019
   privacy: Privacy Policy
   al-nido: Daycare
-  inserimento: Inclusion
+  inserimento: Adaptation
   giornata-tipo: Typical Day
   galleria: Photo Gallery
   contatti: Contacts
@@ -60,7 +60,7 @@ global:
   kitchen: Internal Kitchen
   reservations: Rent Location
   nursery: Daycare
-  inclusion: Inclusion
+  inclusion: Adaptation
   day: Typical Day
   photo: Photos
   services: Services
@@ -342,11 +342,11 @@ rent:
   p3: For any other information and to know the availability of the structure, <strong>contact us immediately ...</strong>
 
 inclusion:
-  p1: The inclusion / adaptation phase is a particularly delicate period. The child arrives in an environment that he does not know and is expected to relate to
-    unknown adults and children. For this reason it is important that the inclusion phase is gradual and serene.
+  p1: The adaptation phase is a particularly delicate period. The child arrives in an environment that he does not know and is expected to relate to
+    unknown adults and children. For this reason it is important that the adaptation phase is gradual and serene.
   p2: During the first days the parent will be required to accompany the child in the class in which the other children and the educator of reference are present. The child will thus be able to get to know the surrounding environment and the educator can always count on parent's presence in times of stress. The parent and the child are bound by an invisible thread which is one of the manifestations of the attachment bond. Gradually the child and educator will establish a bond of trust and affection and the parent can be every day less present.
   p3: It's important that the educator and the parent talk about what is happening to give a meaning to the child's practical experience. The more the adult is serene and shows trust in the environment and in the educator, the more the child will feel that he is in a safe place.
-  p4: Another fundamental thing is to say goodbye the child at the time of leaving and to verbalize that the mother and father go to work but they will return back to take him home. The child must feel clarity and serenity in the message that the adult sends. Our model of inclusion ends in about two weeks. It is very important not to force the children and respect their pace.
+  p4: Another fundamental thing is to say goodbye the child at the time of leaving and to verbalize that the mother and father go to work but they will return back to take him home. The child must feel clarity and serenity in the message that the adult sends. Our model of adaptation ends in about two weeks. It is very important not to force the children and respect their pace.
   p5: The child can bring a teddy bear or a game to which he is particularly attached, it acts as a "transitional object" and creates a sort of bridge between the nursery school and the house, having the function of comforting the child in times of stress.
 
 day:
