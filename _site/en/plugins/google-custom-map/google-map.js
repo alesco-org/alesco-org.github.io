@@ -11,21 +11,10 @@ function initMap() {
                 { color: '#eeddee' }
             ]
         },{
-            featureType: "natural",
-            stylers: [
-                { hue: '#ff0000' }
-            ]
-        },{
             featureType: "road",
             stylers: [
                 { hue: '#5500aa' },
                 { saturation: -70 }
-            ]
-        },{
-            featureType: "building",
-            elementType: "labels",
-            stylers: [
-                { hue: '#000066' }
             ]
         },{
             featureType: "poi", //points of interest
