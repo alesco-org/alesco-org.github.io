@@ -32,6 +32,17 @@ features:
             </div>
         </div>
         -->
+        {% if site.alert.show %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="schoolInfo main-alert">
+                    <a href="{% tl contatti %}">
+                        <h2>{% t alert.message %}</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
 
         <div class="row space-small">
             <div class="col-sm-6 col-xs-12">
