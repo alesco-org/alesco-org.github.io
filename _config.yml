@@ -6,7 +6,7 @@ description: "Asilo Nido I Bambini del Circo Massimo"
 
 alert:
   show: true
-  repeat: false
+  repeat: true
 
 social:
     facebook: "https://www.facebook.com/asilonidoromacircomassimo/"
