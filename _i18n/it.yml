@@ -172,7 +172,7 @@ contacts:
     Se sei alla ricerca di un asilo nido per il tuo bambino/a e desideri ricevere ulteriori informazioni, inviaci un messaggio utilizzando il form qui sotto.
     Ti ricontatteremo appena possibile.
   disclaimer: Questo form <strong>è riservato ai genitori</strong> che desiderano informazioni sull'asilo nido. Per offerte di lavoro, visitare la sezione
-  disclaimer-page: \"Lavora con noi\"
+  disclaimer-page: "\"Lavora con noi\""
   placeholders:
     name: Nome e Cognome (es. Mario Rossi) *
     email: Indirizzo Email (es. mario.rossi@gmail.com) *
@@ -185,7 +185,7 @@ contacts:
     reserve: Vorrei affittare le sale o il giardino
     other: Altre informazioni
   disclaimer2: Per inviare proposte di collaborazione, seguire le istruzioni riportate nella sezione
-  disclaimer2-page: \"Lavora con noi\"
+  disclaimer2-page: "\"Lavora con noi\""
   send: Invia il messaggio
   reaching: Come raggiungere la struttura
   location:

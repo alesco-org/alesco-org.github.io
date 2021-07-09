@@ -173,7 +173,7 @@ contacts:
     If you're looking for a nursery school for your child and want to have more information, send us a message using the form below.
     We'll contact you back as soon as possible.
   disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the page
-  disclaimer-page: \"Work with us\"
+  disclaimer-page: "\"Work with us\""
   placeholders:
     name: Name and Surname (eg. John Doe) *
     email: Email Address (eg. johndoe@gmail.com) *
@@ -186,7 +186,7 @@ contacts:
     reserve: I want to reserve some halls or the garden
     other: Other information
   disclaimer2: To send work proposals, please follow instructions in the page
-  disclaimer2-page: \"Lavora con noi\"
+  disclaimer2-page: "\"Work with us\""
   send: Send
   reaching: How to get here
   location:

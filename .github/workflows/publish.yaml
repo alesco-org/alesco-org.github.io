@@ -1,0 +1,26 @@
+name: Publish Website
+on:
+  push:
+    branches:
+    - website-builder
+jobs:
+  publish-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: |
+          rm -rf _site
+          bundle exec jekyll build
+
+          # fix bug in sitemap generation
+          for f in $(find . -name sitemap.xml); do
+              sed -i "s/<loc>\//<loc>/" $f
+          done
+
+      - name: Publish
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: master
+          folder: _site
