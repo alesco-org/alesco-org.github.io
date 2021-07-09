@@ -14,8 +14,6 @@ jobs:
           ruby-version: 2.7
       - name: Build
         run: |
-          rm -rf _site
-
           bundle install
           bundle exec jekyll build
 
