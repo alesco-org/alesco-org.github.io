@@ -90,7 +90,8 @@ slide:
     img: "img/header/header-3-cropped.jpg"
 
 alert:
-  message: "Hot Deal: enroll before July 23rd to get 50% off on both subscription and 1st month fees!"
+  #message: "Hot Deal: enroll before July 23rd to get 50% off on both subscription and 1st month fees!"
+  message: "Special offers available if you reserve in July! A few places remaining for September."
 
 section:
   s1:
