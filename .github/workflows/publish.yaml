@@ -13,6 +13,8 @@ jobs:
       - name: Build
         run: |
           rm -rf _site
+
+          bundle install
           bundle exec jekyll build
 
           # fix bug in sitemap generation
@@ -23,5 +25,5 @@ jobs:
       - name: Publish
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: master
+          branch: gh-pages
           folder: _site
