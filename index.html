@@ -33,6 +33,7 @@ features:
         </div>
         -->
         {% if site.alert.show %}
+        {% if site.alert.repeat %}
         <div class="row">
             <div class="col-md-12">
                 <div class="schoolInfo main-alert">
@@ -42,6 +43,7 @@ features:
                 </div>
             </div>
         </div>
+        {% endif %}
         {% endif %}
 
         <div class="row space-small">
