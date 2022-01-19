@@ -4,7 +4,9 @@ info:
   opening_hours: "Mon-Fri 7:30 AM - 6:30 PM"
 
 cookie:
-  desc: This website uses cookies to gather information about usage of the website itself.
+  desc: We and third parties use cookies or similar technologies for technical reasons and, with your consent, also for other goals described in the Cookie Policy such as gathering and processing of personal data from devices, showing you customized ads, measuring performance and analyzing audience to improve our products and services. You are free to allow or deny your consent. By clicking on the \"Accept\" button, you agree on using these technologies for all the described goals. By clicking on the \"Refuse\" button you only allow using technical cookies.
+  allow: Accept
+  deny: Refuse
 
 
 titles:

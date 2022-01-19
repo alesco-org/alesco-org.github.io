@@ -4,7 +4,9 @@ info:
   opening_hours: "Lun-Ven 7:30 - 18:30"
 
 cookie:
-  desc: Questo sito utilizza i cookie per raccogliere informazioni sull'utilizzo del sito stesso.
+  desc: Noi e terze parti usiamo cookie o tecnologie simili per funzionalità tecniche e, con il tuo consenso, anche per altre finalità descritte nella Cookie Policy quali raccogliere ed elaborare dati personali dai dispositivi, mostrarti pubblicità personalizzata, misurarne la performance, analizzare la nostra audience e migliorare i nostri prodotti e servizi. Puoi liberamente prestare o rifiutare il tuo consenso. Cliccando sul pulsante \"Accetta\" acconsenti all'uso di tali tecnologie per tutte le finalità indicate. Cliccando sul pulsante \"Continua senza accettare\" acconsenti all'uso dei soli cookie tecnici.
+  allow: Accetta
+  deny: Continua senza accettare
 
 titles:
   gruppo-educativo: Gruppo Educativo
