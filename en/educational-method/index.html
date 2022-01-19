@@ -19,6 +19,9 @@
   <link rel="stylesheet" type="text/css" href="https://ibambinidelcircomassimo.it/plugins/owl-carousel/owl.carousel.css?version=11" media="screen">
   <link rel="stylesheet" type="text/css" href="https://ibambinidelcircomassimo.it/plugins/isotope/jquery.fancybox.css?version=11">
   <link rel="stylesheet" type="text/css" href="https://ibambinidelcircomassimo.it/plugins/isotope/isotope.css?version=11">
+
+  <!-- COOKIE CONSENT -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   
   <!-- GOOGLE FONT -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -363,24 +366,57 @@ of motility and ability to manipulate, to make him an active subject in the unde
   
 
   
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96984171-1"></script>
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied'
+    });
 
-  ga('create', 'UA-96984171-1', 'auto');
-  ga('send', 'pageview');
+    gtag('config', 'UA-96984171-1');
   </script>
-  
 
   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
-  <script type="text/javascript">
-      window.cookieconsent_options = {"message":"This website uses cookies to gather information about usage of the website itself.","dismiss":"Ok","learnMore":"Info","link":"https://ibambinidelcircomassimo.it/en/privacy/","theme":"light-bottom"};
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#efefef",
+        "text": "#404040"
+      },
+      "button": {
+        "background": "#8ec760",
+        "text": "#ffffff"
+      }
+    },
+    "type": "opt-in",
+    "content": {
+      "message": "We and third parties use cookies or similar technologies for technical reasons and, with your consent, also for other goals described in the Cookie Policy such as gathering and processing of personal data from devices, showing you customized ads, measuring performance and analyzing audience to improve our products and services. You are free to allow or deny your consent. By clicking on the \"Accept\" button, you agree on using these technologies for all the described goals. By clicking on the \"Refuse\" button you only allow using technical cookies.",
+      "deny": "Refuse",
+      "allow": "Accept",
+      "link": "Info",
+      "href": "/privacy/"
+    },
+    "onStatusChange": function(status) {
+      if (this.hasConsented()) {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
+    },
+  });
   </script>
-
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
   <!-- End Cookie Consent plugin -->
+
+  
+
+  
 
 
 </body>
