@@ -466,6 +466,11 @@ Sono momenti di gioco pensati e preparati dalle educatrici secondo alcuni criter
           'ad_storage': 'granted',
           'analytics_storage': 'granted'
         });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
       }
     },
   });

@@ -465,6 +465,11 @@ These are the moments of playing, prepared by educators according to certain cri
           'ad_storage': 'granted',
           'analytics_storage': 'granted'
         });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
       }
     },
   });

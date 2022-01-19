@@ -408,6 +408,11 @@ of motility and ability to manipulate, to make him an active subject in the unde
           'ad_storage': 'granted',
           'analytics_storage': 'granted'
         });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
       }
     },
   });

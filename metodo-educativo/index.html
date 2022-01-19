@@ -411,6 +411,11 @@ e della capacità di manipolazione e renderlo soggetto attivo nella conoscenza d
           'ad_storage': 'granted',
           'analytics_storage': 'granted'
         });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
       }
     },
   });

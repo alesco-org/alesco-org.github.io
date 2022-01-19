@@ -437,6 +437,11 @@ Il Titolare del Trattamento dei Dati è responsabile per questa privacy policy, 
           'ad_storage': 'granted',
           'analytics_storage': 'granted'
         });
+      } else {
+        gtag('consent', 'update', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+        });
       }
     },
   });
