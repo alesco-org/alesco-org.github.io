@@ -340,14 +340,14 @@ kitchen:
 
 
 rent:
-  p1: "&Egrave; possibile affittare le sale e/o il giardino dell'Asilo Nido il <strong>sabato e la domenica a qualsiasi ora</strong>, oppure nei <strong>giorni feriali dopo le ore 18:30</strong>."
+  p1: "&Egrave; possibile affittare il giardino di 120 mq e/o le sale interne con parquet dell'Asilo Nido il <strong>sabato e la domenica a qualsiasi ora</strong>, oppure nei <strong>giorni feriali dopo le ore 18:30</strong>."
   p2: "La struttura è adatta ad ospitare (e ha già ospitato in passato) attività come le seguenti:"
   items:
-    i1: Feste di compleanno
-    i2: Corsi di preparazione al parto
-    i3: Corsi di lingua (adulti e bambini)
-    i4: Corsi di yoga (adulti e bambini)
-    i5: Corsi di pilates
+    i1: Corsi di yoga (adulti e bambini)
+    i2: Corsi di pilates
+    i3: Feste di compleanno
+    i4: Corsi di preparazione al parto
+    i5: Corsi di lingua (adulti e bambini)
     i6: Corsi di psicomotricità
     i7: Corsi di primo soccorso pediatrico e BLSD
     i8: Corsi di formazione allattamento al seno e svezzamento

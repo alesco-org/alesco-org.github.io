@@ -330,14 +330,14 @@ kitchen:
 
 
 rent:
-  p1: "It's possible to rent the rooms and / or the garden of the nursery school on <strong> Saturday and Sunday at any time </strong>, or on <strong> weekdays after 18:30 </strong>."
+  p1: "It's possible to rent the 120 sm garden and / or the rooms with parquet flooring of the nursery school on <strong> Saturday and Sunday at any time </strong>, or during <strong> weekdays after 18:30 </strong>."
   p2: "The structure is suitable for hosting (and has already hosted in the past) activities such as the following:"
   items:
-    i1: Birthday parties
-    i2: Childbirth preparation courses
-    i3: Language courses (adults and children)
-    i4: Yoga courses (adults and children)
-    i5: Pilates courses
+    i1: Yoga courses (adults and children)
+    i2: Pilates courses
+    i3: Birthday parties
+    i4: Childbirth preparation courses
+    i5: Language courses (adults and children)
     i6: Psychomotricity courses
     i7: Pediatric first aid courses and BLSD
     i8: Breastfeeding and weaning training courses
