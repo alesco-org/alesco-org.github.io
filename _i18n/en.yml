@@ -17,6 +17,7 @@ titles:
   lavora-con-noi: Work with Us
   laboratori: Laboratories
   pediatra: Pediatrician
+  bilingue: Bilingual School
   cucina-interna: Internal Kitchen
   servizi: Services
   open-day-2017: Open Day 2017
@@ -59,6 +60,7 @@ global:
   method: Educational Method
   work_with_us: Work with Us
   doctor: Pediatrician
+  bilingual: Bilingual School
   kitchen: Internal Kitchen
   reservations: Rent Location
   nursery: Daycare
@@ -123,38 +125,40 @@ home:
     The school is placed on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
     The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities. 
     The hall dedicated to infants is divided into a game area and a sleeping section.
-    There are three big multipurpose rooms for expressive activities, symbolic games and psychomotricity.
+    There are three large multipurpose rooms for expressive activities, symbolic games and psychomotricity.
   p3: |-
-    The location of the nursery schools allows to divide childrens into different age ranges. In every room there's a place for changing children.
-    Every environment is designed to promote social activities and autonomy of every child, it's child-friendly and well suited for the child age.
+    The structure of the nursery school allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    Every environment is designed to promote social activities and autonomy of every child. Each class is children-friendly and well suited for their respective age.
   p4: |-
     The nursery school contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
   why: Why choosing us?
   services:
     s1:
+      title: Bilingual School
+      description: Let's become citizens of the world! Learning English as a second language enriches and stimulates curiosity in children.
+      icon: "fa-globe"
+    s2:
       title: Qualified Staff
       description: The nursery school is managed by psychologists and professional educators.
       icon: "fa-graduation-cap"
-    s2:
-      title: Continuous Training
-      description: The staff continuously follows courses for first aid, PBLS, HACCP and security.
-      icon: "fa-pencil"
     s3:
-      title: Music Laboratory
-      description: Children follow a music laboratory with Gordon's method, given by professional teachers.
-      icon: "fa-music"
-    s4:
-      title: Healthy Food
-      description: Our food menu are developed by a nutritionist.
-      icon: "fa-cutlery"
-    s5:
       title: Flexible hours
       description: We provide several options for exit hours to help families.
       icon: "fa-clock-o"
+    s4:
+      title: Continuous Training
+      description: The staff continuously follows courses for first aid, PBLS, HACCP and security.
+      icon: "fa-pencil"
+    s5:
+      title: Healthy Food
+      description: Our meals are prepared every day by our chef ad developed by a nutritionist.
+      icon: "fa-cutlery"
     s6:
-      title: English and Spanish
-      description: Let's become citizens of the world! Learning a second language enriches and stimulates curiosity in children..
-      icon: "fa-globe"
+      title: Music Laboratory
+      description: Children follow a music laboratory with Gordon's method, given by professional teachers.
+      icon: "fa-music"
+    
+    
   know: Do you want to know more?
   contact_desc: Contact us for scheduling a visit. We'll show you the location and our educational project.
   teachers:
@@ -209,8 +213,8 @@ sentence:
 group:
   title: Educational Group
   p1: The nursery school "I Bambini del Circo Massimo" is an educational service directed by three people.
-  p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about coordinating daily activities, laboratories and defining the pedagogical project.
-  p3: <strong>Elena Ierace</strong>, owner and educator, <mark>Master's Degree in Psychology of Childhood and Family</mark> and specializing in Familiy Psychoteraphy. She cares about daily work organization and works in the various classes divided by child age.
+  p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family and specialized in Familiy Psychoteraphy</mark>. She cares about coordinating daily activities, laboratories and defining the pedagogical project.
+  p3: <strong>Elena Ierace</strong>, owner and educator, <mark>Master's Degree in Psychology of Childhood and Family and specialized in Familiy Psychoteraphy</mark>. She cares about daily work organization and works in the various classes divided by child age.
   p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator</mark>. She cares about doing activities and taking care of the children.
   p5: All other educators who follow daily activities own all requirements and degrees required by laws, and also a lot of experience in working with children.
 
@@ -302,13 +306,13 @@ workshops:
   musica:
     title: "Music Laboratory"
     text: "Music, like all artistic disciplines, is an expressive language that, especially in the first years of life, reaches the essence of the child even before verbal language. For this reason, as early as infancy, we have the opportunity to interact with the child through music that is truly conceived as an opportunity for emotional, physical (gestural) and social growth."
-  lingue:
-    title: "English and Spanish Laboratory"
-    text: "The child from 1 to 3 years is still in the phase of learning his primary language and for this reason his brain has a remarkable elasticity. If the child already comes into contact with a foreign language and starts playing with it, he will have the opportunity to learn the differences between the sounds of the two languages in a spontaneous and natural way, all at an age when nothing is experienced as a task but as pure fun."
   esterni:
     title: "Outdoor Activities"
     text: "The structure is equipped with a very spacious outdoor garden (150 square meters), which offers the possibility of doing several external laboratories including gardening, water games and the use of small swimming pools in summer for bathing."
 
+bilingual:
+  p1: The child from 1 to 3 years is still in the phase of learning his primary language and for this reason his brain has a remarkable elasticity. If the child already comes into contact with a foreign language and starts playing with it, he will have the opportunity to learn the differences between the sounds of the two languages in a spontaneous and natural way, all at an age when nothing is experienced as a task but as pure fun.
+  p2: At the nursery school "I Bambini del Circo Massimo", childrens will be followed by professtional educators who drive the execution of some daily activities using the English language.
 
 pediatrician:
   p1: The nursery school includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
