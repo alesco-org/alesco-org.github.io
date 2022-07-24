@@ -425,3 +425,10 @@ promotion:
     p2: "I nuovi genitori che hanno intenzione di iscrivere il proprio figlio/a per l'anno scolastico 2019/2020 avranno l'occasione di esplorare l'asilo nido, conoscere il personale e l'offerta educativa."
     p3: "<strong>Per i bambini invece... Tanti giochi e animazione!</strong>"
     p4: "Vieni a trovarci <strong>Sabato 6 Luglio 2019, dalle ore 16:00 alle 19:00!</strong>"
+
+messages:
+  thank-you: "Grazie per averci contattato. Invieremo una copia del tuo messaggio all'indirizzo email che hai specificato."
+  check-mail-1: "Controlla la tua casella di posta più tardi"
+  check-mail-2: ", ti risponderemo appena possibile."
+  check-mail-2-sub: ", di solito rispondiamo in poche ore. Potremmo contattarti via telefono se hai lasciato il tuo numero."
+  see-you: "A presto!"

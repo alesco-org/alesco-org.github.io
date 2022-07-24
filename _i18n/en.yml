@@ -398,3 +398,10 @@ promotion:
     p2: "All new parents who want to enroll their children for the school year 2019/2020 will be able to visit the facility, meet the educators and get to know our educational project."
     p3: "<strong>For the children... A lot of games and shows!</strong>"
     p4: "Come to meet us on <strong>July 6, 2019, from 4pm to 7pm!</strong>"
+
+messages:
+  thank-you: "Thank you for contacting us. We'll send a copy of this message to the mail address you specified."
+  check-mail-1: "Check your mailbox later today"
+  check-mail-2: ", we'll reply as soon as possible."
+  check-mail-2-sub: ", usually we reply in a few hours. We may contact you via phone if you left your number."
+  see-you: "See you soon!"
