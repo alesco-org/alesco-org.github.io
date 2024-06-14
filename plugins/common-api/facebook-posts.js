@@ -1,4 +1,5 @@
 
+/*
 $(document).ready(function() {
     $.get("https://alesco.nerdammer.it/posts", function (res) {
 
@@ -32,3 +33,4 @@ $(document).ready(function() {
 
     })
 });
+*/
