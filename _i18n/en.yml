@@ -91,17 +91,17 @@ slide:
     img: "img/header/header-2-cropped.jpg"
   s3:
     title: "I Bambini del Circo Massimo"
-    description: "The art of educating..."
+    description: "The Joy of learning..."
     align: "right"
     img: "img/header/header-3-cropped.jpg"
 
 alert:
   #message: "Hot Deal: enroll before July 23rd to get 50% off on both subscription and 1st month fees!"
-  message: "Special offers available! A few places remaining for September."
+  message: "Enrollment now open: few spots available."
 
 section:
   s1:
-    title: "Nursery School"
+    title: "Day care"
     link: "#asilo"
     icon: "fa-child"
   s2:
@@ -118,21 +118,21 @@ section:
     icon: "fa-facebook-official"
 
 home:
-  title: The Nursery School (Preschool)
+  title: The day care
   p1: |-
-    The Nursery School (Preschool) "I Bambini del Circo Massimo" is a bilingual child care school, located in the heart of Rome, for children ranging from 3 months to 3 years old,
+    The day care "I Bambini del Circo Massimo" is a bilingual infant and toddler care school, located in the heart of Rome, for children from 3 months to 3 years old
     coming from all over the world. Among the multiple educational activities that it offers, children of all ages also benefit from the presence of 
     specialized educators who teach the English language every day.
   p2: |-
-    The school is placed on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
+    The school is located on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
     The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities. 
     The hall dedicated to infants is divided into a game area and a sleeping section.
     There are three large multipurpose rooms for expressive activities, symbolic games and psychomotricity.
   p3: |-
-    The structure of the nursery school allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    The structure of the day care allows to divide childrens into different age ranges. In every room there's a place for changing children.
     Every environment is designed to promote social activities and autonomy of every child. Each class is children-friendly and well suited for their respective age.
   p4: |-
-    The nursery school contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+    The day care contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
   why: Why choosing us?
   services:
     s1:
@@ -141,7 +141,7 @@ home:
       icon: "fa-globe"
     s2:
       title: Qualified Staff
-      description: The nursery school is managed by psychologists and professional educators.
+      description: The day care is managed by psychologists and professional educators.
       icon: "fa-graduation-cap"
     s3:
       title: Flexible hours
@@ -181,7 +181,7 @@ home:
 contacts:
   send_message: Send us a message!
   desc: |-
-    If you're looking for a nursery school for your child and want to have more information, send us a message using the form below.
+    If you're looking for a day care for your child and want to have more information, send us a message using the form below.
     We'll contact you back as soon as possible.
   disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the page
   disclaimer-page: "\"Work with us\""
@@ -192,7 +192,7 @@ contacts:
     message: Write your message here *
   reason:
     select: "- select a reason -"
-    info: Information about enrollment in the nursery school
+    info: Information about enrollment in the day care
     work: I want to work with you
     reserve: I want to reserve some halls or the garden
     other: Other information
@@ -201,8 +201,8 @@ contacts:
   send: Send
   reaching: How to get here
   location:
-    p1: The nursery school is located in <strong>via del Circo Massimo 9</strong>, where via del Circo Massimo crosses viale Aventino (in front of the FAO building), and it's located nearby the metro B station "Circo Massimo".
-    p2: The nursery school is easily reachable in few minutes using public transportation from
+    p1: The day care is located in <strong>via del Circo Massimo 9</strong>, where via del Circo Massimo crosses viale Aventino (in front of the FAO building), and it's located nearby the metro B station "Circo Massimo".
+    p2: The day care is easily reachable in few minutes using public transportation from
     metro: <strong>Metro B:</strong> few minutes from metro stations of <strong>Marconi, Basilica S. Paolo, Garbatella, Piramide, (Circo Massimo), Colosseo, Cavour, Termini, Castro Pretorio and Policlinico.</strong>
     tram: <strong>Tram nr. 3:</strong> few stops from <strong>San Giovanni, Manzoni, via Labicana, via Merulana, (Circo Massimo), viale Aventino, via Marmorata, Porta Portese and Trastevere.</strong>
 
@@ -223,7 +223,7 @@ group:
 location:
   see-all: Full Photo Gallery
   p1: |-
-    The Nursery School (Preschool) "I Bambini del Circo Massimo" is a child care school for children ranging from 3 months to 3 years old. It's
+    The day care "I Bambini del Circo Massimo" is an infant and toddler care school for children from 3 months to 3 years old. It's
     located on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
     The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities.
   p2: |-
@@ -233,7 +233,7 @@ location:
     The location of the nursery schools allows to divide childrens into different age ranges. In every room there's a place for changing children.
     Every environment is designed to promote social activities and autonomy of every child, it's child-friendly and well suited for the child age.
   p4: |-
-    The nursery school contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+    The day care contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
 
 
 method:
@@ -241,7 +241,7 @@ method:
     The child occupies a central position and, in its uniqueness, is a bearer of strong potential.
     The adult's job is to offer adequate spaces for the expression of intuition and imagination.
     Children learn within the relationship between peers and with the adult who stands in a perspective of listening and observation.
-    The nursery school must be thought of as a place to build the right conditions for learning, within which children can be
+    The day care must be thought of as a place to build the right conditions for learning, within which children can be
     welcomed and helped to grow.
   p2: |-
     "The child is like a traveler who observes new things and tries to understand the unknown language of those around him. We adults are the guides of these travelers who make their entry into human life..."
@@ -251,10 +251,10 @@ method:
     The child must have the opportunity to express his full potential within a well-organized environment and detailed planning.
     The better the quality of the gaming opportunities offered, the more enjoyable the experience will be for both the adult and the child.
   p4: |-
-    Within the nursery school, the child must create secure and stable relationships with a figure of
+    Within the day care, the child must create secure and stable relationships with a figure of
     reference that takes care of him.
     The good numerical ratio between educators and children is the key element that guarantees
-    the quality of a nursery school, the organization of the school ensures regular occasions for care
+    the quality of a day care, the organization of the school ensures regular occasions for care
     in which the educator pays personal attention to each individual child.
   p5: |-
     An American research has shown that children included in nursery programs with more careful educators
@@ -314,10 +314,10 @@ workshops:
 
 bilingual:
   p1: The child from 1 to 3 years is still in the phase of learning his primary language and for this reason his brain has a remarkable elasticity. If the child already comes into contact with a foreign language and starts playing with it, he will have the opportunity to learn the differences between the sounds of the two languages in a spontaneous and natural way, all at an age when nothing is experienced as a task but as pure fun.
-  p2: At the nursery school "I Bambini del Circo Massimo", childrens will be followed by professtional educators who drive the execution of some daily activities using the English language.
+  p2: At the day care "I Bambini del Circo Massimo", childrens will be followed by professtional educators who drive the execution of some daily activities using the English language.
 
 pediatrician:
-  p1: The nursery school includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
+  p1: The day care includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
   name: Dr. Marina De Angelis
   items:
     i1: Born in Roma on 03/25/1958
@@ -332,7 +332,7 @@ pediatrician:
 
 
 kitchen:
-  p1: "The nursery school is equipped with a professional, all-steel interior kitchen. The cook, in possession of the HACCP certification, prepares the morning snacks, lunch and afternoon snacks."
+  p1: "The day care is equipped with a professional, all-steel interior kitchen. The cook, in possession of the HACCP certification, prepares the morning snacks, lunch and afternoon snacks."
   p2: "Our snack includes: yogurt, pureed fruit (apple, pear, banana), ciambellone prepared by the cook, milk with cereals, rice cakes, crackers, biscuits with jam."
   p3: "Our diet requires that the child takes all the nutrients every day in adequate quantities. Approximately 15% of proteins, 30% of fats and 60% of carbohydrates are expected. So our food model includes lots of fruit and vegetables, together with cereals and legumes, fish, meat and eggs."
 
@@ -367,7 +367,7 @@ day:
   p2: For the time of the snack we move into the big hall. The younger children are taken by the educators while the older ones eat autonomously. Snacks are provided by the nursery school.
   t3: 10.00 - 11.00 Activities and Laboratories
   p3: |-
-    Every day the spaces of the nursery school are purposely arranged to allow all children to freely choose what, where and how to play with whom. The spaces are communicating and an educator is always present in every room.
+    Every day the spaces of the day care are purposely arranged to allow all children to freely choose what, where and how to play with whom. The spaces are communicating and an educator is always present in every room.
 
     These are the moments of playing, prepared by educators according to certain criteria:
   i1: "Variety: during the year various materials and games are proposed;"
@@ -396,7 +396,7 @@ promotion:
       Promotion is valid until June 30, 2019.
     p2: Few places available... Hurry up!
   open-day-2019:
-    p1: "On July 6, 2019 the Nursery School \"I Bambini del Circo Massimo\" organises a <strong>day of games and shows open to all children!</strong>"
+    p1: "On July 6, 2019 the day care \"I Bambini del Circo Massimo\" organises a <strong>day of games and shows open to all children!</strong>"
     p2: "All new parents who want to enroll their children for the school year 2019/2020 will be able to visit the facility, meet the educators and get to know our educational project."
     p3: "<strong>For the children... A lot of games and shows!</strong>"
     p4: "Come to meet us on <strong>July 6, 2019, from 4pm to 7pm!</strong>"
