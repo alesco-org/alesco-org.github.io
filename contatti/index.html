@@ -21,6 +21,9 @@
   <link rel="stylesheet" type="text/css" href="https://ibambinidelcircomassimo.it/plugins/isotope/isotope.css?version=11">
 
   
+  <!-- COOKIE CONSENT -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  
   
   <!-- GOOGLE FONT -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -473,14 +476,51 @@ Ti ricontatteremo appena possibile.
       gtag('js', new Date());
       
         gtag('consent', 'default', {
-          'ad_storage': 'granted',
-          'analytics_storage': 'granted'
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
         });
       
 
       gtag('config', 'UA-96984171-1');
     </script>
 
+    
+      <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script>
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+          "background": "#383b75"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        },
+        "type": "opt-in",
+        "content": {
+          "message": "Noi e terze parti usiamo cookie per funzionalità tecniche e, con il tuo consenso, anche per altre finalità statistiche e di profilazione descritte nella Cookie Policy. Puoi liberamente prestare il tuo consenso cliccando sul pulsante \"Accetta\". Cliccando sul pulsante \"Continua senza accettare\" acconsenti invece all'uso dei soli cookie tecnici.",
+          "deny": "Continua senza accettare",
+          "allow": "Accetta",
+          "link": "Informazioni",
+          "href": "/privacy/"
+        },
+        "onStatusChange": function(status) {
+          if (this.hasConsented()) {
+            gtag('consent', 'update', {
+              'ad_storage': 'granted',
+              'analytics_storage': 'granted'
+            });
+          } else {
+            gtag('consent', 'update', {
+              'ad_storage': 'denied',
+              'analytics_storage': 'denied'
+            });
+          }
+        },
+      });
+      </script>
+      <!-- End Cookie Consent plugin -->
     
 
   
