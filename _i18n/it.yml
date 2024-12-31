@@ -98,7 +98,7 @@ slide:
 alert:
   #message: "Offerta Lampo: se ti iscrivi entro il 23 Luglio, 50% di sconto su iscrizione e prima retta!"
   #message: "Offerte speciali disponibili! Pochi posti rimasti per Settembre."
-  message: "Iscrizioni aperte: pochi posti rimasti."
+  message: "Iscrizioni aperte: ultimi posti rimasti."
 
 section:
   s1:
