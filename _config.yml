@@ -45,3 +45,6 @@ exclude:
 languages: ["it", "en"]
 
 prod-mode: true
+
+include:
+- ambientamento-al-nido.pdf
