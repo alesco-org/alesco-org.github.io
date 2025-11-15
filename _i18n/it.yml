@@ -16,7 +16,7 @@ titles:
   lavora-con-noi: Lavora con Noi
   laboratori: Laboratori
   pediatra: Pediatra
-  bilingue: Asilo Bilingue
+  bilingue: Asilo Nido
   cucina-interna: Cucina Interna
   servizi: Servizi
   open-day-2017: Open Day 2017
@@ -62,7 +62,7 @@ global:
   method: Metodo Educativo
   work_with_us: Lavora con Noi
   doctor: Pediatra
-  bilingual: Asilo Bilingue
+  bilingual: Asilo Nido
   kitchen: Cucina Interna
   reservations: Affitto Sale
   nursery: Al Nido
@@ -102,7 +102,7 @@ alert:
 
 section:
   s1:
-    title: "L'asilo"
+    title: "L'asilo nido"
     link: "#asilo"
     icon: "fa-child"
   s2:
@@ -110,7 +110,7 @@ section:
     link: "#galleria"
     icon: "fa-picture-o"
   s3:
-    title: "Dove Siamo"
+    title: "Dove siamo"
     link: "#dove"
     icon: "fa-map-o"
   s4:
@@ -121,7 +121,7 @@ section:
 home:
   title: I Bambini del Circo Massimo
   p1: |-
-    "I Bambini del Circo Massimo" è un asilo nido bilingue, situato nel cuore del centro storico di Roma e frequentato da bambini da 0 a 3 anni,
+    "I Bambini del Circo Massimo" è un asilo nido situato nel cuore del centro storico di Roma e frequentato da bambini da 0 a 3 anni,
     provenienti da ogni parte del mondo. Oltre alle molteplici attività didattiche svolte all'interno dell'asilo, anche l'insegnamento della lingua inglese,
     da parte di educatrici specializzate, è parte integrante dell'offerta formativa per i bambini di tutte le età.
   p2: |-
@@ -133,16 +133,16 @@ home:
     La conformazione del nido permette di suddividere i bimbi in base alle diverse fasce di età e in ogni stanza è annesso un angolo cambio. Ogni ambiente è predisposto
     e studiato per promuovere la socializzazione e l'autonomia dei bambini. Tutte le classi sono a misura di bambino e adatte alla loro età.
   p4: |-
-    L'asilo dispone di un giardino esterno attrezzato di diversi giochi di 150 mq circa. Nell'asilo nido è presente la cucina interna.
+    L'asilo nido dispone di un giardino esterno attrezzato di diversi giochi di 150 mq circa. Nell'asilo nido è presente la cucina interna.
   why: Perché sceglierci?
   services:
     s1:
-      title: Asilo Bilingue
+      title: Laboratori di Inglese
       description: Diventiamo cittadini del mondo! Apprendere l'inglese come seconda lingua arricchisce e stimola la naturale curiosità dei bambini.
       icon: "fa-globe"
     s2:
       title: Personale Qualificato
-      description: L'asilo è gestito da psicologhe ed educatrici professionali.
+      description: L'asilo nido è gestito da psicologhe ed educatrici professionali.
       icon: "fa-graduation-cap"
     s3:
       title: Orari flessibili
@@ -171,7 +171,7 @@ home:
       picture: "assets/titolari/elena.jpg"
     ginevra:
       name: Ginevra Papini
-      description: "Educatrice Professionale"
+      description: "Educatrice Professionale e Consulente del Sonno"
       picture: "assets/titolari/ginevra.jpg"
     giulia:
       name: Giulia Papini
@@ -219,13 +219,13 @@ group:
   p1: L'asilo nido "I Bambini del Circo Massimo" è un servizio socio educativo gestito da tre titolari con i titoli del settore.
   p2: <strong>Giulia Papini</strong>, titolare e coordinatrice, <mark>laureata in Psicologia dell'Infanzia e della Famiglia e specializzata in Psicoterapia Familiare</mark>. Si occupa del coordinamento delle attività quotidiane e dei laboratori esterni e definizione del progetto pedagogico.
   p3: <strong>Elena Ierace</strong>, titolare ed educatrice, <mark>laureata in Psicologia dell’Infanzia e della Famiglia e specializzata in Psicoterapia Familiare</mark>. Si occupa della gestione interna quotidiana delle diverse classi suddivise per fasce di età.
-  p4: <strong>Ginevra Papini</strong>, titolare ed educatrice, diplomata in Tecnico dei Servizi Sociali e <mark>specializzata come Educatrice Professionale</mark>. Si occupa dell'organizzazione delle attività e della cura dei bambini.
+  p4: <strong>Ginevra Papini</strong>, titolare ed educatrice, diplomata in Tecnico dei Servizi Sociali e <mark>specializzata come Educatrice Professionale e Consulente del Sonno</mark>. Si occupa dell'organizzazione delle attività, della cura dei bambini e supporta le famiglie come consulente del sonno.
   p5: Tutte le educatrici che svolgono le attività quotidiane possiedono i titoli di studio richiesti, oltre una notevole esperienza con i bambini.
 
 location:
   see-all: Guarda Tutte le Foto
   p1: |-
-    "I Bambini del Circo Massimo" è un asilo nido bilingue, situato nel cuore del centro storico di Roma e frequentato da bambini da 0 a 3 anni,
+    "I Bambini del Circo Massimo" è un asilo nido situato nel cuore del centro storico di Roma e frequentato da bambini da 0 a 3 anni,
     provenienti da ogni parte del mondo. Oltre alle molteplici attività didattiche svolte all'interno dell'asilo, anche l'insegnamento della lingua inglese,
     da parte di educatrici specializzate, è parte integrante dell'offerta formativa per i bambini di tutte le età.
   p2: |-

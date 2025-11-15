@@ -17,7 +17,7 @@ titles:
   lavora-con-noi: Work with Us
   laboratori: Laboratories
   pediatra: Pediatrician
-  bilingue: Bilingual School
+  bilingue: Daycare School
   cucina-interna: Internal Kitchen
   servizi: Services
   open-day-2017: Open Day 2017
@@ -62,7 +62,7 @@ global:
   method: Educational Method
   work_with_us: Work with Us
   doctor: Pediatrician
-  bilingual: Bilingual School
+  bilingual: Daycare School
   kitchen: Internal Kitchen
   reservations: Rent Location
   nursery: Daycare
@@ -101,7 +101,7 @@ alert:
 
 section:
   s1:
-    title: "Day care"
+    title: "Daycare"
     link: "#asilo"
     icon: "fa-child"
   s2:
@@ -118,9 +118,9 @@ section:
     icon: "fa-facebook-official"
 
 home:
-  title: The day care
+  title: The daycare
   p1: |-
-    The day care "I Bambini del Circo Massimo" is a bilingual infant and toddler care school, located in the heart of Rome, for children from 3 months to 3 years old
+    The daycare "I Bambini del Circo Massimo" is an infant and toddler daycare, located in the heart of Rome, for children from 3 months to 3 years old
     coming from all over the world. Among the multiple educational activities that it offers, children of all ages also benefit from the presence of 
     specialized educators who teach the English language every day.
   p2: |-
@@ -129,19 +129,19 @@ home:
     The hall dedicated to infants is divided into a game area and a sleeping section.
     There are three large multipurpose rooms for expressive activities, symbolic games and psychomotricity.
   p3: |-
-    The structure of the day care allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    The structure of the daycare allows to divide childrens into different age ranges. In every room there's a place for changing children.
     Every environment is designed to promote social activities and autonomy of every child. Each class is children-friendly and well suited for their respective age.
   p4: |-
-    The day care contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+    The daycare contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
   why: Why choosing us?
   services:
     s1:
-      title: Bilingual School
+      title: School
       description: Let's become citizens of the world! Learning English as a second language enriches and stimulates curiosity in children.
       icon: "fa-globe"
     s2:
       title: Qualified Staff
-      description: The day care is managed by psychologists and professional educators.
+      description: The daycare is managed by psychologists and professional educators.
       icon: "fa-graduation-cap"
     s3:
       title: Flexible hours
@@ -170,7 +170,7 @@ home:
       picture: "assets/titolari/elena.jpg"
     ginevra:
       name: Ginevra Papini
-      description: "Professional Educator"
+      description: "Professional Educator and Sleep Consultant"
       picture: "assets/titolari/ginevra.jpg"
     giulia:
       name: Giulia Papini
@@ -181,9 +181,9 @@ home:
 contacts:
   send_message: Send us a message!
   desc: |-
-    If you're looking for a day care for your child and want to have more information, send us a message using the form below.
+    If you're looking for a daycare for your child and want to have more information, send us a message using the form below.
     We'll contact you back as soon as possible.
-  disclaimer: This form <strong>is reserved to parents</strong> who want more information on the nursery school. For job offerings, please visit the page
+  disclaimer: This form <strong>is reserved to parents</strong> who want more information on the daycare school. For job offerings, please visit the page
   disclaimer-page: "\"Work with us\""
   placeholders:
     name: Name and Surname (eg. John Doe) *
@@ -192,7 +192,7 @@ contacts:
     message: Write your message here *
   reason:
     select: "- select a reason -"
-    info: Information about enrollment in the day care
+    info: Information about enrollment in the daycare
     work: I want to work with you
     reserve: I want to reserve some halls or the garden
     other: Other information
@@ -201,8 +201,8 @@ contacts:
   send: Send
   reaching: How to get here
   location:
-    p1: The day care is located in <strong>via del Circo Massimo 9</strong>, where via del Circo Massimo crosses viale Aventino (in front of the FAO building), and it's located nearby the metro B station "Circo Massimo".
-    p2: The day care is easily reachable in few minutes using public transportation from
+    p1: The daycare is located in <strong>via del Circo Massimo 9</strong>, where via del Circo Massimo crosses viale Aventino (in front of the FAO building), and it's located nearby the metro B station "Circo Massimo".
+    p2: The daycare is easily reachable in few minutes using public transportation from
     metro: <strong>Metro B:</strong> few minutes from metro stations of <strong>Marconi, Basilica S. Paolo, Garbatella, Piramide, (Circo Massimo), Colosseo, Cavour, Termini, Castro Pretorio and Policlinico.</strong>
     tram: <strong>Tram nr. 3:</strong> few stops from <strong>San Giovanni, Manzoni, via Labicana, via Merulana, (Circo Massimo), viale Aventino, via Marmorata, Porta Portese and Trastevere.</strong>
 
@@ -214,26 +214,26 @@ sentence:
 
 group:
   title: Educational Group
-  p1: The nursery school "I Bambini del Circo Massimo" is an educational service directed by three people.
+  p1: The daycare school "I Bambini del Circo Massimo" is an educational service directed by three people.
   p2: <strong>Giulia Papini</strong>, owner and coordinator, <mark>Master's Degree in Psychology of Childhood and Family and specialized in Familiy Psychoteraphy</mark>. She cares about coordinating daily activities, laboratories and defining the pedagogical project.
   p3: <strong>Elena Ierace</strong>, owner and educator, <mark>Master's Degree in Psychology of Childhood and Family and specialized in Familiy Psychoteraphy</mark>. She cares about daily work organization and works in the various classes divided by child age.
-  p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator</mark>. She cares about doing activities and taking care of the children.
+  p4: <strong>Ginevra Papini</strong>, owner and educator, graduated as Social Services Technician and <mark>specialized as Professional Educator and Sleep Consultant</mark>. She cares about organizing the daily activities, taking care of the children and supporting families as sleep consultant.
   p5: All other educators who follow daily activities own all requirements and degrees required by laws, and also a lot of experience in working with children.
 
 location:
   see-all: Full Photo Gallery
   p1: |-
-    The day care "I Bambini del Circo Massimo" is an infant and toddler care school for children from 3 months to 3 years old. It's
+    The daycare "I Bambini del Circo Massimo" is an infant and toddler care school for children from 3 months to 3 years old. It's
     located on a single floor of 220 squared meters indoor plus a garden of 150 squared meters.
     The common area at the entrance contains the lobby and a multipurpose hall dedicated to meals and some daily activities.
   p2: |-
     The hall dedicated to infants is divided into a game area and a sleeping section.
     There are three big multipurpose rooms for expressive activities, symbolic games and psychomotricity.
   p3: |-
-    The location of the nursery schools allows to divide childrens into different age ranges. In every room there's a place for changing children.
+    The location of the daycare school allows to divide childrens into different age ranges. In every room there's a place for changing children.
     Every environment is designed to promote social activities and autonomy of every child, it's child-friendly and well suited for the child age.
   p4: |-
-    The day care contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
+    The daycare contains an external garden equipped with several outdoor games and an internal kitchen where we prepare fresh meals every day.
 
 
 method:
@@ -241,7 +241,7 @@ method:
     The child occupies a central position and, in its uniqueness, is a bearer of strong potential.
     The adult's job is to offer adequate spaces for the expression of intuition and imagination.
     Children learn within the relationship between peers and with the adult who stands in a perspective of listening and observation.
-    The day care must be thought of as a place to build the right conditions for learning, within which children can be
+    The daycare must be thought of as a place to build the right conditions for learning, within which children can be
     welcomed and helped to grow.
   p2: |-
     "The child is like a traveler who observes new things and tries to understand the unknown language of those around him. We adults are the guides of these travelers who make their entry into human life..."
@@ -251,10 +251,10 @@ method:
     The child must have the opportunity to express his full potential within a well-organized environment and detailed planning.
     The better the quality of the gaming opportunities offered, the more enjoyable the experience will be for both the adult and the child.
   p4: |-
-    Within the day care, the child must create secure and stable relationships with a figure of
+    Within the daycare, the child must create secure and stable relationships with a figure of
     reference that takes care of him.
     The good numerical ratio between educators and children is the key element that guarantees
-    the quality of a day care, the organization of the school ensures regular occasions for care
+    the quality of a daycare, the organization of the school ensures regular occasions for care
     in which the educator pays personal attention to each individual child.
   p5: |-
     An American research has shown that children included in nursery programs with more careful educators
@@ -269,7 +269,7 @@ method:
 
 work:
   p1: If working with children is the best thing in the world for you, you can send us your CV and we'll evaluate it.
-  p2: In this moment our staff is complete, but we have some <strong>open positions for internships</strong> in our nursery school.
+  p2: In this moment our staff is complete, but we have some <strong>open positions for internships</strong> in our daycare school.
   p3: Send your CV to
   p4: "specifying your availability for an internship."
 
@@ -314,10 +314,10 @@ workshops:
 
 bilingual:
   p1: The child from 1 to 3 years is still in the phase of learning his primary language and for this reason his brain has a remarkable elasticity. If the child already comes into contact with a foreign language and starts playing with it, he will have the opportunity to learn the differences between the sounds of the two languages in a spontaneous and natural way, all at an age when nothing is experienced as a task but as pure fun.
-  p2: At the day care "I Bambini del Circo Massimo", childrens will be followed by professtional educators who drive the execution of some daily activities using the English language.
+  p2: At the daycare "I Bambini del Circo Massimo", childrens will be followed by professtional educators who drive the execution of some daily activities using the English language.
 
 pediatrician:
-  p1: The day care includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
+  p1: The daycare includes medical examination for all children (with parental authorization), at least once a month. The visits are carried out by Dr. Marina De Angelis.
   name: Dr. Marina De Angelis
   items:
     i1: Born in Roma on 03/25/1958
@@ -332,13 +332,13 @@ pediatrician:
 
 
 kitchen:
-  p1: "The day care is equipped with a professional, all-steel interior kitchen. The cook, in possession of the HACCP certification, prepares the morning snacks, lunch and afternoon snacks."
+  p1: "The daycare is equipped with a professional, all-steel interior kitchen. The cook, in possession of the HACCP certification, prepares the morning snacks, lunch and afternoon snacks."
   p2: "Our snack includes: yogurt, pureed fruit (apple, pear, banana), ciambellone prepared by the cook, milk with cereals, rice cakes, crackers, biscuits with jam."
   p3: "Our diet requires that the child takes all the nutrients every day in adequate quantities. Approximately 15% of proteins, 30% of fats and 60% of carbohydrates are expected. So our food model includes lots of fruit and vegetables, together with cereals and legumes, fish, meat and eggs."
 
 
 rent:
-  p1: "It's possible to rent the 120 sm garden and / or the rooms with parquet flooring of the nursery school on <strong> Saturday and Sunday at any time </strong>, or during <strong> weekdays after 17:30 </strong>."
+  p1: "It's possible to rent the 120 sm garden and / or the rooms with parquet flooring of the daycare school on <strong> Saturday and Sunday at any time </strong>, or during <strong> weekdays after 17:30 </strong>."
   p2: "The structure is suitable for hosting (and has already hosted in the past) activities such as the following:"
   items:
     i1: Yoga courses (adults and children)
@@ -358,16 +358,16 @@ inclusion:
   p2: During the first days the parent will be required to accompany the child in the class in which the other children and the educator of reference are present. The child will thus be able to get to know the surrounding environment and the educator can always count on parent's presence in times of stress. The parent and the child are bound by an invisible thread which is one of the manifestations of the attachment bond. Gradually the child and educator will establish a bond of trust and affection and the parent can be every day less present.
   p3: It's important that the educator and the parent talk about what is happening to give a meaning to the child's practical experience. The more the adult is serene and shows trust in the environment and in the educator, the more the child will feel that he is in a safe place.
   p4: Another fundamental thing is to say goodbye the child at the time of leaving and to verbalize that the mother and father go to work but they will return back to take him home. The child must feel clarity and serenity in the message that the adult sends. Our model of adaptation ends in about two weeks. It is very important not to force the children and respect their pace.
-  p5: The child can bring a teddy bear or a game to which he is particularly attached, it acts as a "transitional object" and creates a sort of bridge between the nursery school and the house, having the function of comforting the child in times of stress.
+  p5: The child can bring a teddy bear or a game to which he is particularly attached, it acts as a "transitional object" and creates a sort of bridge between the daycare school and the house, having the function of comforting the child in times of stress.
 
 day:
   t1: 7.30 - 9.30 Welcoming
-  p1: Welcoming means to meet, listen, reassure, contain and verbalize emotions. In the delicate moment of entrance, we try to offer understanding and support to both mother and child, obviously in different forms. It is impossible to welcome a child without welcoming his parents, his family and his story. Children are welcomed at the entrance by the educator, in the lobby there are holes to leave the child's personal items and a small box in which to put the shoes before wearing non-slip socks or slippers for the nursery school.
+  p1: Welcoming means to meet, listen, reassure, contain and verbalize emotions. In the delicate moment of entrance, we try to offer understanding and support to both mother and child, obviously in different forms. It is impossible to welcome a child without welcoming his parents, his family and his story. Children are welcomed at the entrance by the educator, in the lobby there are holes to leave the child's personal items and a small box in which to put the shoes before wearing non-slip socks or slippers for the daycare school.
   t2: 9.30 - 10.00 Snack
-  p2: For the time of the snack we move into the big hall. The younger children are taken by the educators while the older ones eat autonomously. Snacks are provided by the nursery school.
+  p2: For the time of the snack we move into the big hall. The younger children are taken by the educators while the older ones eat autonomously. Snacks are provided by the daycare school.
   t3: 10.00 - 11.00 Activities and Laboratories
   p3: |-
-    Every day the spaces of the day care are purposely arranged to allow all children to freely choose what, where and how to play with whom. The spaces are communicating and an educator is always present in every room.
+    Every day the spaces of the daycare are purposely arranged to allow all children to freely choose what, where and how to play with whom. The spaces are communicating and an educator is always present in every room.
 
     These are the moments of playing, prepared by educators according to certain criteria:
   i1: "Variety: during the year various materials and games are proposed;"
@@ -381,12 +381,12 @@ day:
   p5: "Lunch is the time for socializing for children. This moment is made more fun by the figure of the \"waiter\": every day two children are chosen on a rotating basis and they'll bring the dishes to the other children who are waiting on the table."
   p5-2: The role of the waiter allows the children to actively participate in the meal and helps to create a serene atmosphere.
   t6: 12.30 - 14.30 Sleeping
-  p6: The children who stay at the nursery school to sleep are accompanied by the educators in the sleeping room. Before going to sleep, the educator sings some songs or read a fable to reconcile the moment of sleep, then children go to sleep all together. Each child has his own fixed place and easily recognizes it also because of the sheet that is brought from home.
+  p6: The children who stay at the daycare school to sleep are accompanied by the educators in the sleeping room. Before going to sleep, the educator sings some songs or read a fable to reconcile the moment of sleep, then children go to sleep all together. Each child has his own fixed place and easily recognizes it also because of the sheet that is brought from home.
   t7: 15.30 - 16.00 Afternoon snack
   t8: 15.30-18.30 Afternoon activities
   p8: Free playing activities, out in the garden when possible. Reading and cognitive games.
   t9: Reunion
-  p9: The exit times are 15.30, 16.30, 17.30, 18.30. For children who do not sleep in the nursery school, the first exit time is at 12.30.
+  p9: The exit times are 15.30, 16.30, 17.30, 18.30. For children who do not sleep in the daycare school, the first exit time is at 12.30.
 
 promotion:
   2019:
@@ -396,7 +396,7 @@ promotion:
       Promotion is valid until June 30, 2019.
     p2: Few places available... Hurry up!
   open-day-2019:
-    p1: "On July 6, 2019 the day care \"I Bambini del Circo Massimo\" organises a <strong>day of games and shows open to all children!</strong>"
+    p1: "On July 6, 2019 the daycare \"I Bambini del Circo Massimo\" organises a <strong>day of games and shows open to all children!</strong>"
     p2: "All new parents who want to enroll their children for the school year 2019/2020 will be able to visit the facility, meet the educators and get to know our educational project."
     p3: "<strong>For the children... A lot of games and shows!</strong>"
     p4: "Come to meet us on <strong>July 6, 2019, from 4pm to 7pm!</strong>"
